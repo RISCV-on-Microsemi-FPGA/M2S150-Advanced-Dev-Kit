@@ -1,0 +1,17 @@
+
+Creating FlashPro Express Job Project...
+Software Version: 11.7.0.119
+creating folder: /home/cyril/CoreRV32IM/Libero/M2S150/FlashProExpress/RISCV_BaseDesign_bitstream
+programmer 'S200XTY0G2' : FlashPro5
+Created new project '/home/cyril/CoreRV32IM/Libero/M2S150/FlashProExpress/RISCV_BaseDesign_bitstream/RISCV_BaseDesign_bitstream.pro'
+STAPL file '/home/cyril/CoreRV32IM/Libero/M2S150/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp' has been loaded successfully.
+DESIGN : RISCV_BaseDesign;  CHECKSUM : C2B4;  ALG_VERSION : 2
+creating folder: /home/cyril/CoreRV32IM/Libero/M2S150/FlashProExpress/RISCV_BaseDesign_bitstream/projectData
+Software Version: 11.7.0.119
+STAPL file '/home/cyril/CoreRV32IM/Libero/M2S150/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp' has been loaded successfully.
+DESIGN : RISCV_BaseDesign;  CHECKSUM : C2B4;  ALG_VERSION : 2
+programmer 'S200XTY0G2' : FlashPro5
+
+Created FlashPro Express Job Project.
+Project saved.
+Project closed.
