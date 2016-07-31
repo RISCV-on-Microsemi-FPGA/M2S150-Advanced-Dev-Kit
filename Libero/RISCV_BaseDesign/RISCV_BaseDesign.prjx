@@ -1157,15 +1157,10 @@ STATE="utd"
 TIME="1469968612"
 SIZE="3849"
 ENDFILE
-VALUE "<project>/constraint/SiFiveE31Coreplex_SF2_Reference_System_derived_constraints.sdc,sdc"
-STATE="utd"
-TIME="1469623938"
-SIZE="3842"
-ENDFILE
 VALUE "<project>/designer/impl1/RISCV_BaseDesign.ide_des,ide_des"
 STATE="utd"
-TIME="1469968394"
-SIZE="617"
+TIME="1469972628"
+SIZE="697"
 ENDFILE
 VALUE "<project>/designer/impl1/XTLOSC_FAB.ide_des,ide_des"
 STATE="utd"
@@ -1174,8 +1169,8 @@ SIZE="207"
 ENDFILE
 VALUE "<project>/hdl/RISCV_BaseDesign.v,hdl"
 STATE="utd"
-TIME="1469968600"
-SIZE="23089"
+TIME="1469970734"
+SIZE="23087"
 ENDFILE
 VALUE "<project>/hdl/uj_jtag.v,hdl"
 STATE="utd"
@@ -1304,51 +1299,6 @@ STATE="utd"
 TIME="1469467097"
 SIZE="4701"
 PARENT="<project>/component/Actel/DirectCore/CoreTimer/2.0.103/CoreTimer.cxf"
-ENDFILE
-VALUE "<project>/synthesis/MSS_SUBSYSTEM.so,so"
-STATE="utd"
-TIME="1469468683"
-SIZE="243"
-ENDFILE
-VALUE "<project>/synthesis/MSS_SUBSYSTEM_sdc.sdc,syn_sdc"
-STATE="utd"
-TIME="1469468683"
-SIZE="2020"
-ENDFILE
-VALUE "<project>/synthesis/MSS_SUBSYSTEM_syn.prj,prj"
-STATE="utd"
-TIME="1469469091"
-SIZE="8139"
-ENDFILE
-VALUE "<project>/synthesis/RISCV_BaseDesign.so,so"
-STATE="utd"
-TIME="1469968695"
-SIZE="249"
-ENDFILE
-VALUE "<project>/synthesis/RISCV_BaseDesign_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1469968693"
-SIZE="3841"
-ENDFILE
-VALUE "<project>/synthesis/RISCV_BaseDesign_syn.prj,prj"
-STATE="utd"
-TIME="1469968696"
-SIZE="9187"
-ENDFILE
-VALUE "<project>/synthesis/SiFiveE31Coreplex_SF2_Reference_System.so,so"
-STATE="utd"
-TIME="1469624034"
-SIZE="293"
-ENDFILE
-VALUE "<project>/synthesis/SiFiveE31Coreplex_SF2_Reference_System_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1469624032"
-SIZE="3883"
-ENDFILE
-VALUE "<project>/synthesis/SiFiveE31Coreplex_SF2_Reference_System_syn.prj,prj"
-STATE="utd"
-TIME="1469624035"
-SIZE="9297"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -2013,7 +1963,7 @@ ReportsCurrentItem;Generate FPGA Array Data:RISCV_BaseDesign_init_config.xml
 Constraint Manager;Constraint Manager;0
 HDL;hdl/RISCV_BaseDesign.v;0
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+ACTIVEVIEW;Constraint Manager
 ENDLIST
 LIST ModuleSubBlockList
 LIST "ALU::work","component/SiFive/SiFive/SiFiveE31Coreplex/1.0.8/rtl/verilog/Top.v","FALSE","FALSE"
@@ -2285,6 +2235,7 @@ ENDLIST
 LIST "RISCV_BaseDesign::work","hdl/RISCV_BaseDesign.v","FALSE","FALSE"
 SUBBLOCK "MSS_SUBSYSTEM::work","component/work/MSS_SUBSYSTEM/MSS_SUBSYSTEM.v","TRUE","FALSE"
 SUBBLOCK "SiFiveE31Coreplex_sd::work","component/work/SiFiveE31Coreplex_sd/SiFiveE31Coreplex_sd.v","TRUE","FALSE"
+SUBBLOCK "uj_jtag::work","hdl/uj_jtag.v","FALSE","FALSE"
 ENDLIST
 LIST "Rocket::work","component/SiFive/SiFive/SiFiveE31Coreplex/1.0.8/rtl/verilog/Top.v","FALSE","FALSE"
 SUBBLOCK "ALU::work","component/SiFive/SiFive/SiFiveE31Coreplex/1.0.8/rtl/verilog/Top.v","FALSE","FALSE"
