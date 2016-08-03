@@ -25,3 +25,6 @@ http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro
 
 ### Libero
 Libero is Microsemi's FPGA design tool. You will need this tool if you wish to modify the example FPGA design. Libero is available from the following page: http://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads
+
+### Example Software Projects
+A set of self-contained example software projects are available for this design from the [riscv-junk-drawer](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/examples).
