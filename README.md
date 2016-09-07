@@ -18,7 +18,7 @@ The SmartFusion2 Advanced Development Kit includes a SmartFusion2 M2S150 SoC FPG
 
 ### FlashPro Express
 This project includes two FlashPro Express projects that can be used to program the development board's FPGA. A stand alone installer for FlashPro Express is available from the following page:
-http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software
+http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software. Please note that you only need to install this standalone version of FlashPro Express if you do not have the Libero tools installed.
 
 * The first FlashPro Express project, RISCV_BaseDesign_bitstream, allows software debugging using FlashPro5. The same JTAG port is used for programming the FPGA and debugging RIAC-V software.
 * The second FlashPro Express project, RISCV_BaseDesign_bitstream_io-jtag, allows debugging using an Olimex ARM-USB-TINY-H debug probe connected to FPGA IOs. Please refer to the Libero project's [README](https://github.com/RISCV-on-Microsemi-FPGA/M2S150-Advanced-Dev-Kit/blob/master/Libero/RISCV_BaseDesign/README.txt) for pins assignment.
