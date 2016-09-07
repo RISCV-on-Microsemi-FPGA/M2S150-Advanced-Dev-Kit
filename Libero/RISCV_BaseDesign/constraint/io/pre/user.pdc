@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S150TS , Package: 1152 FC
 
-# Date generated: Wed Jul 27 14:46:19 2016 
+# Date generated: Wed Aug 31 11:24:41 2016 
 
 
 # 
@@ -103,42 +103,34 @@ set_io {LEDS[7]}       \
     -DIRECTION OUTPUT
 
 
-set_io RV_TCK         \
-    -pinname M3       \
-    -fixed yes        \
-    -DIRECTION INPUT
-
-
-set_io RV_TDI         \
-    -pinname P7       \
-    -fixed yes        \
-    -DIRECTION INPUT
-
-
-set_io RV_TDO          \
-    -pinname M2        \
-    -fixed yes         \
-    -DIRECTION OUTPUT
-
-
-set_io RV_TMS         \
-    -pinname R9       \
-    -fixed yes        \
-    -RES_PULL Up      \
-    -DIRECTION INPUT
-
-
-set_io RV_TRSTB       \
-    -pinname R10      \
-    -fixed yes        \
-    -RES_PULL Up      \
-    -DIRECTION INPUT
-
-
 set_io RX             \
     -pinname H7       \
     -fixed yes        \
     -DIRECTION INPUT
+
+
+set_io SPI_FLASH_SCLK  \
+    -pinname U12       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_FLASH_SDI  \
+    -pinname T12      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io SPI_FLASH_SDO   \
+    -pinname K1        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_FLASH_SS    \
+    -pinname K2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
 
 
 set_io {SWITCHES[0]}  \

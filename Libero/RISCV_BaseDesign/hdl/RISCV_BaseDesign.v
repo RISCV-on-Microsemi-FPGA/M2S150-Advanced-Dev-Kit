@@ -56,9 +56,13 @@ module RISCV_BaseDesign (
                    inout [1:0]   MDDR_DQS_N,
                 
 
-                   input         MDDR_DQS_TMATCH_0_IN
+                   input         MDDR_DQS_TMATCH_0_IN,
 
-                   // MISC
+                   // SPI Flash
+                   output        SPI_FLASH_SS,
+                   output        SPI_FLASH_SCLK,
+                   output        SPI_FLASH_SDO,
+                   input         SPI_FLASH_SDI
 
                    );
 
@@ -182,6 +186,7 @@ module RISCV_BaseDesign (
    wire  asyncTRSTB;
    wire  clk;
    wire  core_DRV_TDO;
+   wire  icore_TCK;
    wire  core_TCK;
    wire  core_TDI;
    wire  core_TDO;
@@ -651,6 +656,11 @@ module RISCV_BaseDesign (
    ,.MDDR_DQ(MDDR_DQ[15:0])
    ,.MDDR_DQS(MDDR_DQS[1:0])
    ,.MDDR_DQS_N(MDDR_DQS_N)
+   ,.SPI_FLASH_SS(SPI_FLASH_SS)
+   ,.SPI_FLASH_SCLK(SPI_FLASH_SCLK)
+   ,.SPI_FLASH_SDO(SPI_FLASH_SDO)
+   ,.SPI_FLASH_SDI(SPI_FLASH_SDI)
+
    );
     
    // These waivers are only needed because VP3 does not
@@ -728,7 +738,7 @@ module RISCV_BaseDesign (
                      
                      // JTAG port (to DUT)
                      .dutntrst (core_TRSTB),
-                     .duttck   (core_TCK), 
+                     .duttck   (icore_TCK), 
                      .duttms   (core_TMS), 
                      .duttdi   (core_TDI),
                      .duttdo   (core_TDO),
@@ -736,7 +746,10 @@ module RISCV_BaseDesign (
                      // gpio output port
                      .gpout(),
                      .gpin(4'b0)
-                     );          
+                     );    
+                     
+    CLKINT coretck_clkint(.A(icore_TCK), .Y(core_TCK));
+
  //   @Unparsed end;
 
 `else // !`ifdef USE_UJTAG

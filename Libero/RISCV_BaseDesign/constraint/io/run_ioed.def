@@ -1,7 +1,7 @@
-data DESIGN SiFiveE31Coreplex_SF2_Reference_System
-data HPATH '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/designer/SiFiveE31Coreplex_SF2_Reference_System'
-data CPATH '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/constraint/io'
-data CDIR '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/constraint'
+data DESIGN RISCV_BaseDesign
+data HPATH '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign'
+data CPATH '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io'
+data CDIR '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint'
 data ETYPE IO
 data FAM SmartFusion2
 data DIE PA4M12000_TS
@@ -14,16 +14,17 @@ data VCCI_1.8_VOLTR COM
 data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
-data AFL '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/designer/SiFiveE31Coreplex_SF2_Reference_System/SiFiveE31Coreplex_SF2_Reference_System.afl'
-data ADL '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/designer/SiFiveE31Coreplex_SF2_Reference_System/SiFiveE31Coreplex_SF2_Reference_System.adl'
-data LOC '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/designer/SiFiveE31Coreplex_SF2_Reference_System/SiFiveE31Coreplex_SF2_Reference_System.loc'
-data SEG '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/designer/SiFiveE31Coreplex_SF2_Reference_System/SiFiveE31Coreplex_SF2_Reference_System.seg'
-data NMAT_PDC '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/designer/SiFiveE31Coreplex_SF2_Reference_System/SiFiveE31Coreplex_SF2_Reference_System.nmatinit.pdc'
-data SMAT_SEG '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/designer/SiFiveE31Coreplex_SF2_Reference_System/SiFiveE31Coreplex_SF2_Reference_System.seg'
+data AFL '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.afl'
+data ADL '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.adl'
+data LOC '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.loc'
+data SEG '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.seg'
+data NMAT_PDC '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.nmatinit.pdc'
+data SMAT_SEG '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.seg'
 
-data IO_PDC_0 '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/constraint/io/user.pdc'
-data TARGET_IOPDC  '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/constraint/io/user.pdc'
-data TARGET_FPPDC  '/home/cyril/CoreRV32IM/Libero/M2S150/RISCV_BaseDesign/constraint/fp/user.pdc'
+data IO_PDC_0 '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc'
+data IO_PDC_1 '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/jtag-io.pdc'
+data TARGET_IOPDC  '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc'
+data TARGET_FPPDC  '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/fp/user.pdc'
 data TARGET_DEVICES_FOR_MIGRATION 'PA4M12000_TS '
 data RESTRICTPROBEPINS 1
 data RESTRICTSPIPINS 0

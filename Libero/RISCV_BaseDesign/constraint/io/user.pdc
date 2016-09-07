@@ -6,17 +6,20 @@
 
 # Family: SmartFusion2 , Die: M2S150TS , Package: 1152 FC
 
-# Date generated: Mon Jul 25 21:31:31 2016 
+# Date generated: Wed Aug 10 17:41:18 2016 
+
 
 # 
 # User Locked I/O Bank Settings
 # 
+
 
 # 
 # Unlocked I/O Bank Settings
 # The I/O Bank Settings can be locked by directly editing this file
 # or by making changes in the I/O Attribute Editor
 # 
+
 
 # 
 # User Locked I/O settings
@@ -106,6 +109,30 @@ set_io RX             \
     -DIRECTION INPUT
 
 
+set_io SPI_FLASH_SCLK  \
+    -pinname U12       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_FLASH_SDI  \
+    -pinname T12      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io SPI_FLASH_SDO   \
+    -pinname K1        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_FLASH_SS    \
+    -pinname K2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
 set_io {SWITCHES[0]}  \
     -pinname G27      \
     -fixed yes        \
@@ -135,4 +162,16 @@ set_io TX              \
     -fixed yes         \
     -DIRECTION OUTPUT
 
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
 
