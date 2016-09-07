@@ -23,12 +23,8 @@ module RISCV_BaseDesign (
                    input         RV_TRSTB,
 `endif                   
                    // GPIOs (for switches, interrupts, and LEDs)
-
-//<CJ>                   input  [15:0] GPIO_HDR_IN,
-//<CJ>                   output [15:0] GPIO_HDR_OUT,
-                   
                    input [3:0]   BUTTONS,
-                   input [3:0]   SWITCHES,
+                   input [7:0]   SWITCHES,
                    output [7:0]  LEDS,
                    
                    //UART 
@@ -228,10 +224,9 @@ module RISCV_BaseDesign (
    //--------------------------------------------------------
    // Switches & LEDs
    
-   assign GPIO_IN = {16'b0, //GPIO_HDR_IN[15:0],
-                     8'b0, // pad
+   assign GPIO_IN = {20'b0, // pad
                      BUTTONS[3:0], 
-                     SWITCHES[3:0]};
+                     SWITCHES[7:0]};
 
    // inputs on 31:0
    assign LEDS = GPIO_OUT[7:0];

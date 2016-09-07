@@ -1,11 +1,11 @@
 KEY IDE_DES_TOOL "Ide"
-KEY IDE_DES_ADB_PATH "/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/impl1/RISCV_BaseDesign.adb"
+KEY IDE_DES_ADB_PATH "/scratch/MSCC_RISC-V/bootloader/github/staging/temp/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/impl1/RISCV_BaseDesign.adb"
 LIST SOURCE_FILES
-VALUE "/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc;pdc"
-VALUE "/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/RISCV_BaseDesign_derived_constraints.sdc;sdc"
+VALUE "/scratch/MSCC_RISC-V/bootloader/github/staging/temp/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc;pdc"
+VALUE "/scratch/MSCC_RISC-V/bootloader/github/staging/temp/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/RISCV_BaseDesign_derived_constraints.sdc;sdc"
 ENDLIST
 LIST OPTIONAL_FILES
-VALUE "/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/synthesis/RISCV_BaseDesign_sdc.sdc;Skipped"
+VALUE "/scratch/MSCC_RISC-V/bootloader/github/staging/temp/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/synthesis/RISCV_BaseDesign_sdc.sdc;Skipped"
 ENDLIST
 LIST VCD_FILES
 ENDLIST

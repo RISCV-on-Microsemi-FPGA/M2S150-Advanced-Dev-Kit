@@ -1,6 +1,6 @@
 <project name="RISCV_BaseDesign_bitstream" version="1.1">
     <ProjectDirectory>
-        /scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream
+        /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,19 +9,11 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        /scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/RISCV_BaseDesign_bitstream.log
+        /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/RISCV_BaseDesign_bitstream.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
-    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb2.0">
-        <name>
-            S200XTY0G2
-        </name>
-        <id>
-            S200XTY0G2
-        </id>
-    </programmer>
     <configuration>
         <Hardware>
             <FlashPro>
@@ -81,7 +73,7 @@
             </Custom>
             <Algo type="STAPL">
                 <filename>
-                    /scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp
+                    /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp
                 </filename>
                 <local>
                     projectData/M2S150TS_1.stp

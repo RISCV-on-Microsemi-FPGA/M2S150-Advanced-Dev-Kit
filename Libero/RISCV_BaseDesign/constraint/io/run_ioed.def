@@ -1,7 +1,7 @@
 data DESIGN RISCV_BaseDesign
-data HPATH '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign'
-data CPATH '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io'
-data CDIR '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint'
+data HPATH '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign'
+data CPATH '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io'
+data CDIR '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint'
 data ETYPE IO
 data FAM SmartFusion2
 data DIE PA4M12000_TS
@@ -14,17 +14,14 @@ data VCCI_1.8_VOLTR COM
 data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
-data AFL '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.afl'
-data ADL '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.adl'
-data LOC '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.loc'
-data SEG '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.seg'
-data NMAT_PDC '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.nmatinit.pdc'
-data SMAT_SEG '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.seg'
+data AFL '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/COMPILE/RISCV_BaseDesign.afl'
+data ADL '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/RISCV_BaseDesign.adl'
+data LOC '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/COMPILE/RISCV_BaseDesign.loc'
+data SEG '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/designer/RISCV_BaseDesign/COMPILE/RISCV_BaseDesign.seg'
 
-data IO_PDC_0 '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc'
-data IO_PDC_1 '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/jtag-io.pdc'
-data TARGET_IOPDC  '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc'
-data TARGET_FPPDC  '/scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/fp/user.pdc'
+data IO_PDC_0 '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc'
+data TARGET_IOPDC  '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/io/user.pdc'
+data TARGET_FPPDC  '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/constraint/fp/user.pdc'
 data TARGET_DEVICES_FOR_MIGRATION 'PA4M12000_TS '
 data RESTRICTPROBEPINS 1
 data RESTRICTSPIPINS 0

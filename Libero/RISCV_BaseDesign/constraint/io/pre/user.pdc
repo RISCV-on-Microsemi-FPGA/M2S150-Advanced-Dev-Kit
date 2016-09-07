@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S150TS , Package: 1152 FC
 
-# Date generated: Wed Aug 31 11:24:41 2016 
+# Date generated: Wed Sep  7 16:58:21 2016 
 
 
 # 
@@ -134,24 +134,48 @@ set_io SPI_FLASH_SS    \
 
 
 set_io {SWITCHES[0]}  \
-    -pinname G27      \
+    -pinname F25      \
     -fixed yes        \
     -DIRECTION INPUT
 
 
 set_io {SWITCHES[1]}  \
-    -pinname H27      \
+    -pinname G25      \
     -fixed yes        \
     -DIRECTION INPUT
 
 
 set_io {SWITCHES[2]}  \
-    -pinname F23      \
+    -pinname J23      \
     -fixed yes        \
     -DIRECTION INPUT
 
 
 set_io {SWITCHES[3]}  \
+    -pinname J22      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {SWITCHES[4]}  \
+    -pinname G27      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {SWITCHES[5]}  \
+    -pinname H27      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {SWITCHES[6]}  \
+    -pinname F23      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {SWITCHES[7]}  \
     -pinname G23      \
     -fixed yes        \
     -DIRECTION INPUT

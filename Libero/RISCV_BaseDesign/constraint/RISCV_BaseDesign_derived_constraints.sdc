@@ -1,11 +1,11 @@
 # Microsemi Corp.
-# Date: 2016-Sep-05 17:51:07
+# Date: 2016-Sep-07 23:15:38
 # This file was generated based on the following SDC source files:
-#   /scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/component/work/MSS_SUBSYSTEM_sb/CCC_0/MSS_SUBSYSTEM_sb_CCC_0_FCCC.sdc
+#   /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/component/work/MSS_SUBSYSTEM_sb/CCC_0/MSS_SUBSYSTEM_sb_CCC_0_FCCC.sdc
 #   /usr/local/microsemi/Libero_v11.7/Libero/data/aPA4M/cores/constraints/PA4M12000/coreconfigp.sdc
 #   /usr/local/microsemi/Libero_v11.7/Libero/data/aPA4M/cores/constraints/coreresetp.sdc
-#   /scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/component/work/MSS_SUBSYSTEM_sb/FABOSC_0/MSS_SUBSYSTEM_sb_FABOSC_0_OSC.sdc
-#   /scratch/MSCC_RISC-V/bootloader/Libero/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/component/work/MSS_SUBSYSTEM_sb_MSS/MSS_SUBSYSTEM_sb_MSS.sdc
+#   /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/component/work/MSS_SUBSYSTEM_sb/FABOSC_0/MSS_SUBSYSTEM_sb_FABOSC_0_OSC.sdc
+#   /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/component/work/MSS_SUBSYSTEM_sb_MSS/MSS_SUBSYSTEM_sb_MSS.sdc
 #
 
 create_clock -name {CLK0_PAD} -period 20 [ get_ports { CLK0_PAD } ]

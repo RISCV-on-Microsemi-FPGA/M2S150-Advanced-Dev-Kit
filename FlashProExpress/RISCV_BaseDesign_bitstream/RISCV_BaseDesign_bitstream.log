@@ -1,17 +1,14 @@
 
 Creating FlashPro Express Job Project...
 Software Version: 11.7.0.119
-creating folder: /scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream
-programmer 'S200XTY0G2' : FlashPro5
-Created new project '/scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/RISCV_BaseDesign_bitstream.pro'
-STAPL file '/scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp' has been loaded successfully.
-DESIGN : RISCV_BaseDesign;  CHECKSUM : 0A88;  ALG_VERSION : 2
-creating folder: /scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/projectData
+creating folder: /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream
+Created new project '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/RISCV_BaseDesign_bitstream.pro'
+STAPL file '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp' has been loaded successfully.
+DESIGN : RISCV_BaseDesign;  CHECKSUM : DAB5;  ALG_VERSION : 2
+creating folder: /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/projectData
 Software Version: 11.7.0.119
-STAPL file '/scratch/MSCC_RISC-V/github_sandbox/temp/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp' has been loaded successfully.
-DESIGN : RISCV_BaseDesign;  CHECKSUM : 0A88;  ALG_VERSION : 2
-programmer 'S200XTY0G2' : FlashPro5
+STAPL file '/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream/M2S150TS_1.stp' has been loaded successfully.
+DESIGN : RISCV_BaseDesign;  CHECKSUM : DAB5;  ALG_VERSION : 2
 
 Created FlashPro Express Job Project.
-Project saved.
 Project closed.

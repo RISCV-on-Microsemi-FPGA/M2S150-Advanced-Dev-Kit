@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sat Jul 30 19:34:20 2016
+// Created by SmartDesign Wed Sep  7 22:11:13 2016
 // Version: v11.7 11.7.0.119
 //////////////////////////////////////////////////////////////////////
 
@@ -247,7 +247,6 @@ wire   [1:0]  FIC_1_AHB_S_HTRANS;
 wire   [31:0] FIC_1_AHB_S_HWDATA;
 wire          FIC_1_AHB_S_HWRITE;
 wire          FIC_1_CLK_net_0;
-wire          FIC_1_LOCK_net_0;
 wire          INIT_DONE_net_0;
 wire   [15:0] MDDR_ADDR_net_0;
 wire   [2:0]  MDDR_BA_net_0;
@@ -279,6 +278,7 @@ wire          MDDR_RAS_N_net_0;
 wire          MDDR_RESET_N_net_0;
 wire          MDDR_WE_N_net_0;
 wire          MSS_DDR_FIC_SUBSYSTEM_CLK_net_0;
+wire          MSS_DDR_FIC_SUBSYSTEM_LOCK_net_0;
 wire   [15:0] MSS_INT_F2M;
 wire          MSS_READY_net_0;
 wire          MSS_SUBSYSTEM_sb_MSS_TMP_0_FIC_2_APB_M_PCLK;
@@ -308,11 +308,11 @@ wire   [2:0]  MDDR_BA_net_1;
 wire          POWER_ON_RESET_N_net_1;
 wire          INIT_DONE_net_1;
 wire          MSS_DDR_FIC_SUBSYSTEM_CLK_net_1;
-wire          FIC_1_LOCK_net_1;
+wire          MSS_DDR_FIC_SUBSYSTEM_LOCK_net_1;
 wire          FIC_0_CLK_net_1;
-wire          FIC_1_LOCK_net_2;
+wire          MSS_DDR_FIC_SUBSYSTEM_LOCK_net_2;
 wire          FIC_1_CLK_net_1;
-wire          FIC_1_LOCK_net_3;
+wire          MSS_DDR_FIC_SUBSYSTEM_LOCK_net_3;
 wire          DDR_READY_net_1;
 wire          MSS_READY_net_1;
 wire   [31:0] MDDR_DDR_AMBA_SLAVE_HRDATA_net_0;
@@ -412,16 +412,16 @@ assign INIT_DONE_net_1                     = INIT_DONE_net_0;
 assign INIT_DONE                           = INIT_DONE_net_1;
 assign MSS_DDR_FIC_SUBSYSTEM_CLK_net_1     = MSS_DDR_FIC_SUBSYSTEM_CLK_net_0;
 assign MSS_DDR_FIC_SUBSYSTEM_CLK           = MSS_DDR_FIC_SUBSYSTEM_CLK_net_1;
-assign FIC_1_LOCK_net_1                    = FIC_1_LOCK_net_0;
-assign MSS_DDR_FIC_SUBSYSTEM_LOCK          = FIC_1_LOCK_net_1;
+assign MSS_DDR_FIC_SUBSYSTEM_LOCK_net_1    = MSS_DDR_FIC_SUBSYSTEM_LOCK_net_0;
+assign MSS_DDR_FIC_SUBSYSTEM_LOCK          = MSS_DDR_FIC_SUBSYSTEM_LOCK_net_1;
 assign FIC_0_CLK_net_1                     = FIC_0_CLK_net_0;
 assign FIC_0_CLK                           = FIC_0_CLK_net_1;
-assign FIC_1_LOCK_net_2                    = FIC_1_LOCK_net_0;
-assign FIC_0_LOCK                          = FIC_1_LOCK_net_2;
+assign MSS_DDR_FIC_SUBSYSTEM_LOCK_net_2    = MSS_DDR_FIC_SUBSYSTEM_LOCK_net_0;
+assign FIC_0_LOCK                          = MSS_DDR_FIC_SUBSYSTEM_LOCK_net_2;
 assign FIC_1_CLK_net_1                     = FIC_1_CLK_net_0;
 assign FIC_1_CLK                           = FIC_1_CLK_net_1;
-assign FIC_1_LOCK_net_3                    = FIC_1_LOCK_net_0;
-assign FIC_1_LOCK                          = FIC_1_LOCK_net_3;
+assign MSS_DDR_FIC_SUBSYSTEM_LOCK_net_3    = MSS_DDR_FIC_SUBSYSTEM_LOCK_net_0;
+assign FIC_1_LOCK                          = MSS_DDR_FIC_SUBSYSTEM_LOCK_net_3;
 assign DDR_READY_net_1                     = DDR_READY_net_0;
 assign DDR_READY                           = DDR_READY_net_1;
 assign MSS_READY_net_1                     = MSS_READY_net_0;
@@ -488,7 +488,7 @@ MSS_SUBSYSTEM_sb_CCC_0_FCCC CCC_0(
         .GL0      ( FIC_0_CLK_net_0 ),
         .GL1      ( FIC_1_CLK_net_0 ),
         .GL2      ( MSS_DDR_FIC_SUBSYSTEM_CLK_net_0 ),
-        .LOCK     ( FIC_1_LOCK_net_0 ) 
+        .LOCK     ( MSS_DDR_FIC_SUBSYSTEM_LOCK_net_0 ) 
         );
 
 //--------CoreConfigP   -   Actel:DirectCore:CoreConfigP:7.0.105
@@ -714,7 +714,7 @@ MSS_SUBSYSTEM_sb_MSS MSS_SUBSYSTEM_sb_MSS_0(
         // Inputs
         .MCCC_CLK_BASE             ( FIC_0_CLK_net_0 ),
         .MDDR_DQS_TMATCH_0_IN      ( MDDR_DQS_TMATCH_0_IN ),
-        .MCCC_CLK_BASE_PLL_LOCK    ( FIC_1_LOCK_net_0 ),
+        .MCCC_CLK_BASE_PLL_LOCK    ( MSS_DDR_FIC_SUBSYSTEM_LOCK_net_0 ),
         .MSS_RESET_N_F2M           ( CORERESETP_0_RESET_N_F2M ),
         .MDDR_DDR_CORE_RESET_N     ( CORERESETP_0_MDDR_DDR_AXI_S_CORE_RESET_N ),
         .MDDR_DDR_AHB0_S_HSEL      ( MDDR_DDR_AHB0_S_HSEL ),

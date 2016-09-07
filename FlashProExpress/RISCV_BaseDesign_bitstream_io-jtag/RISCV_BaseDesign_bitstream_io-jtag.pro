@@ -1,6 +1,6 @@
 <project name="RISCV_BaseDesign_bitstream_io-jtag" version="1.1">
     <ProjectDirectory>
-        /scratch/MSCC_RISC-V/github_sandbox/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream_io-jtag
+        /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream_io-jtag
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        /scratch/MSCC_RISC-V/github_sandbox/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream_io-jtag/RISCV_BaseDesign_bitstream_io-jtag.log
+        /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream_io-jtag/RISCV_BaseDesign_bitstream_io-jtag.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -81,7 +81,7 @@
             </Custom>
             <Algo type="STAPL">
                 <filename>
-                    /scratch/MSCC_RISC-V/github_sandbox/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream_io-jtag/M2S150TS_1.stp
+                    /scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/FlashProExpress/RISCV_BaseDesign_bitstream_io-jtag/M2S150TS_1.stp
                 </filename>
                 <local>
                     projectData/M2S150TS_1.stp
