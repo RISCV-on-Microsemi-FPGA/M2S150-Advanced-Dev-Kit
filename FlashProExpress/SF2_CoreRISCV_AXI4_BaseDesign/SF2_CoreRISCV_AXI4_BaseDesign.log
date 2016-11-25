@@ -1,0 +1,46 @@
+
+Creating FlashPro Express Job Project...
+Software Version: 11.7.0.119
+creating folder: /home/user/CoreRISCV_AXI4/M2S150-Advanced-Dev-Kit/FlashProExpress/SF2_CoreRISCV_AXI4_BaseDesign
+programmer 'S201Z6SMPU' : FlashPro5
+Created new project '/home/user/CoreRISCV_AXI4/M2S150-Advanced-Dev-Kit/FlashProExpress/SF2_CoreRISCV_AXI4_BaseDesign/SF2_CoreRISCV_AXI4_BaseDesign.pro'
+STAPL file '/home/user/CoreRISCV_AXI4/M2S150-Advanced-Dev-Kit/FlashProExpress/SF2_CoreRISCV_AXI4_BaseDesign/M2S150TS_1.stp' has been loaded successfully.
+DESIGN : SF2_CoreRISCV_AXI4;  CHECKSUM : E129;  ALG_VERSION : 2
+creating folder: /home/user/CoreRISCV_AXI4/M2S150-Advanced-Dev-Kit/FlashProExpress/SF2_CoreRISCV_AXI4_BaseDesign/projectData
+Software Version: 11.7.0.119
+STAPL file '/home/user/CoreRISCV_AXI4/M2S150-Advanced-Dev-Kit/FlashProExpress/SF2_CoreRISCV_AXI4_BaseDesign/M2S150TS_1.stp' has been loaded successfully.
+DESIGN : SF2_CoreRISCV_AXI4;  CHECKSUM : E129;  ALG_VERSION : 2
+programmer 'S201Z6SMPU' : FlashPro5
+
+Created FlashPro Express Job Project.
+programmer 'S201Z6SMPU' : Scan Chain...
+Warning: programmer 'S201Z6SMPU' : Vpump has been selected on programmer AND an externally provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'S201Z6SMPU' : Check Chain...
+programmer 'S201Z6SMPU' : Scan and Check Chain PASSED.
+Warning: programmer 'S201Z6SMPU' : device 'M2S150TS' : Device authentication failure : Cannot find HSM public key required to validate device certificate.
+programmer 'S201Z6SMPU' : device 'M2S150TS' : Executing action PROGRAM
+programmer 'S201Z6SMPU' : device 'M2S150TS' : Family: SmartFusion2
+programmer 'S201Z6SMPU' : device 'M2S150TS' : Product:      M2S150
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT ISC_ENABLE_RESULT[32] = 00756444
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT CRCERR: [1] = 0
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT EDCERR: [1] = 0
+programmer 'S201Z6SMPU' : device 'M2S150TS' : TEMPGRADE: ROOM
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT VPPRANGE: [3] = 2
+programmer 'S201Z6SMPU' : device 'M2S150TS' : VPPRANGE: HIGH
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT TEMP: [8] = 64
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT VPP: [8] = 75
+programmer 'S201Z6SMPU' : device 'M2S150TS' : Programming FPGA Array and eNVM...
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT Fabric component digest[256] = 7c647d61b77f74bc41df690af1d18c38abd230add7e6f5be5fbea023c8237612
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT eNVM_0 component digest[256] = 0c394b603181bb6743fd8dfc5fb790e071a59684d1f7f6dad21c9575ea0d2b20
+programmer 'S201Z6SMPU' : device 'M2S150TS' : ===================================================================================
+programmer 'S201Z6SMPU' : device 'M2S150TS' : EXPORT DSN[128] = 47f7d983d299d1311c991f57ccaa5da9
+programmer 'S201Z6SMPU' : device 'M2S150TS' : ===================================================================================
+programmer 'S201Z6SMPU' : device 'M2S150TS' : Finished: Mon Nov 21 16:21:23 2016 (Elapsed time 00:04:23)
+programmer 'S201Z6SMPU' : device 'M2S150TS' : Executing action PROGRAM PASSED.
+programmer 'S201Z6SMPU' : Chain programming PASSED.
+Chain Programming Finished: Mon Nov 21 16:21:23 2016 (Elapsed time 00:04:23)
+
+                        o - o - o - o - o - o
+
+Project saved.
+Project closed.
