@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>RISCV_BaseDesign</design>
-	<target_edif>/scratch/MSCC_RISC-V/bootloader/github/M2S150-Advanced-Dev-Kit/Libero/RISCV_BaseDesign/synthesis/RISCV_BaseDesign.edn</target_edif>
-</SynplifyOutput>
