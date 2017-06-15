@@ -1,0 +1,32 @@
+
+set_io RV_TCK         \
+    -pinname M3       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io RV_TDI         \
+    -pinname P7       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io RV_TDO          \
+    -pinname M2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io RV_TMS         \
+    -pinname R9       \
+    -fixed yes        \
+    -RES_PULL Up      \
+    -DIRECTION INPUT
+
+
+set_io RV_TRSTB       \
+    -pinname R10      \
+    -fixed yes        \
+    -RES_PULL Up      \
+    -DIRECTION INPUT
+

@@ -1,0 +1,16 @@
+Project Name: CoreRISCV_AXI4_BaseDesign
+Location: C:\Users\ciaran.lappin\Desktop\RISCV_UPDATE\M2S150-Advanced-Dev-Kit-master\v11_8\CoreRISCV_AXI4_BaseDesign
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2S150-FC1152
+Family         : SmartFusion2
+Die            : M2S150
+Package        : 1152 FC
+Speed          : STD
+Core Voltage   : 1.2
+Range          : COM
