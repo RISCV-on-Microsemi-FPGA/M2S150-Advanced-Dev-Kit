@@ -1,5 +1,5 @@
 # SmartFusion2 Advanced Development Kit RISC-V Sample Design
-Sample RISC-V Libero project(s) for the SmartFusion2 (M2S150) Advanced Development Kit.
+Sample RISC-V Libero projects for the SmartFusion2 (M2S150) Advanced Development Kit.
 
 This project contains a Libero project containing an FPGA design including a RISC-V RV32IM soft processor. Programming bitstreams are also included so that you do not need to run through the full FPGA design flow in order to start developping software for RISC-V.
 
@@ -26,4 +26,4 @@ http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro
 Libero is Microsemi's FPGA design tool. You will need this tool if you wish to modify the example FPGA design. Libero is available from the following [page](http://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
 
 ### Example Software Projects
-A set of self-contained example software projects are available for this design from the [riscv-junk-drawer](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/examples).
+A set of RISC-V example software projects are also available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole).
