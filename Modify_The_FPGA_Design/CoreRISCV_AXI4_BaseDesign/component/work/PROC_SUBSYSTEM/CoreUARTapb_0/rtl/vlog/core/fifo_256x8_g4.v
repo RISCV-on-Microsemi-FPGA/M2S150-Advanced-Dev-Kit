@@ -29,7 +29,6 @@
 
 `timescale 1 ns/100 ps
 
-//SmartFusion4 uses a fifo_128x8 
 module PROC_SUBSYSTEM_CoreUARTapb_0_fifo_256x8(DO, RCLOCK, WCLOCK, DI, WRB, RDB, RESET, FULL, EMPTY);		
 output [7:0] DO;
 input RCLOCK;

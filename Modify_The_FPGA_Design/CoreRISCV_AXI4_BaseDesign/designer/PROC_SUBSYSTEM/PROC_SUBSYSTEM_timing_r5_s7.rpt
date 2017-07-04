@@ -1,0 +1,1594 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.8
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+Date: Tue Jul 04 12:42:02 2017
+
+
+Design: PROC_SUBSYSTEM
+Family: SmartFusion2
+Die: M2S150
+Package: 1152 FC
+Temperature Range: 0 - 85 C
+Voltage Range: 1.14 - 1.26 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Production
+Min Operating Conditions: BEST - 1.26 V - 0 C
+Max Operating Conditions: WORST - 1.14 V - 85 C
+Scenario for Timing Analysis: timing_analysis
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               CLK0_PAD                                                                        
+Period (ns):                1.980                                                                           
+Frequency (MHz):            505.051                                                                         
+Required Period (ns):       20.000                                                                          
+Required Frequency (MHz):   50.000                                                                          
+External Setup (ns):        N/A                                                                             
+External Hold (ns):         N/A                                                                             
+Min Clock-To-Out (ns):      N/A                                                                             
+Max Clock-To-Out (ns):      N/A                                                                             
+
+Clock Domain:               MSS_SUBSYSTEM_sb_0/CCC_0/GL0                                                    
+Period (ns):                13.170                                                                          
+Frequency (MHz):            75.930                                                                          
+Required Period (ns):       12.048                                                                          
+Required Frequency (MHz):   83.001                                                                          
+External Setup (ns):        2.296                                                                           
+External Hold (ns):         0.754                                                                           
+Min Clock-To-Out (ns):      7.087                                                                           
+Max Clock-To-Out (ns):      16.237                                                                          
+
+Clock Domain:               MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT                             
+Period (ns):                6.440                                                                           
+Frequency (MHz):            155.280                                                                         
+Required Period (ns):       20.000                                                                          
+Required Frequency (MHz):   50.000                                                                          
+External Setup (ns):        N/A                                                                             
+External Hold (ns):         N/A                                                                             
+Min Clock-To-Out (ns):      N/A                                                                             
+Max Clock-To-Out (ns):      N/A                                                                             
+
+Clock Domain:               MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB                        
+Period (ns):                9.864                                                                           
+Frequency (MHz):            101.379                                                                         
+Required Period (ns):       48.193                                                                          
+Required Frequency (MHz):   20.750                                                                          
+External Setup (ns):        N/A                                                                             
+External Hold (ns):         N/A                                                                             
+Min Clock-To-Out (ns):      N/A                                                                             
+Max Clock-To-Out (ns):      N/A                                                                             
+
+Clock Domain:               TCK                                                                             
+Period (ns):                21.569                                                                          
+Frequency (MHz):            46.363                                                                          
+Required Period (ns):       166.670                                                                         
+Required Frequency (MHz):   6.000                                                                           
+External Setup (ns):        1.181                                                                           
+External Hold (ns):         4.055                                                                           
+Min Clock-To-Out (ns):      N/A                                                                             
+Max Clock-To-Out (ns):      N/A                                                                             
+
+                            Input to Output                                                                 
+Min Delay (ns):             0.027                                                                           
+Max Delay (ns):             0.047                                                                           
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain CLK0_PAD
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin MSS_SUBSYSTEM_sb_0/CCC_0/CLK0_PAD_INST/U_IOPAD:PAD
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+
+SET Register to Register
+
+Path 1
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  13.135                                                                          
+  Slack (ns):                  -1.122                                                                          
+  Arrival (ns):                19.469                                                                          
+  Required (ns):               18.347                                                                          
+  Setup (ns):                  0.151                                                                           
+  Minimum Period (ns):         13.170                                                                          
+
+Path 2
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.939                                                                          
+  Slack (ns):                  -1.105                                                                          
+  Arrival (ns):                19.273                                                                          
+  Required (ns):               18.168                                                                          
+  Setup (ns):                  0.354                                                                           
+  Minimum Period (ns):         13.153                                                                          
+
+Path 3
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.915                                                                          
+  Slack (ns):                  -1.078                                                                          
+  Arrival (ns):                19.249                                                                          
+  Required (ns):               18.171                                                                          
+  Setup (ns):                  0.354                                                                           
+  Minimum Period (ns):         13.126                                                                          
+
+Path 4
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.932                                                                          
+  Slack (ns):                  -1.069                                                                          
+  Arrival (ns):                19.266                                                                          
+  Required (ns):               18.197                                                                          
+  Setup (ns):                  0.327                                                                           
+  Minimum Period (ns):         13.117                                                                          
+
+Path 5
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.906                                                                          
+  Slack (ns):                  -1.043                                                                          
+  Arrival (ns):                19.240                                                                          
+  Required (ns):               18.197                                                                          
+  Setup (ns):                  0.327                                                                           
+  Minimum Period (ns):         13.091                                                                          
+
+
+Expanded Path 1
+  From: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10]
+  data required time                             18.347    
+  data arrival time                          -   19.469    
+  slack                                          -1.122    
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  0.000                        MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     4.091          Clock generation
+  4.091                        
+               +     0.339          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_net
+  4.430                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:An (r)
+               +     0.168          cell: ADLIB:GBM
+  4.598                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:YEn (f)
+               +     0.716          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_YWn_GEast
+  5.314                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB5:An (f)
+               +     0.372          cell: ADLIB:RGB
+  5.686                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB5:YL (r)
+               +     0.648          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB5_rgbl_net_1
+  6.334                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK (r)
+               +     0.108          cell: ADLIB:SLE
+  6.442                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:Q (r)
+               +     2.520          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_168_reto_11
+  8.962                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7369:D (r)
+               +     0.186          cell: ADLIB:CFG4
+  9.148                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7369:Y (r)
+               +     0.779          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7369
+  9.927                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7512_1_0[3]:C (r)
+               +     0.088          cell: ADLIB:CFG3
+  10.015                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7512_1_0[3]:Y (r)
+               +     0.800          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/N_3387
+  10.815                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_1_0:B (r)
+               +     0.276          cell: ADLIB:ARI1_CC
+  11.091                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_1_0:UB (f)
+               +     0.000          net: NET_CC_CONFIG84
+  11.091                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_0_CC_0:UB[4] (f)
+               +     0.794          cell: ADLIB:CC_CONFIG
+  11.885                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_0_CC_0:CC[10] (r)
+               +     0.000          net: NET_CC_CONFIG103
+  11.885                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_7_0:CC (r)
+               +     0.078          cell: ADLIB:ARI1_CC
+  11.963                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_7_0:S (r)
+               +     2.623          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513[9]
+  14.586                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_7_0_RNI2TDP:C (r)
+               +     0.118          cell: ADLIB:CFG3
+  14.704                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/T_7513_cry_7_0_RNI2TDP:Y (f)
+               +     0.264          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/N_207
+  14.968                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2_1_0[9]:C (f)
+               +     0.117          cell: ADLIB:CFG3
+  15.085                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2_1_0[9]:Y (r)
+               +     0.106          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2_1_0[9]
+  15.191                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2[9]:B (r)
+               +     0.088          cell: ADLIB:CFG4
+  15.279                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2[9]:Y (r)
+               +     1.033          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2[9]
+  16.312                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2_RNIHQLV[9]:C (r)
+               +     0.088          cell: ADLIB:CFG3
+  16.400                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7_m2_RNIHQLV[9]:Y (r)
+               +     0.829          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s1_pc__7[9]
+  17.229                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/s0_vaddr_i_m3[9]:A (r)
+               +     0.088          cell: ADLIB:CFG3
+  17.317                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/s0_vaddr_i_m3[9]:Y (r)
+               +     1.837          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/N_193
+  19.154                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/CFG_26:C (r)
+               +     0.241          cell: ADLIB:CFG2_IP_BC
+  19.395                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/CFG_26:IPC (r)
+               +     0.074          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/A_ADDR_net[10]
+  19.469                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10] (r)
+                                    
+  19.469                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  12.048                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  12.048                       MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     4.091          Clock generation
+  16.139                       
+               +     0.339          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_net
+  16.478                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:An (r)
+               +     0.168          cell: ADLIB:GBM
+  16.646                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:YEn (f)
+               +     0.701          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_YWn_GEast
+  17.347                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB13:An (f)
+               +     0.372          cell: ADLIB:RGB
+  17.719                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB13:YL (r)
+               +     0.621          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB13_rgbl_net_1
+  18.340                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/FF_0:CLK (r)
+               +     0.070          cell: ADLIB:SLE_IP_CLK
+  18.410                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/FF_0:IPCLKn (f)
+               +     0.088          net: CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/A_CLK_net
+  18.498                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_CLK (r)
+               -     0.151          Library setup time: ADLIB:RAM1K18_IP
+  18.347                       CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10]
+                                    
+  18.347                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        GPIO_IN[2]
+  To:                          CoreGPIO_IN/xhdl1.GEN_BITS_2_.gpin1:D
+  Delay (ns):                  8.268                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.268                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.204                                                                           
+  External Setup (ns):         2.296                                                                           
+
+Path 2
+  From:                        GPIO_IN[1]
+  To:                          CoreGPIO_IN/xhdl1.GEN_BITS_1_.gpin1:D
+  Delay (ns):                  8.048                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.048                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.204                                                                           
+  External Setup (ns):         2.091                                                                           
+
+Path 3
+  From:                        GPIO_IN[0]
+  To:                          CoreGPIO_IN/xhdl1.GEN_BITS_0_.gpin1:D
+  Delay (ns):                  7.958                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                7.958                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.204                                                                           
+  External Setup (ns):         1.996                                                                           
+
+Path 4
+  From:                        SPI_FLASH_SDI
+  To:                          CORESPI_0/USPI/UCC/msrxs_datain[0]:D
+  Delay (ns):                  6.939                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                6.939                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.204                                                                           
+  External Setup (ns):         0.980                                                                           
+
+Path 5
+  From:                        SPI_FLASH_SDI
+  To:                          CORESPI_0/USPI/UCC/msrxs_shiftreg[0]:D
+  Delay (ns):                  6.938                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                6.938                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.194                                                                           
+  External Setup (ns):         0.956                                                                           
+
+
+Expanded Path 1
+  From: GPIO_IN[2]
+  To: CoreGPIO_IN/xhdl1.GEN_BITS_2_.gpin1:D
+  data required time                             N/C       
+  data arrival time                          -   8.268     
+  slack                                          N/C       
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        GPIO_IN[2] (f)
+               +     0.000          net: GPIO_IN[2]
+  0.000                        GPIO_IN_ibuf[2]/U0/U_IOPAD:PAD (f)
+               +     2.098          cell: ADLIB:IOPAD_IN
+  2.098                        GPIO_IN_ibuf[2]/U0/U_IOPAD:Y (f)
+               +     0.045          net: GPIO_IN_ibuf[2]/U0/YIN1
+  2.143                        GPIO_IN_ibuf[2]/U0/U_IOINFF:A (f)
+               +     0.106          cell: ADLIB:IOINFF_BYPASS
+  2.249                        GPIO_IN_ibuf[2]/U0/U_IOINFF:Y (f)
+               +     6.019          net: GPIO_IN_c[2]
+  8.268                        CoreGPIO_IN/xhdl1.GEN_BITS_2_.gpin1:D (f)
+                                    
+  8.268                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     3.968          Clock generation
+  N/C                          
+               +     0.329          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_net
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:An (r)
+               +     0.163          cell: ADLIB:GBM
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:YEn (f)
+               +     0.694          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_YWn_GEast
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB8:An (f)
+               +     0.361          cell: ADLIB:RGB
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB8:YR (r)
+               +     0.661          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB8_rgbr_net_1
+  N/C                          CoreGPIO_IN/xhdl1.GEN_BITS_2_.gpin1:CLK (r)
+               -     0.204          Library setup time: ADLIB:SLE
+  N/C                          CoreGPIO_IN/xhdl1.GEN_BITS_2_.gpin1:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        CoreGPIO_OUT/xhdl1.GEN_BITS[6].APB_32.GPOUT_reg[6]:CLK
+  To:                          GPIO_OUT[6]
+  Delay (ns):                  9.888                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                16.237                                                                          
+  Required (ns):                                                                                               
+  Clock to Out (ns):           16.237                                                                          
+
+Path 2
+  From:                        CoreGPIO_OUT/xhdl1.GEN_BITS[7].APB_32.GPOUT_reg[7]:CLK
+  To:                          GPIO_OUT[7]
+  Delay (ns):                  9.827                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                16.175                                                                          
+  Required (ns):                                                                                               
+  Clock to Out (ns):           16.175                                                                          
+
+Path 3
+  From:                        CoreGPIO_OUT/xhdl1.GEN_BITS[1].APB_32.GPOUT_reg[1]:CLK
+  To:                          GPIO_OUT[1]
+  Delay (ns):                  9.601                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                15.957                                                                          
+  Required (ns):                                                                                               
+  Clock to Out (ns):           15.957                                                                          
+
+Path 4
+  From:                        CoreGPIO_OUT/xhdl1.GEN_BITS[4].APB_32.GPOUT_reg[4]:CLK
+  To:                          GPIO_OUT[4]
+  Delay (ns):                  9.607                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                15.956                                                                          
+  Required (ns):                                                                                               
+  Clock to Out (ns):           15.956                                                                          
+
+Path 5
+  From:                        CoreGPIO_OUT/xhdl1.GEN_BITS[3].APB_32.GPOUT_reg[3]:CLK
+  To:                          GPIO_OUT[3]
+  Delay (ns):                  9.466                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                15.837                                                                          
+  Required (ns):                                                                                               
+  Clock to Out (ns):           15.837                                                                          
+
+
+Expanded Path 1
+  From: CoreGPIO_OUT/xhdl1.GEN_BITS[6].APB_32.GPOUT_reg[6]:CLK
+  To: GPIO_OUT[6]
+  data required time                             N/C       
+  data arrival time                          -   16.237    
+  slack                                          N/C       
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  0.000                        MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     4.091          Clock generation
+  4.091                        
+               +     0.339          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_net
+  4.430                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:An (r)
+               +     0.168          cell: ADLIB:GBM
+  4.598                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:YEn (f)
+               +     0.715          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_YWn_GEast
+  5.313                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB8:An (f)
+               +     0.372          cell: ADLIB:RGB
+  5.685                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB8:YR (r)
+               +     0.664          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB8_rgbr_net_1
+  6.349                        CoreGPIO_OUT/xhdl1.GEN_BITS[6].APB_32.GPOUT_reg[6]:CLK (r)
+               +     0.127          cell: ADLIB:SLE
+  6.476                        CoreGPIO_OUT/xhdl1.GEN_BITS[6].APB_32.GPOUT_reg[6]:Q (f)
+               +     5.757          net: GPIO_OUT_c[6]
+  12.233                       GPIO_OUT_obuf[6]/U0/U_IOOUTFF:A (f)
+               +     0.403          cell: ADLIB:IOOUTFF_BYPASS
+  12.636                       GPIO_OUT_obuf[6]/U0/U_IOOUTFF:Y (f)
+               +     0.126          net: GPIO_OUT_obuf[6]/U0/DOUT
+  12.762                       GPIO_OUT_obuf[6]/U0/U_IOPAD:D (f)
+               +     3.475          cell: ADLIB:IOPAD_TRI
+  16.237                       GPIO_OUT_obuf[6]/U0/U_IOPAD:PAD (f)
+               +     0.000          net: GPIO_OUT[6]
+  16.237                       GPIO_OUT[6] (f)
+                                    
+  16.237                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     4.091          Clock generation
+  N/C                          
+                                    
+  N/C                          GPIO_OUT[6] (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[1]:ALn
+  Delay (ns):                  8.084                                                                           
+  Slack (ns):                  3.490                                                                           
+  Arrival (ns):                14.409                                                                          
+  Required (ns):               17.899                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         8.558                                                                           
+  Skew (ns):                   0.059                                                                           
+
+Path 2
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_r[1]:ALn
+  Delay (ns):                  8.084                                                                           
+  Slack (ns):                  3.501                                                                           
+  Arrival (ns):                14.409                                                                          
+  Required (ns):               17.910                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         8.547                                                                           
+  Skew (ns):                   0.048                                                                           
+
+Path 3
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_r[0]:ALn
+  Delay (ns):                  8.084                                                                           
+  Slack (ns):                  3.501                                                                           
+  Arrival (ns):                14.409                                                                          
+  Required (ns):               17.910                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         8.547                                                                           
+  Skew (ns):                   0.048                                                                           
+
+Path 4
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[0]:ALn
+  Delay (ns):                  8.084                                                                           
+  Slack (ns):                  3.501                                                                           
+  Arrival (ns):                14.409                                                                          
+  Required (ns):               17.910                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         8.547                                                                           
+  Skew (ns):                   0.048                                                                           
+
+Path 5
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:CLK
+  To:                          CORERISCV_AXI4_0/debugBusRespFifo/genblk2.rdAddrGrayReg_sync[0]:ALn
+  Delay (ns):                  8.099                                                                           
+  Slack (ns):                  3.509                                                                           
+  Arrival (ns):                14.424                                                                          
+  Required (ns):               17.933                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         8.539                                                                           
+  Skew (ns):                   0.025                                                                           
+
+
+Expanded Path 1
+  From: MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:CLK
+  To: CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[1]:ALn
+  data required time                             17.899    
+  data arrival time                          -   14.409    
+  slack                                          3.490     
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  0.000                        MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     4.091          Clock generation
+  4.091                        
+               +     0.339          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_net
+  4.430                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:An (r)
+               +     0.168          cell: ADLIB:GBM
+  4.598                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:YEn (f)
+               +     0.686          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_YWn_GEast
+  5.284                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB20:An (f)
+               +     0.372          cell: ADLIB:RGB
+  5.656                        MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB20:YL (r)
+               +     0.669          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB20_rgbl_net_1
+  6.325                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:CLK (r)
+               +     0.102          cell: ADLIB:SLE
+  6.427                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int:Q (r)
+               +     1.757          net: MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int
+  8.184                        CORERISCV_AXI4_0/debugBusReqFifo/rd_reset:B (r)
+               +     0.088          cell: ADLIB:CFG2
+  8.272                        CORERISCV_AXI4_0/debugBusReqFifo/rd_reset:Y (r)
+               +     4.009          net: CORERISCV_AXI4_0/debugBusReqFifo/rd_reset
+  12.281                       CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5:An (f)
+               +     0.420          cell: ADLIB:GBM
+  12.701                       CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5:YEn (f)
+               +     0.682          net: CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5/U0_YWn_GEast
+  13.383                       CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5/U0_RGB1:An (f)
+               +     0.372          cell: ADLIB:RGB
+  13.755                       CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5/U0_RGB1:YR (r)
+               +     0.654          net: CORERISCV_AXI4_0/debugBusReqFifo/rd_reset_RNI5HA5/U0_RGB1_YR
+  14.409                       CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[1]:ALn (r)
+                                    
+  14.409                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  12.048                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  12.048                       MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     4.091          Clock generation
+  16.139                       
+               +     0.339          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_net
+  16.478                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:An (r)
+               +     0.168          cell: ADLIB:GBM
+  16.646                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:YEn (f)
+               +     0.686          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_YWn_GEast
+  17.332                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB20:An (f)
+               +     0.372          cell: ADLIB:RGB
+  17.704                       MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB20:YR (r)
+               +     0.610          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB20_rgbr_net_1
+  18.314                       CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[1]:CLK (r)
+               -     0.415          Library recovery time: ADLIB:SLE
+  17.899                       CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[1]:ALn
+                                    
+  17.899                       data required time
+
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        TCK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[0]:ALn
+  Delay (ns):                  8.392                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.392                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      2.701                                                                           
+
+Path 2
+  From:                        TCK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[1]:ALn
+  Delay (ns):                  8.392                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.392                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      2.701                                                                           
+
+Path 3
+  From:                        TRSTB
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[0]:ALn
+  Delay (ns):                  8.392                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.392                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      2.701                                                                           
+
+Path 4
+  From:                        TRSTB
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[1]:ALn
+  Delay (ns):                  8.392                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.392                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      2.701                                                                           
+
+
+Expanded Path 1
+  From: TCK
+  To: CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[0]:ALn
+  data required time                             N/C       
+  data arrival time                          -   8.392     
+  slack                                          N/C       
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        TCK (r)
+               +     0.000          net: TCK
+  0.000                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TCK (r)
+               +     0.046          cell: ADLIB:UJTAG_SYSRESET_FF_IP
+  0.046                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:URSTB (r)
+               +     6.197          net: COREJTAGDEBUG_0/UJTAG_0_URSTB
+  6.243                        COREJTAGDEBUG_0/genblk1.UJTAG_0_RNIFG38:An (f)
+               +     0.420          cell: ADLIB:GBM
+  6.663                        COREJTAGDEBUG_0/genblk1.UJTAG_0_RNIFG38:YEn (f)
+               +     0.693          net: COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_YWn_GEast
+  7.356                        COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1_RGB1:An (f)
+               +     0.372          cell: ADLIB:RGB
+  7.728                        COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1_RGB1:YR (r)
+               +     0.664          net: COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1_RGB1_rgbr_net_1
+  8.392                        CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[0]:ALn (r)
+                                    
+  8.392                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+               +     0.000          Clock source
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0 (r)
+               +     3.968          Clock generation
+  N/C                          
+               +     0.329          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_net
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:An (r)
+               +     0.163          cell: ADLIB:GBM
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST:YEn (f)
+               +     0.667          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_YWn_GEast
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB22:An (f)
+               +     0.361          cell: ADLIB:RGB
+  N/C                          MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB22:YR (r)
+               +     0.618          net: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB22_rgbr_net_1
+  N/C                          CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[0]:CLK (r)
+               -     0.415          Library recovery time: ADLIB:SLE
+  N/C                          CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[0]:ALn
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT to MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+
+No Path 
+
+END SET MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT to MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+
+----------------------------------------------------
+
+SET MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB to MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+
+No Path 
+
+END SET MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB to MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+
+----------------------------------------------------
+
+SET TCK to MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+
+No Path 
+
+END SET TCK to MSS_SUBSYSTEM_sb_0/CCC_0/GL0
+
+----------------------------------------------------
+
+Clock Domain MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT
+
+SET Register to Register
+
+Path 1
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[4]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN
+  Delay (ns):                  2.991                                                                           
+  Slack (ns):                  16.583                                                                          
+  Arrival (ns):                12.223                                                                          
+  Required (ns):               28.806                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         3.417                                                                           
+
+Path 2
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[7]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN
+  Delay (ns):                  2.958                                                                           
+  Slack (ns):                  16.602                                                                          
+  Arrival (ns):                12.204                                                                          
+  Required (ns):               28.806                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         3.398                                                                           
+
+Path 3
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[2]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN
+  Delay (ns):                  2.874                                                                           
+  Slack (ns):                  16.700                                                                          
+  Arrival (ns):                12.106                                                                          
+  Required (ns):               28.806                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         3.300                                                                           
+
+Path 4
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[10]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN
+  Delay (ns):                  2.825                                                                           
+  Slack (ns):                  16.749                                                                          
+  Arrival (ns):                12.057                                                                          
+  Required (ns):               28.806                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         3.251                                                                           
+
+Path 5
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[8]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN
+  Delay (ns):                  2.759                                                                           
+  Slack (ns):                  16.815                                                                          
+  Arrival (ns):                11.991                                                                          
+  Required (ns):               28.806                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         3.185                                                                           
+
+
+Expanded Path 1
+  From: MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[4]:CLK
+  To: MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN
+  data required time                             28.806    
+  data arrival time                          -   12.223    
+  slack                                          16.583    
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT
+               +     0.000          Clock source
+  0.000                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT (r)
+               +     1.042          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKOUT
+  1.042                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:A (r)
+               +     0.179          cell: ADLIB:RCOSC_25_50MHZ_FAB
+  1.221                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:CLKOUT (r)
+               +     5.883          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKINT
+  7.104                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:An (f)
+               +     0.420          cell: ADLIB:GBM
+  7.524                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:YEn (f)
+               +     0.675          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YWn_GEast
+  8.199                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:An (f)
+               +     0.372          cell: ADLIB:RGB
+  8.571                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:YR (r)
+               +     0.661          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0_rgbr_net_1
+  9.232                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[4]:CLK (r)
+               +     0.127          cell: ADLIB:SLE
+  9.359                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[4]:Q (f)
+               +     0.801          net: MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[4]
+  10.160                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled4_7:D (f)
+               +     0.338          cell: ADLIB:CFG4
+  10.498                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled4_7:Y (f)
+               +     0.262          net: MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled4_7
+  10.760                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled4:A (f)
+               +     0.193          cell: ADLIB:CFG4
+  10.953                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled4:Y (f)
+               +     1.270          net: MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled4
+  12.223                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN (f)
+                                    
+  12.223                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  20.000                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT
+               +     0.000          Clock source
+  20.000                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT (r)
+               +     1.042          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKOUT
+  21.042                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:A (r)
+               +     0.179          cell: ADLIB:RCOSC_25_50MHZ_FAB
+  21.221                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:CLKOUT (r)
+               +     5.883          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKINT
+  27.104                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:An (f)
+               +     0.420          cell: ADLIB:GBM
+  27.524                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:YEn (f)
+               +     0.675          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YWn_GEast
+  28.199                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:An (f)
+               +     0.372          cell: ADLIB:RGB
+  28.571                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:YR (r)
+               +     0.629          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0_rgbr_net_1
+  29.200                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:CLK (r)
+               -     0.394          Library setup time: ADLIB:SLE
+  28.806                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/ddr_settled:EN
+                                    
+  28.806                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[10]:ALn
+  Delay (ns):                  6.018                                                                           
+  Slack (ns):                  13.560                                                                          
+  Arrival (ns):                15.237                                                                          
+  Required (ns):               28.797                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         6.440                                                                           
+  Skew (ns):                   0.007                                                                           
+
+Path 2
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[6]:ALn
+  Delay (ns):                  6.018                                                                           
+  Slack (ns):                  13.560                                                                          
+  Arrival (ns):                15.237                                                                          
+  Required (ns):               28.797                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         6.440                                                                           
+  Skew (ns):                   0.007                                                                           
+
+Path 3
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[2]:ALn
+  Delay (ns):                  6.018                                                                           
+  Slack (ns):                  13.560                                                                          
+  Arrival (ns):                15.237                                                                          
+  Required (ns):               28.797                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         6.440                                                                           
+  Skew (ns):                   0.007                                                                           
+
+Path 4
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[4]:ALn
+  Delay (ns):                  6.018                                                                           
+  Slack (ns):                  13.560                                                                          
+  Arrival (ns):                15.237                                                                          
+  Required (ns):               28.797                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         6.440                                                                           
+  Skew (ns):                   0.007                                                                           
+
+Path 5
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[8]:ALn
+  Delay (ns):                  6.018                                                                           
+  Slack (ns):                  13.560                                                                          
+  Arrival (ns):                15.237                                                                          
+  Required (ns):               28.797                                                                          
+  Recovery (ns):               0.415                                                                           
+  Minimum Period (ns):         6.440                                                                           
+  Skew (ns):                   0.007                                                                           
+
+
+Expanded Path 1
+  From: MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:CLK
+  To: MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[10]:ALn
+  data required time                             28.797    
+  data arrival time                          -   15.237    
+  slack                                          13.560    
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT
+               +     0.000          Clock source
+  0.000                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT (r)
+               +     1.042          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKOUT
+  1.042                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:A (r)
+               +     0.179          cell: ADLIB:RCOSC_25_50MHZ_FAB
+  1.221                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:CLKOUT (r)
+               +     5.883          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKINT
+  7.104                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:An (f)
+               +     0.420          cell: ADLIB:GBM
+  7.524                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:YEn (f)
+               +     0.675          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YWn_GEast
+  8.199                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:An (f)
+               +     0.372          cell: ADLIB:RGB
+  8.571                        MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:YR (r)
+               +     0.648          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0_rgbr_net_1
+  9.219                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:CLK (r)
+               +     0.102          cell: ADLIB:SLE
+  9.321                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:Q (r)
+               +     3.749          net: MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_0
+  13.070                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4N5C:An (f)
+               +     0.420          cell: ADLIB:GBM
+  13.490                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4N5C:YEn (f)
+               +     0.682          net: MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4N5C/U0_YWn_GEast
+  14.172                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4N5C/U0_RGB1:An (f)
+               +     0.372          cell: ADLIB:RGB
+  14.544                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4N5C/U0_RGB1:YR (r)
+               +     0.693          net: MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4N5C/U0_RGB1_YR
+  15.237                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[10]:ALn (r)
+                                    
+  15.237                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  20.000                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT
+               +     0.000          Clock source
+  20.000                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT (r)
+               +     1.042          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKOUT
+  21.042                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:A (r)
+               +     0.179          cell: ADLIB:RCOSC_25_50MHZ_FAB
+  21.221                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB:CLKOUT (r)
+               +     5.883          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/N_RCOSC_25_50MHZ_CLKINT
+  27.104                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:An (f)
+               +     0.420          cell: ADLIB:GBM
+  27.524                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT:YEn (f)
+               +     0.675          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YWn_GEast
+  28.199                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:An (f)
+               +     0.372          cell: ADLIB:RGB
+  28.571                       MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0:YR (r)
+               +     0.641          net: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1_RGB0_rgbr_net_1
+  29.212                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[10]:CLK (r)
+               -     0.415          Library recovery time: ADLIB:SLE
+  28.797                       MSS_SUBSYSTEM_sb_0/CORERESETP_0/count_ddr[10]:ALn
+                                    
+  28.797                       data required time
+
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET MSS_SUBSYSTEM_sb_0/CCC_0/GL0 to MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT
+
+No Path 
+
+END SET MSS_SUBSYSTEM_sb_0/CCC_0/GL0 to MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT
+
+----------------------------------------------------
+
+Clock Domain MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB
+
+SET Register to Register
+
+Path 1
+  From:                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:CLK_CONFIG_APB
+  To:                          MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/FIC_2_APB_M_PREADY:EN
+  Delay (ns):                  3.388                                                                           
+  Slack (ns):                  3.937                                                                           
+  Arrival (ns):                3.388                                                                           
+  Required (ns):               7.325                                                                           
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         -3.937                                                                          
+
+Path 2
+  From:                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:CLK_CONFIG_APB
+  To:                          MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/state[0]:D
+  Delay (ns):                  2.752                                                                           
+  Slack (ns):                  4.658                                                                           
+  Arrival (ns):                2.752                                                                           
+  Required (ns):               7.410                                                                           
+  Setup (ns):                  0.298                                                                           
+  Minimum Period (ns):         -4.658                                                                          
+
+Path 3
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/psel:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/soft_reset_reg[0]:EN
+  Delay (ns):                  3.409                                                                           
+  Slack (ns):                  19.993                                                                          
+  Arrival (ns):                11.442                                                                          
+  Required (ns):               31.435                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         8.208                                                                           
+
+Path 4
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/psel:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/soft_reset_reg[16]:EN
+  Delay (ns):                  3.409                                                                           
+  Slack (ns):                  19.993                                                                          
+  Arrival (ns):                11.442                                                                          
+  Required (ns):               31.435                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         8.208                                                                           
+
+Path 5
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/psel:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/soft_reset_reg[1]:EN
+  Delay (ns):                  3.409                                                                           
+  Slack (ns):                  19.993                                                                          
+  Arrival (ns):                11.442                                                                          
+  Required (ns):               31.435                                                                          
+  Setup (ns):                  0.394                                                                           
+  Minimum Period (ns):         8.208                                                                           
+
+
+Expanded Path 1
+  From: MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:CLK_CONFIG_APB
+  To: MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/FIC_2_APB_M_PREADY:EN
+  data required time                             7.325     
+  data arrival time                          -   3.388     
+  slack                                          3.937     
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB
+               +     0.000          Clock source
+  0.000                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:CLK_CONFIG_APB (r)
+               +     0.365          cell: ADLIB:MSS_120_IP
+  0.365                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:PER2_FABRIC_PENABLE (r)
+               +     1.999          net: MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_TMP_0_FIC_2_APB_MASTER_PENABLE
+  2.364                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/next_state4:A (r)
+               +     0.168          cell: ADLIB:CFG2
+  2.532                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/next_state4:Y (f)
+               +     0.118          net: MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/next_state4
+  2.650                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/un1_next_FIC_2_APB_M_PREADY_0_sqmuxa_0:C (f)
+               +     0.102          cell: ADLIB:CFG4
+  2.752                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/un1_next_FIC_2_APB_M_PREADY_0_sqmuxa_0:Y (f)
+               +     0.636          net: MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/un1_next_FIC_2_APB_M_PREADY_0_sqmuxa_0
+  3.388                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/FIC_2_APB_M_PREADY:EN (f)
+                                    
+  3.388                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  0.000                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB
+               +     0.000          Clock source
+  0.000                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:CLK_CONFIG_APB (r)
+               +     5.583          net: MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB
+  5.583                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST_RNI1HN6:An (f)
+               +     0.420          cell: ADLIB:GBM
+  6.003                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST_RNI1HN6:YEn (f)
+               +     0.694          net: MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST_RNI1HN6/U0_YWn_GEast
+  6.697                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST_RNI1HN6/U0_RGB1_RGB0:An (f)
+               +     0.372          cell: ADLIB:RGB
+  7.069                        MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST_RNI1HN6/U0_RGB1_RGB0:YR (r)
+               +     0.650          net: MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST_RNI1HN6/U0_RGB1_RGB0_rgbr_net_1
+  7.719                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/FIC_2_APB_M_PREADY:CLK (r)
+               -     0.394          Library setup time: ADLIB:SLE
+  7.325                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/FIC_2_APB_M_PREADY:EN
+                                    
+  7.325                        data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET MSS_SUBSYSTEM_sb_0/CCC_0/GL0 to MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB
+
+No Path 
+
+END SET MSS_SUBSYSTEM_sb_0/CCC_0/GL0 to MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/CLK_CONFIG_APB
+
+----------------------------------------------------
+
+Clock Domain TCK
+
+SET Register to Register
+
+Path 1
+  From:                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/utdo:CLK
+  To:                          COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UTDO
+  Delay (ns):                  1.810                                                                           
+  Slack (ns):                  72.546                                                                          
+  Arrival (ns):                10.462                                                                          
+  Required (ns):               83.008                                                                          
+  Setup (ns):                  0.322                                                                           
+  Minimum Period (ns):         21.569                                                                          
+
+Path 2
+  From:                        CORERISCV_AXI4_0/debugTransportModuleJtag0/TDO_ret_1:CLK
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/utdo:D
+  Delay (ns):                  5.838                                                                           
+  Slack (ns):                  74.779                                                                          
+  Arrival (ns):                16.897                                                                          
+  Required (ns):               91.676                                                                          
+  Setup (ns):                  0.298                                                                           
+  Minimum Period (ns):         17.121                                                                          
+
+Path 3
+  From:                        CORERISCV_AXI4_0/debugTransportModuleJtag0/TDO_ret_2:CLK
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/utdo:D
+  Delay (ns):                  5.603                                                                           
+  Slack (ns):                  75.014                                                                          
+  Arrival (ns):                16.662                                                                          
+  Required (ns):               91.676                                                                          
+  Setup (ns):                  0.298                                                                           
+  Minimum Period (ns):         16.651                                                                          
+
+Path 4
+  From:                        CORERISCV_AXI4_0/debugTransportModuleJtag0/TDO_ret:CLK
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/utdo:D
+  Delay (ns):                  5.023                                                                           
+  Slack (ns):                  75.588                                                                          
+  Arrival (ns):                16.088                                                                          
+  Required (ns):               91.676                                                                          
+  Setup (ns):                  0.298                                                                           
+  Minimum Period (ns):         15.503                                                                          
+
+Path 5
+  From:                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[1]:CLK
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/endofshift_ret:D
+  Delay (ns):                  4.903                                                                           
+  Slack (ns):                  78.630                                                                          
+  Arrival (ns):                13.669                                                                          
+  Required (ns):               92.299                                                                          
+  Setup (ns):                  0.298                                                                           
+  Minimum Period (ns):         9.401                                                                           
+
+
+Expanded Path 1
+  From: COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/utdo:CLK
+  To: COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UTDO
+  data required time                             83.008    
+  data arrival time                          -   10.462    
+  slack                                          72.546    
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        TCK
+               +     0.000          Clock source
+  0.000                        TCK (r)
+               +     0.000          net: TCK
+  0.000                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TCK (r)
+               +     0.046          cell: ADLIB:UJTAG_SYSRESET_FF_IP
+  0.046                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UDRCK (r)
+               +     6.551          net: COREJTAGDEBUG_0/iUDRCK
+  6.597                        COREJTAGDEBUG_0/genblk1.udrck_clkint:An (f)
+               +     0.420          cell: ADLIB:GBM
+  7.017                        COREJTAGDEBUG_0/genblk1.udrck_clkint:YEn (f)
+               +     0.648          net: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_YWn_GEast
+  7.665                        COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB2:An (f)
+               +     0.372          cell: ADLIB:RGB
+  8.037                        COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB2:YR (r)
+               +     0.615          net: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB2_rgbr_net_1
+  8.652                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/utdo:CLK (r)
+               +     0.102          cell: ADLIB:SLE
+  8.754                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/utdo:Q (r)
+               +     1.419          net: COREJTAGDEBUG_0/UTDO_INT
+  10.173                       COREJTAGDEBUG_0/genblk1.UJTAG_0/IP_INTERFACE_0:A (r)
+               +     0.228          cell: ADLIB:IP_INTERFACE
+  10.401                       COREJTAGDEBUG_0/genblk1.UJTAG_0/IP_INTERFACE_0:IPA (r)
+               +     0.061          net: COREJTAGDEBUG_0/genblk1_UJTAG_0/UTDO_net
+  10.462                       COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UTDO (r)
+                                    
+  10.462                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  83.330                       TCK
+               +     0.000          Clock source
+  83.330                       TCK (f)
+               +     0.000          net: TCK
+  83.330                       COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TCK (f)
+               -     0.322          Library setup time: ADLIB:UJTAG_SYSRESET_FF_IP
+  83.008                       COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UTDO
+                                    
+  83.008                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        TRSTB
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[2]:D
+  Delay (ns):                  9.356                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                9.356                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.298                                                                           
+  External Setup (ns):         1.181                                                                           
+
+Path 2
+  From:                        TDI
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[2]:D
+  Delay (ns):                  9.232                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                9.232                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.298                                                                           
+  External Setup (ns):         1.057                                                                           
+
+Path 3
+  From:                        TRSTB
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[0]:D
+  Delay (ns):                  9.069                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                9.069                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.298                                                                           
+  External Setup (ns):         0.889                                                                           
+
+Path 4
+  From:                        TDI
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[1]:D
+  Delay (ns):                  8.571                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.571                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.298                                                                           
+  External Setup (ns):         0.366                                                                           
+
+Path 5
+  From:                        TDI
+  To:                          COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TDI
+  Delay (ns):                  0.000                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                0.000                                                                           
+  Required (ns):                                                                                               
+  Setup (ns):                  0.321                                                                           
+  External Setup (ns):         0.321                                                                           
+
+
+Expanded Path 1
+  From: TRSTB
+  To: COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[2]:D
+  data required time                             N/C       
+  data arrival time                          -   9.356     
+  slack                                          N/C       
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        TRSTB (r)
+               +     0.000          net: TRSTB
+  0.000                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TRSTB (r)
+               +     0.046          cell: ADLIB:UJTAG_SYSRESET_FF_IP
+  0.046                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UIREG[3] (r)
+               +     0.809          net: COREJTAGDEBUG_0/UIREG_OUT[3]
+  0.855                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state6_5:C (r)
+               +     0.383          cell: ADLIB:CFG4
+  1.238                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state6_5:Y (f)
+               +     0.593          net: COREJTAGDEBUG_0/genblk1_UJ_JTAG_0/state6_5
+  1.831                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state6:C (f)
+               +     0.338          cell: ADLIB:CFG4
+  2.169                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state6:Y (f)
+               +     4.608          net: COREJTAGDEBUG_0/genblk1_UJ_JTAG_0/N_244
+  6.777                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_0_o3_0_RNIOG151[0]:A (f)
+               +     0.102          cell: ADLIB:CFG4
+  6.879                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_0_o3_0_RNIOG151[0]:Y (f)
+               +     0.910          net: COREJTAGDEBUG_0/genblk1_UJ_JTAG_0/N_226_i_0
+  7.789                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_1_RNO[2]:C (f)
+               +     0.246          cell: ADLIB:CFG4
+  8.035                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_1_RNO[2]:Y (f)
+               +     0.266          net: COREJTAGDEBUG_0/genblk1_UJ_JTAG_0/un1_state_1_sqmuxa_2_s2_0_1
+  8.301                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_1[2]:C (f)
+               +     0.246          cell: ADLIB:CFG4
+  8.547                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_1[2]:Y (f)
+               +     0.605          net: COREJTAGDEBUG_0/genblk1_UJ_JTAG_0/state_20_1_iv_1[2]
+  9.152                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_i[2]:C (f)
+               +     0.117          cell: ADLIB:CFG4
+  9.269                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_20_1_iv_i[2]:Y (r)
+               +     0.087          net: COREJTAGDEBUG_0/genblk1_UJ_JTAG_0/state_20_1_iv_i[2]
+  9.356                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[2]:D (r)
+                                    
+  9.356                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          TCK
+               +     0.000          Clock source
+  N/C                          TCK (r)
+               +     0.000          net: TCK
+  N/C                          COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TCK (r)
+               +     0.045          cell: ADLIB:UJTAG_SYSRESET_FF_IP
+  N/C                          COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UDRCK (r)
+               +     6.354          net: COREJTAGDEBUG_0/iUDRCK
+  N/C                          COREJTAGDEBUG_0/genblk1.udrck_clkint:An (f)
+               +     0.407          cell: ADLIB:GBM
+  N/C                          COREJTAGDEBUG_0/genblk1.udrck_clkint:YEn (f)
+               +     0.685          net: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_YWn_GEast
+  N/C                          COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB0:An (f)
+               +     0.361          cell: ADLIB:RGB
+  N/C                          COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB0:YR (r)
+               +     0.621          net: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB0_rgbr_net_1
+  N/C                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[2]:CLK (r)
+               -     0.298          Library setup time: ADLIB:SLE
+  N/C                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[2]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        TRSTB
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/pauselow:ALn
+  Delay (ns):                  8.437                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.437                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      0.374                                                                           
+
+Path 2
+  From:                        TRSTB
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state[0]:ALn
+  Delay (ns):                  8.437                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.437                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      0.374                                                                           
+
+Path 3
+  From:                        TRSTB
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/tckgo:ALn
+  Delay (ns):                  8.437                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.437                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      0.364                                                                           
+
+Path 4
+  From:                        TRSTB
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_ret_1:ALn
+  Delay (ns):                  8.437                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.437                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      0.360                                                                           
+
+Path 5
+  From:                        TRSTB
+  To:                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/state_ret_2:ALn
+  Delay (ns):                  8.437                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                8.437                                                                           
+  Required (ns):                                                                                               
+  Recovery (ns):               0.415                                                                           
+  External Recovery (ns):      0.360                                                                           
+
+
+Expanded Path 1
+  From: TRSTB
+  To: COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/pauselow:ALn
+  data required time                             N/C       
+  data arrival time                          -   8.437     
+  slack                                          N/C       
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        TRSTB (r)
+               +     0.000          net: TRSTB
+  0.000                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TRSTB (r)
+               +     0.046          cell: ADLIB:UJTAG_SYSRESET_FF_IP
+  0.046                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:URSTB (r)
+               +     6.197          net: COREJTAGDEBUG_0/UJTAG_0_URSTB
+  6.243                        COREJTAGDEBUG_0/genblk1.UJTAG_0_RNIFG38:An (f)
+               +     0.420          cell: ADLIB:GBM
+  6.663                        COREJTAGDEBUG_0/genblk1.UJTAG_0_RNIFG38:YEn (f)
+               +     0.721          net: COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_YWn_GEast
+  7.384                        COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1_RGB6:An (f)
+               +     0.372          cell: ADLIB:RGB
+  7.756                        COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1_RGB6:YR (r)
+               +     0.681          net: COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1_RGB6_rgbr_net_1
+  8.437                        COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/pauselow:ALn (r)
+                                    
+  8.437                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          TCK
+               +     0.000          Clock source
+  N/C                          TCK (r)
+               +     0.000          net: TCK
+  N/C                          COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TCK (r)
+               +     0.045          cell: ADLIB:UJTAG_SYSRESET_FF_IP
+  N/C                          COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:UDRCK (r)
+               +     6.354          net: COREJTAGDEBUG_0/iUDRCK
+  N/C                          COREJTAGDEBUG_0/genblk1.udrck_clkint:An (f)
+               +     0.407          cell: ADLIB:GBM
+  N/C                          COREJTAGDEBUG_0/genblk1.udrck_clkint:YEn (f)
+               +     0.686          net: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_YWn_GEast
+  N/C                          COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB1:An (f)
+               +     0.361          cell: ADLIB:RGB
+  N/C                          COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB1:YR (r)
+               +     0.625          net: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1_RGB1_rgbr_net_1
+  N/C                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/pauselow:CLK (r)
+               -     0.415          Library recovery time: ADLIB:SLE
+  N/C                          COREJTAGDEBUG_0/genblk1.UJ_JTAG_0/pauselow:ALn
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET MSS_SUBSYSTEM_sb_0/CCC_0/GL0 to TCK
+
+No Path 
+
+END SET MSS_SUBSYSTEM_sb_0/CCC_0/GL0 to TCK
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+Path 1
+  From:                        TCK
+  To:                          TDO
+  Delay (ns):                  0.047                                                                           
+  Slack (ns):                                                                                                  
+  Arrival (ns):                0.047                                                                           
+  Required (ns):                                                                                               
+
+
+Expanded Path 1
+  From: TCK
+  To: TDO
+  data required time                             N/C       
+  data arrival time                          -   0.047     
+  slack                                          N/C       
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        TCK (f)
+               +     0.000          net: TCK
+  0.000                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TCK (f)
+               +     0.047          cell: ADLIB:UJTAG_SYSRESET_FF_IP
+  0.047                        COREJTAGDEBUG_0/genblk1_UJTAG_0/INST_UJTAG_SYSRESET_FF_IP:TDO (f)
+               +     0.000          net: TDO
+  0.047                        TDO (f)
+                                    
+  0.047                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          TCK (f)
+                                    
+  N/C                          TDO (f)
+                                    
+  N/C                          data required time
+
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

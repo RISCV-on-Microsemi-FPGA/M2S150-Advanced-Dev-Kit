@@ -1,5 +1,5 @@
 # SmartFusion2 Advanced Development Kit RISC-V Sample Design
-Sample RISC-V Libero project(s) for the SmartFusion2 (M2S150) Advanced Development Kit.
+Sample RISC-V Libero projects for the SmartFusion2 (M2S150) Advanced Development Kit.
 
 This project contains a Libero project containing an FPGA design including a RISC-V RV32IM soft processor. Programming bitstreams are also included so that you do not need to run through the full FPGA design flow in order to start developping software for RISC-V.
 
@@ -20,10 +20,10 @@ The SmartFusion2 Advanced Development Kit includes a SmartFusion2 M2S150 SoC FPG
 This project includes two FlashPro Express projects that can be used to program the development board's FPGA. A stand alone installer for FlashPro Express is available from the following [page](
 http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software). Please note that you only need to install this standalone version of FlashPro Express if you do not have the Libero tools installed.
 
-* The first FlashPro Express project, PROC_SUBSYSTEM_BaseDesign, allows software debugging using FlashPro5. The same JTAG port is used for programming the FPGA and debugging RISC-V software.
+* PROC_SUBSYSTEM_BaseDesign, allows software debugging using FlashPro5. The same JTAG port is used for programming the FPGA and debugging RISC-V software.
 
 ### Libero
 Libero is Microsemi's FPGA design tool. You will need this tool if you wish to modify the example FPGA design. Libero is available from the following [page](http://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
 
 ### Example Software Projects
-A set of self-contained example software projects are available for this design from the [riscv-junk-drawer](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/examples).
+A set of RISC-V example software projects are also available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole).

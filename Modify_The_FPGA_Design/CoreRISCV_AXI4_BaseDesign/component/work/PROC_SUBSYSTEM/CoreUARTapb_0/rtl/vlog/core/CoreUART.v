@@ -250,7 +250,7 @@ begin
         // from fifo, waiting for next data byte
 
 //        if (stop_strobe == 1'b1 || (rx_dout_reg_empty == 1'b1))
-        if (stop_strobe == 1'b1 || (rx_dout_reg_empty == 1'b1) || ((rx_dout_reg_empty == 1'b0) && (rx_idle == 1'b1)))
+        if (stop_strobe == 1'b1 || (rx_dout_reg_empty == 1'b1) || ((rx_dout_reg_empty == 1'b0) && (rx_idle == 1'b1 || RX_FIFO==1)))
         begin
           RXRDY <= !rx_dout_reg_empty;
         end

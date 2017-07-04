@@ -1,0 +1,821 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.8
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+Date: Tue Jul 04 12:42:10 2017
+
+
+Design: PROC_SUBSYSTEM
+Family: SmartFusion2
+Die: M2S150
+Package: 1152 FC
+Temperature Range: 0 - 85 C
+Voltage Range: 1.14 - 1.26 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Production
+Min Operating Conditions: BEST - 1.26 V - 0 C
+Max Operating Conditions: WORST - 1.14 V - 85 C
+Scenario for Timing Analysis: timing_analysis
+
+
+Path 1
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  13.135                                                                          
+  Slack (ns):                  -1.122                                                                          
+  Arrival (ns):                19.469                                                                          
+  Required (ns):               18.347                                                                          
+
+Path 2
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.939                                                                          
+  Slack (ns):                  -1.105                                                                          
+  Arrival (ns):                19.273                                                                          
+  Required (ns):               18.168                                                                          
+
+Path 3
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.915                                                                          
+  Slack (ns):                  -1.078                                                                          
+  Arrival (ns):                19.249                                                                          
+  Required (ns):               18.171                                                                          
+
+Path 4
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.932                                                                          
+  Slack (ns):                  -1.069                                                                          
+  Arrival (ns):                19.266                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 5
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.906                                                                          
+  Slack (ns):                  -1.043                                                                          
+  Arrival (ns):                19.240                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 6
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_2/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.913                                                                          
+  Slack (ns):                  -0.898                                                                          
+  Arrival (ns):                19.247                                                                          
+  Required (ns):               18.349                                                                          
+
+Path 7
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_2/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.704                                                                          
+  Slack (ns):                  -0.867                                                                          
+  Arrival (ns):                19.038                                                                          
+  Required (ns):               18.171                                                                          
+
+Path 8
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_1/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.861                                                                          
+  Slack (ns):                  -0.842                                                                          
+  Arrival (ns):                19.195                                                                          
+  Required (ns):               18.353                                                                          
+
+Path 9
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_2/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.695                                                                          
+  Slack (ns):                  -0.832                                                                          
+  Arrival (ns):                19.029                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 10
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.665                                                                          
+  Slack (ns):                  -0.652                                                                          
+  Arrival (ns):                18.999                                                                          
+  Required (ns):               18.347                                                                          
+
+Path 11
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.581                                                                          
+  Slack (ns):                  -0.644                                                                          
+  Arrival (ns):                18.930                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 12
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.469                                                                          
+  Slack (ns):                  -0.635                                                                          
+  Arrival (ns):                18.803                                                                          
+  Required (ns):               18.168                                                                          
+
+Path 13
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.445                                                                          
+  Slack (ns):                  -0.608                                                                          
+  Arrival (ns):                18.779                                                                          
+  Required (ns):               18.171                                                                          
+
+Path 14
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.597                                                                          
+  Slack (ns):                  -0.607                                                                          
+  Arrival (ns):                18.946                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 15
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.540                                                                          
+  Slack (ns):                  -0.603                                                                          
+  Arrival (ns):                18.889                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 16
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.462                                                                          
+  Slack (ns):                  -0.599                                                                          
+  Arrival (ns):                18.796                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 17
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_3/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.602                                                                          
+  Slack (ns):                  -0.582                                                                          
+  Arrival (ns):                18.936                                                                          
+  Required (ns):               18.354                                                                          
+
+Path 18
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.436                                                                          
+  Slack (ns):                  -0.573                                                                          
+  Arrival (ns):                18.770                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 19
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.556                                                                          
+  Slack (ns):                  -0.566                                                                          
+  Arrival (ns):                18.905                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 20
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.483                                                                          
+  Slack (ns):                  -0.482                                                                          
+  Arrival (ns):                18.829                                                                          
+  Required (ns):               18.347                                                                          
+
+Path 21
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.489                                                                          
+  Slack (ns):                  -0.481                                                                          
+  Arrival (ns):                18.838                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 22
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.509                                                                          
+  Slack (ns):                  -0.477                                                                          
+  Arrival (ns):                18.858                                                                          
+  Required (ns):               18.381                                                                          
+
+Path 23
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.287                                                                          
+  Slack (ns):                  -0.465                                                                          
+  Arrival (ns):                18.633                                                                          
+  Required (ns):               18.168                                                                          
+
+Path 24
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.444                                                                          
+  Slack (ns):                  -0.452                                                                          
+  Arrival (ns):                18.793                                                                          
+  Required (ns):               18.341                                                                          
+
+Path 25
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.462                                                                          
+  Slack (ns):                  -0.450                                                                          
+  Arrival (ns):                18.811                                                                          
+  Required (ns):               18.361                                                                          
+
+Path 26
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.448                                                                          
+  Slack (ns):                  -0.440                                                                          
+  Arrival (ns):                18.797                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 27
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.263                                                                          
+  Slack (ns):                  -0.438                                                                          
+  Arrival (ns):                18.609                                                                          
+  Required (ns):               18.171                                                                          
+
+Path 28
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.468                                                                          
+  Slack (ns):                  -0.436                                                                          
+  Arrival (ns):                18.817                                                                          
+  Required (ns):               18.381                                                                          
+
+Path 29
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.280                                                                          
+  Slack (ns):                  -0.429                                                                          
+  Arrival (ns):                18.626                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 30
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_2/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.443                                                                          
+  Slack (ns):                  -0.428                                                                          
+  Arrival (ns):                18.777                                                                          
+  Required (ns):               18.349                                                                          
+
+Path 31
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.403                                                                          
+  Slack (ns):                  -0.411                                                                          
+  Arrival (ns):                18.752                                                                          
+  Required (ns):               18.341                                                                          
+
+Path 32
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.421                                                                          
+  Slack (ns):                  -0.409                                                                          
+  Arrival (ns):                18.770                                                                          
+  Required (ns):               18.361                                                                          
+
+Path 33
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.338                                                                          
+  Slack (ns):                  -0.408                                                                          
+  Arrival (ns):                18.694                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 34
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.254                                                                          
+  Slack (ns):                  -0.403                                                                          
+  Arrival (ns):                18.600                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 35
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.408                                                                          
+  Slack (ns):                  -0.400                                                                          
+  Arrival (ns):                18.757                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 36
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.389                                                                          
+  Slack (ns):                  -0.399                                                                          
+  Arrival (ns):                18.738                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 37
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_2/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.234                                                                          
+  Slack (ns):                  -0.397                                                                          
+  Arrival (ns):                18.568                                                                          
+  Required (ns):               18.171                                                                          
+
+Path 38
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_1/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.391                                                                          
+  Slack (ns):                  -0.372                                                                          
+  Arrival (ns):                18.725                                                                          
+  Required (ns):               18.353                                                                          
+
+Path 39
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.354                                                                          
+  Slack (ns):                  -0.371                                                                          
+  Arrival (ns):                18.710                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 40
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_2/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.225                                                                          
+  Slack (ns):                  -0.362                                                                          
+  Arrival (ns):                18.559                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 41
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.298                                                                          
+  Slack (ns):                  -0.359                                                                          
+  Arrival (ns):                18.647                                                                          
+  Required (ns):               18.288                                                                          
+
+Path 42
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.367                                                                          
+  Slack (ns):                  -0.359                                                                          
+  Arrival (ns):                18.716                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 43
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.348                                                                          
+  Slack (ns):                  -0.358                                                                          
+  Arrival (ns):                18.697                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 44
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.313                                                                          
+  Slack (ns):                  -0.319                                                                          
+  Arrival (ns):                18.662                                                                          
+  Required (ns):               18.343                                                                          
+
+Path 45
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.257                                                                          
+  Slack (ns):                  -0.318                                                                          
+  Arrival (ns):                18.606                                                                          
+  Required (ns):               18.288                                                                          
+
+Path 46
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.272                                                                          
+  Slack (ns):                  -0.278                                                                          
+  Arrival (ns):                18.621                                                                          
+  Required (ns):               18.343                                                                          
+
+Path 47
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.222                                                                          
+  Slack (ns):                  -0.274                                                                          
+  Arrival (ns):                18.560                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 48
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_2/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.261                                                                          
+  Slack (ns):                  -0.258                                                                          
+  Arrival (ns):                18.607                                                                          
+  Required (ns):               18.349                                                                          
+
+Path 49
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.216                                                                          
+  Slack (ns):                  -0.258                                                                          
+  Arrival (ns):                18.544                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 50
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.246                                                                          
+  Slack (ns):                  -0.245                                                                          
+  Arrival (ns):                18.602                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 51
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.201                                                                          
+  Slack (ns):                  -0.243                                                                          
+  Arrival (ns):                18.550                                                                          
+  Required (ns):               18.307                                                                          
+
+Path 52
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.266                                                                          
+  Slack (ns):                  -0.241                                                                          
+  Arrival (ns):                18.622                                                                          
+  Required (ns):               18.381                                                                          
+
+Path 53
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.238                                                                          
+  Slack (ns):                  -0.237                                                                          
+  Arrival (ns):                18.576                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 54
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_14:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.176                                                                          
+  Slack (ns):                  -0.235                                                                          
+  Arrival (ns):                18.521                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 55
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_2/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  12.052                                                                          
+  Slack (ns):                  -0.227                                                                          
+  Arrival (ns):                18.398                                                                          
+  Required (ns):               18.171                                                                          
+
+Path 56
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.232                                                                          
+  Slack (ns):                  -0.221                                                                          
+  Arrival (ns):                18.560                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 57
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.201                                                                          
+  Slack (ns):                  -0.216                                                                          
+  Arrival (ns):                18.557                                                                          
+  Required (ns):               18.341                                                                          
+
+Path 58
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.219                                                                          
+  Slack (ns):                  -0.214                                                                          
+  Arrival (ns):                18.575                                                                          
+  Required (ns):               18.361                                                                          
+
+Path 59
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.224                                                                          
+  Slack (ns):                  -0.213                                                                          
+  Arrival (ns):                18.573                                                                          
+  Required (ns):               18.360                                                                          
+
+Path 60
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.244                                                                          
+  Slack (ns):                  -0.211                                                                          
+  Arrival (ns):                18.593                                                                          
+  Required (ns):               18.382                                                                          
+
+Path 61
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_60:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.217                                                                          
+  Slack (ns):                  -0.202                                                                          
+  Arrival (ns):                18.566                                                                          
+  Required (ns):               18.364                                                                          
+
+Path 62
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_1/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.209                                                                          
+  Slack (ns):                  -0.202                                                                          
+  Arrival (ns):                18.555                                                                          
+  Required (ns):               18.353                                                                          
+
+Path 63
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.160                                                                          
+  Slack (ns):                  -0.202                                                                          
+  Arrival (ns):                18.509                                                                          
+  Required (ns):               18.307                                                                          
+
+Path 64
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_14:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.192                                                                          
+  Slack (ns):                  -0.198                                                                          
+  Arrival (ns):                18.537                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 65
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_1:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_2/INST_RAM64x18_IP:A_ADDR[6]
+  Delay (ns):                  12.043                                                                          
+  Slack (ns):                  -0.192                                                                          
+  Arrival (ns):                18.389                                                                          
+  Required (ns):               18.197                                                                          
+
+Path 66
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.183                                                                          
+  Slack (ns):                  -0.172                                                                          
+  Arrival (ns):                18.532                                                                          
+  Required (ns):               18.360                                                                          
+
+Path 67
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.203                                                                          
+  Slack (ns):                  -0.170                                                                          
+  Arrival (ns):                18.552                                                                          
+  Required (ns):               18.382                                                                          
+
+Path 68
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_48:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.101                                                                          
+  Slack (ns):                  -0.168                                                                          
+  Arrival (ns):                18.454                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 69
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.165                                                                          
+  Slack (ns):                  -0.164                                                                          
+  Arrival (ns):                18.521                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 70
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.146                                                                          
+  Slack (ns):                  -0.163                                                                          
+  Arrival (ns):                18.502                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 71
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_59:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.176                                                                          
+  Slack (ns):                  -0.161                                                                          
+  Arrival (ns):                18.525                                                                          
+  Required (ns):               18.364                                                                          
+
+Path 72
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_17:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.092                                                                          
+  Slack (ns):                  -0.154                                                                          
+  Arrival (ns):                18.440                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 73
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.163                                                                          
+  Slack (ns):                  -0.134                                                                          
+  Arrival (ns):                18.491                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 74
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_48:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.117                                                                          
+  Slack (ns):                  -0.131                                                                          
+  Arrival (ns):                18.470                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 75
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.183                                                                          
+  Slack (ns):                  -0.130                                                                          
+  Arrival (ns):                18.511                                                                          
+  Required (ns):               18.381                                                                          
+
+Path 76
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  12.055                                                                          
+  Slack (ns):                  -0.123                                                                          
+  Arrival (ns):                18.411                                                                          
+  Required (ns):               18.288                                                                          
+
+Path 77
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_17:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.108                                                                          
+  Slack (ns):                  -0.117                                                                          
+  Arrival (ns):                18.456                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 78
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_2:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_3/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.132                                                                          
+  Slack (ns):                  -0.112                                                                          
+  Arrival (ns):                18.466                                                                          
+  Required (ns):               18.354                                                                          
+
+Path 79
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.130                                                                          
+  Slack (ns):                  -0.111                                                                          
+  Arrival (ns):                18.468                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 80
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.150                                                                          
+  Slack (ns):                  -0.107                                                                          
+  Arrival (ns):                18.488                                                                          
+  Required (ns):               18.381                                                                          
+
+Path 81
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.118                                                                          
+  Slack (ns):                  -0.105                                                                          
+  Arrival (ns):                18.446                                                                          
+  Required (ns):               18.341                                                                          
+
+Path 82
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.136                                                                          
+  Slack (ns):                  -0.103                                                                          
+  Arrival (ns):                18.464                                                                          
+  Required (ns):               18.361                                                                          
+
+Path 83
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.070                                                                          
+  Slack (ns):                  -0.083                                                                          
+  Arrival (ns):                18.426                                                                          
+  Required (ns):               18.343                                                                          
+
+Path 84
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.085                                                                          
+  Slack (ns):                  -0.082                                                                          
+  Arrival (ns):                18.423                                                                          
+  Required (ns):               18.341                                                                          
+
+Path 85
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.103                                                                          
+  Slack (ns):                  -0.080                                                                          
+  Arrival (ns):                18.441                                                                          
+  Required (ns):               18.361                                                                          
+
+Path 86
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_14:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.084                                                                          
+  Slack (ns):                  -0.072                                                                          
+  Arrival (ns):                18.429                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 87
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_14:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.104                                                                          
+  Slack (ns):                  -0.068                                                                          
+  Arrival (ns):                18.449                                                                          
+  Required (ns):               18.381                                                                          
+
+Path 88
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.082                                                                          
+  Slack (ns):                  -0.053                                                                          
+  Arrival (ns):                18.410                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 89
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_addr[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.063                                                                          
+  Slack (ns):                  -0.052                                                                          
+  Arrival (ns):                18.391                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 90
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_3:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/T_974_T_974_0_0/INST_RAM1K18_IP:A_ADDR[10]
+  Delay (ns):                  12.051                                                                          
+  Slack (ns):                  -0.051                                                                          
+  Arrival (ns):                18.398                                                                          
+  Required (ns):               18.347                                                                          
+
+Path 91
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_14:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.039                                                                          
+  Slack (ns):                  -0.043                                                                          
+  Arrival (ns):                18.384                                                                          
+  Required (ns):               18.341                                                                          
+
+Path 92
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_14:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_5_ND_4_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.057                                                                          
+  Slack (ns):                  -0.041                                                                          
+  Arrival (ns):                18.402                                                                          
+  Required (ns):               18.361                                                                          
+
+Path 93
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_3:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_1/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  11.855                                                                          
+  Slack (ns):                  -0.034                                                                          
+  Arrival (ns):                18.202                                                                          
+  Required (ns):               18.168                                                                          
+
+Path 94
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.049                                                                          
+  Slack (ns):                  -0.030                                                                          
+  Arrival (ns):                18.387                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 95
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_58:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.030                                                                          
+  Slack (ns):                  -0.029                                                                          
+  Arrival (ns):                18.368                                                                          
+  Required (ns):               18.339                                                                          
+
+Path 96
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_wdata_ret_3:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/icache/tag_array_0_tag_array_0_0_0/INST_RAM64x18_IP:B_ADDR[6]
+  Delay (ns):                  11.831                                                                          
+  Slack (ns):                  -0.007                                                                          
+  Arrival (ns):                18.178                                                                          
+  Required (ns):               18.171                                                                          
+
+Path 97
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_16:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_3_ND_2_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  11.958                                                                          
+  Slack (ns):                  -0.007                                                                          
+  Arrival (ns):                18.314                                                                          
+  Required (ns):               18.307                                                                          
+
+Path 98
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_48:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:B_ADDR[12]
+  Delay (ns):                  12.009                                                                          
+  Slack (ns):                  -0.005                                                                          
+  Arrival (ns):                18.362                                                                          
+  Required (ns):               18.357                                                                          
+
+Path 99
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/ex_reg_inst[8]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_1_ND_0_R0C0/INST_RAM1K18_IP:B_ADDR[10]
+  Delay (ns):                  11.980                                                                          
+  Slack (ns):                  -0.002                                                                          
+  Arrival (ns):                18.288                                                                          
+  Required (ns):               18.286                                                                          
+
+Path 100
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/alu/mem_reg_wdata_ret_48:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/data/DCACHE_BYTE_LANE_7_ND_6_R0C0/INST_RAM1K18_IP:A_ADDR[12]
+  Delay (ns):                  12.029                                                                          
+  Slack (ns):                  -0.001                                                                          
+  Arrival (ns):                18.382                                                                          
+  Required (ns):               18.381                                                                          
+

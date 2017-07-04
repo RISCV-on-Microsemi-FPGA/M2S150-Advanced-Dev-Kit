@@ -1,0 +1,61 @@
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 1   DATE: 10:29:19 04-Jul-2017
+# INVOKED AS: C:/Microsemi/Libero_SoC_v11.8/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM} -n 5 -starting_seed_index 1 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+         N/A         0  N/A                        0.152  PROC_SUBSYSTEM_timing_violations_max_r1_initial.rpt  PROC_SUBSYSTEM_r1_initial
+  The best result PROC_SUBSYSTEM_r1_initial has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 2   DATE: 10:33:06 04-Jul-2017
+# INVOKED AS: C:/Microsemi/Libero_SoC_v11.8/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM} -n 5 -starting_seed_index 1 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+         N/A         0  N/A                        0.152  PROC_SUBSYSTEM_timing_violations_max_r2_initial.rpt  PROC_SUBSYSTEM_r2_initial
+  The best result PROC_SUBSYSTEM_r2_initial has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 3   DATE: 10:37:10 04-Jul-2017
+# INVOKED AS: C:/Microsemi/Libero_SoC_v11.8/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM} -n 5 -starting_seed_index 1 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+         N/A         0  N/A                        0.152  PROC_SUBSYSTEM_timing_violations_max_r3_initial.rpt  PROC_SUBSYSTEM_r3_initial
+  The best result PROC_SUBSYSTEM_r3_initial has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 4   DATE: 10:40:51 04-Jul-2017
+# INVOKED AS: C:/Microsemi/Libero_SoC_v11.8/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM} -n 5 -starting_seed_index 1 -compare_criteria violations -analysis max -slack_criteria worst
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+         N/A         0  N/A                        0.152  PROC_SUBSYSTEM_timing_violations_max_r4_initial.rpt  PROC_SUBSYSTEM_r4_initial
+           1         0  N/A                        0.152  PROC_SUBSYSTEM_timing_violations_max_r4_s1.rpt  PROC_SUBSYSTEM_r4_s1
+           2  86662958  N/A                       -0.747  PROC_SUBSYSTEM_timing_violations_max_r4_s2.rpt  PROC_SUBSYSTEM_r4_s2
+           3   8988747  N/A                        0.223  PROC_SUBSYSTEM_timing_violations_max_r4_s3.rpt  PROC_SUBSYSTEM_r4_s3
+           4  51071856  N/A                        0.146  PROC_SUBSYSTEM_timing_violations_max_r4_s4.rpt  PROC_SUBSYSTEM_r4_s4
+           5  78381505  N/A                        0.397  PROC_SUBSYSTEM_timing_violations_max_r4_s5.rpt  PROC_SUBSYSTEM_r4_s5
+  The best result PROC_SUBSYSTEM_r4_s5 has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 5   DATE: 12:19:11 04-Jul-2017
+# INVOKED AS: C:/Microsemi/Libero_SoC_v11.8/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM} -n 12 -starting_seed_index 6 -compare_criteria violations -analysis max -slack_criteria worst
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+           6  82287664  N/A                       -0.094  PROC_SUBSYSTEM_timing_violations_max_r5_s6.rpt  PROC_SUBSYSTEM_r5_s6
+           7  23702026  N/A                       -1.122  PROC_SUBSYSTEM_timing_violations_max_r5_s7.rpt  PROC_SUBSYSTEM_r5_s7
+           8  51370950  N/A                       -0.510  PROC_SUBSYSTEM_timing_violations_max_r5_s8.rpt  PROC_SUBSYSTEM_r5_s8
+           9  93189207  N/A                       -0.168  PROC_SUBSYSTEM_timing_violations_max_r5_s9.rpt  PROC_SUBSYSTEM_r5_s9
+          10  17538078  N/A                        0.276  PROC_SUBSYSTEM_timing_violations_max_r5_s10.rpt  PROC_SUBSYSTEM_r5_s10
+          11  77122585  N/A                       -0.192  PROC_SUBSYSTEM_timing_violations_max_r5_s11.rpt  PROC_SUBSYSTEM_r5_s11
+          12  27521058  N/A                       -0.144  PROC_SUBSYSTEM_timing_violations_max_r5_s12.rpt  PROC_SUBSYSTEM_r5_s12
+          13  77808595  N/A                        0.553  PROC_SUBSYSTEM_timing_violations_max_r5_s13.rpt  PROC_SUBSYSTEM_r5_s13
+          14  85318856  N/A                        0.130  PROC_SUBSYSTEM_timing_violations_max_r5_s14.rpt  PROC_SUBSYSTEM_r5_s14
+          15  74257101  N/A                        0.058  PROC_SUBSYSTEM_timing_violations_max_r5_s15.rpt  PROC_SUBSYSTEM_r5_s15
+          16  32878858  N/A                        0.101  PROC_SUBSYSTEM_timing_violations_max_r5_s16.rpt  PROC_SUBSYSTEM_r5_s16
+          17  46508465  N/A                        0.069  PROC_SUBSYSTEM_timing_violations_max_r5_s17.rpt  PROC_SUBSYSTEM_r5_s17
+  The best result PROC_SUBSYSTEM_r5_s13 has been saved into the project.
+

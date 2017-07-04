@@ -1,0 +1,821 @@
+Timing Violation Report Min Delay Analysis
+
+SmartTime Version v11.8
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+Date: Tue Jul 04 13:43:05 2017
+
+
+Design: PROC_SUBSYSTEM
+Family: SmartFusion2
+Die: M2S150
+Package: 1152 FC
+Temperature Range: 0 - 85 C
+Voltage Range: 1.14 - 1.26 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Production
+Min Operating Conditions: BEST - 1.26 V - 0 C
+Max Operating Conditions: WORST - 1.14 V - 85 C
+Scenario for Timing Analysis: timing_analysis
+
+
+Path 1
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/paddr[3]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PADDR[3]
+  Delay (ns):                  0.674                                                                           
+  Slack (ns):                  0.061                                                                           
+  Arrival (ns):                5.113                                                                           
+  Required (ns):               5.052                                                                           
+
+Path 2
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/paddr[6]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PADDR[6]
+  Delay (ns):                  0.792                                                                           
+  Slack (ns):                  0.080                                                                           
+  Arrival (ns):                5.214                                                                           
+  Required (ns):               5.134                                                                           
+
+Path 3
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/paddr[9]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PADDR[9]
+  Delay (ns):                  0.688                                                                           
+  Slack (ns):                  0.088                                                                           
+  Arrival (ns):                5.123                                                                           
+  Required (ns):               5.035                                                                           
+
+Path 4
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/paddr[8]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PADDR[8]
+  Delay (ns):                  0.684                                                                           
+  Slack (ns):                  0.111                                                                           
+  Arrival (ns):                5.125                                                                           
+  Required (ns):               5.014                                                                           
+
+Path 5
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/paddr[2]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PADDR[2]
+  Delay (ns):                  0.685                                                                           
+  Slack (ns):                  0.118                                                                           
+  Arrival (ns):                5.116                                                                           
+  Required (ns):               4.998                                                                           
+
+Path 6
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[12]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[12]
+  Delay (ns):                  0.679                                                                           
+  Slack (ns):                  0.158                                                                           
+  Arrival (ns):                5.120                                                                           
+  Required (ns):               4.962                                                                           
+
+Path 7
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[1]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[1]
+  Delay (ns):                  0.718                                                                           
+  Slack (ns):                  0.164                                                                           
+  Arrival (ns):                5.147                                                                           
+  Required (ns):               4.983                                                                           
+
+Path 8
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/paddr[7]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PADDR[7]
+  Delay (ns):                  0.796                                                                           
+  Slack (ns):                  0.170                                                                           
+  Arrival (ns):                5.218                                                                           
+  Required (ns):               5.048                                                                           
+
+Path 9
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[11]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[11]
+  Delay (ns):                  0.684                                                                           
+  Slack (ns):                  0.170                                                                           
+  Arrival (ns):                5.119                                                                           
+  Required (ns):               4.949                                                                           
+
+Path 10
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[4]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[4]
+  Delay (ns):                  0.795                                                                           
+  Slack (ns):                  0.176                                                                           
+  Arrival (ns):                5.217                                                                           
+  Required (ns):               5.041                                                                           
+
+Path 11
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwrite:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWRITE
+  Delay (ns):                  0.822                                                                           
+  Slack (ns):                  0.192                                                                           
+  Arrival (ns):                5.257                                                                           
+  Required (ns):               5.065                                                                           
+
+Path 12
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[3]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[3]
+  Delay (ns):                  0.770                                                                           
+  Slack (ns):                  0.195                                                                           
+  Arrival (ns):                5.211                                                                           
+  Required (ns):               5.016                                                                           
+
+Path 13
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[10]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[10]
+  Delay (ns):                  0.679                                                                           
+  Slack (ns):                  0.199                                                                           
+  Arrival (ns):                5.108                                                                           
+  Required (ns):               4.909                                                                           
+
+Path 14
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[8]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[8]
+  Delay (ns):                  0.764                                                                           
+  Slack (ns):                  0.200                                                                           
+  Arrival (ns):                5.193                                                                           
+  Required (ns):               4.993                                                                           
+
+Path 15
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[13]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[13]
+  Delay (ns):                  0.679                                                                           
+  Slack (ns):                  0.202                                                                           
+  Arrival (ns):                5.108                                                                           
+  Required (ns):               4.906                                                                           
+
+Path 16
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[2]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[2]
+  Delay (ns):                  0.665                                                                           
+  Slack (ns):                  0.204                                                                           
+  Arrival (ns):                5.096                                                                           
+  Required (ns):               4.892                                                                           
+
+Path 17
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[9]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[9]
+  Delay (ns):                  0.726                                                                           
+  Slack (ns):                  0.249                                                                           
+  Arrival (ns):                5.160                                                                           
+  Required (ns):               4.911                                                                           
+
+Path 18
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[5]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[5]
+  Delay (ns):                  0.811                                                                           
+  Slack (ns):                  0.250                                                                           
+  Arrival (ns):                5.246                                                                           
+  Required (ns):               4.996                                                                           
+
+Path 19
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[7]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[7]
+  Delay (ns):                  0.674                                                                           
+  Slack (ns):                  0.265                                                                           
+  Arrival (ns):                5.115                                                                           
+  Required (ns):               4.850                                                                           
+
+Path 20
+  From:                        CORERISCV_AXI4_0/debugBusRespFifo/genblk2.wrAddrGrayReg_sync[1]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusRespFifo/genblk2.wrAddrGrayReg_r[1]:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.265                                                                           
+  Arrival (ns):                5.901                                                                           
+  Required (ns):               5.636                                                                           
+
+Path 21
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[6]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[6]
+  Delay (ns):                  0.805                                                                           
+  Slack (ns):                  0.267                                                                           
+  Arrival (ns):                5.240                                                                           
+  Required (ns):               4.973                                                                           
+
+Path 22
+  From:                        CORERISCV_AXI4_0/debugBusRespFifo/genblk2.wrAddrGrayReg_sync[0]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusRespFifo/genblk2.wrAddrGrayReg_r[0]:D
+  Delay (ns):                  0.319                                                                           
+  Slack (ns):                  0.273                                                                           
+  Arrival (ns):                5.901                                                                           
+  Required (ns):               5.628                                                                           
+
+Path 23
+  From:                        CORERISCV_AXI4_0/debugBusReqFifo/genblk2.rdAddrGrayReg_sync[1]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk2.rdAddrGrayReg_w[1]:D
+  Delay (ns):                  0.311                                                                           
+  Slack (ns):                  0.274                                                                           
+  Arrival (ns):                6.031                                                                           
+  Required (ns):               5.757                                                                           
+
+Path 24
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[14]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[14]
+  Delay (ns):                  0.766                                                                           
+  Slack (ns):                  0.284                                                                           
+  Arrival (ns):                5.195                                                                           
+  Required (ns):               4.911                                                                           
+
+Path 25
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/Queue_19_1/ram_addr_0_[25]:CLK
+  To:                          COREAXITOAHBL_0/U_AXISlaveCtrl/ADDRReg_ret_14:D
+  Delay (ns):                  0.314                                                                           
+  Slack (ns):                  0.293                                                                           
+  Arrival (ns):                3.868                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 26
+  From:                        CoreGPIO_IN/xhdl1.GEN_BITS_1_.gpin1:CLK
+  To:                          CoreGPIO_IN/xhdl1.GEN_BITS_1_.gpin2:D
+  Delay (ns):                  0.316                                                                           
+  Slack (ns):                  0.296                                                                           
+  Arrival (ns):                3.871                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 27
+  From:                        CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[1]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_r[1]:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.299                                                                           
+  Arrival (ns):                3.852                                                                           
+  Required (ns):               3.553                                                                           
+
+Path 28
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/acq/ram_data_0_[9]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/enables_0_9:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.299                                                                           
+  Arrival (ns):                3.869                                                                           
+  Required (ns):               3.570                                                                           
+
+Path 29
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s1_req_tag[4]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_tag[4]:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.300                                                                           
+  Arrival (ns):                3.857                                                                           
+  Required (ns):               3.557                                                                           
+
+Path 30
+  From:                        CoreUARTapb_0/uUART/tx_hold_reg[7]:CLK
+  To:                          CoreUARTapb_0/uUART/make_TX/tx_byte[7]:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.300                                                                           
+  Arrival (ns):                3.874                                                                           
+  Required (ns):               3.574                                                                           
+
+Path 31
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/CONFIG1_DONE_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/CONFIG1_DONE_clk_base:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.301                                                                           
+  Arrival (ns):                3.876                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 32
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_clk_base:D
+  Delay (ns):                  0.319                                                                           
+  Slack (ns):                  0.301                                                                           
+  Arrival (ns):                3.854                                                                           
+  Required (ns):               3.553                                                                           
+
+Path 33
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/ex_reg_cause[1]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_cause[1]:D
+  Delay (ns):                  0.313                                                                           
+  Slack (ns):                  0.301                                                                           
+  Arrival (ns):                3.880                                                                           
+  Required (ns):               3.579                                                                           
+
+Path 34
+  From:                        CoreGPIO_IN/xhdl1.GEN_BITS_2_.gpin2:CLK
+  To:                          CoreGPIO_IN/xhdl1.GEN_BITS_2_.gpin3:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.301                                                                           
+  Arrival (ns):                3.876                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 35
+  From:                        CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[1]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk1.reset_sync_reg[0]:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.301                                                                           
+  Arrival (ns):                3.849                                                                           
+  Required (ns):               3.548                                                                           
+
+Path 36
+  From:                        CoreUARTapb_0/uUART/tx_hold_reg[5]:CLK
+  To:                          CoreUARTapb_0/uUART/make_TX/tx_byte[5]:D
+  Delay (ns):                  0.323                                                                           
+  Slack (ns):                  0.302                                                                           
+  Arrival (ns):                3.876                                                                           
+  Required (ns):               3.574                                                                           
+
+Path 37
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[7]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[7]:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.303                                                                           
+  Arrival (ns):                3.862                                                                           
+  Required (ns):               3.559                                                                           
+
+Path 38
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/acq/ram_data_0_[3]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/enables_0_3:D
+  Delay (ns):                  0.323                                                                           
+  Slack (ns):                  0.303                                                                           
+  Arrival (ns):                3.878                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 39
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s1_req_tag[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_tag[2]:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.303                                                                           
+  Arrival (ns):                3.871                                                                           
+  Required (ns):               3.568                                                                           
+
+Path 40
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/Queue_8_1/ram_addr_block_0_[4]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/DebugModule_1/sbAcqReg_addr_block[4]:D
+  Delay (ns):                  0.315                                                                           
+  Slack (ns):                  0.303                                                                           
+  Arrival (ns):                3.867                                                                           
+  Required (ns):               3.564                                                                           
+
+Path 41
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/Queue_8_1/ram_addr_block_0_[3]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/DebugModule_1/sbAcqReg_addr_block[3]:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.304                                                                           
+  Arrival (ns):                3.876                                                                           
+  Required (ns):               3.572                                                                           
+
+Path 42
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/ex_reg_cause[4]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_cause[4]:D
+  Delay (ns):                  0.322                                                                           
+  Slack (ns):                  0.304                                                                           
+  Arrival (ns):                3.873                                                                           
+  Required (ns):               3.569                                                                           
+
+Path 43
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/RESET_N_M2F_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/RESET_N_M2F_clk_base:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.304                                                                           
+  Arrival (ns):                3.855                                                                           
+  Required (ns):               3.551                                                                           
+
+Path 44
+  From:                        COREAXITOAHBL_0/U_AXIOutReg/BID[1]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/Queue_22_1/ram_id_0_[1]:D
+  Delay (ns):                  0.311                                                                           
+  Slack (ns):                  0.305                                                                           
+  Arrival (ns):                3.867                                                                           
+  Required (ns):               3.562                                                                           
+
+Path 45
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[0]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[0]:D
+  Delay (ns):                  0.323                                                                           
+  Slack (ns):                  0.305                                                                           
+  Arrival (ns):                3.864                                                                           
+  Required (ns):               3.559                                                                           
+
+Path 46
+  From:                        CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_sync[0]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusReqFifo/genblk2.wrAddrGrayReg_r[0]:D
+  Delay (ns):                  0.317                                                                           
+  Slack (ns):                  0.306                                                                           
+  Arrival (ns):                3.852                                                                           
+  Required (ns):               3.546                                                                           
+
+Path 47
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_state[0]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_state[1]:D
+  Delay (ns):                  0.318                                                                           
+  Slack (ns):                  0.306                                                                           
+  Arrival (ns):                3.881                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 48
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[19]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[19]:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.306                                                                           
+  Arrival (ns):                3.866                                                                           
+  Required (ns):               3.560                                                                           
+
+Path 49
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[8]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[8]:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.306                                                                           
+  Arrival (ns):                3.865                                                                           
+  Required (ns):               3.559                                                                           
+
+Path 50
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/POWER_ON_RESET_N_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/POWER_ON_RESET_N_clk_base:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.306                                                                           
+  Arrival (ns):                3.851                                                                           
+  Required (ns):               3.545                                                                           
+
+Path 51
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[18]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[18]:D
+  Delay (ns):                  0.319                                                                           
+  Slack (ns):                  0.307                                                                           
+  Arrival (ns):                3.861                                                                           
+  Required (ns):               3.554                                                                           
+
+Path 52
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s2_pc[14]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/ex_reg_pc[14]:D
+  Delay (ns):                  0.318                                                                           
+  Slack (ns):                  0.307                                                                           
+  Arrival (ns):                3.885                                                                           
+  Required (ns):               3.578                                                                           
+
+Path 53
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/Queue_19_1/ram_addr_0_[26]:CLK
+  To:                          COREAXITOAHBL_0/U_AXISlaveCtrl/ADDRReg_ret_11:D
+  Delay (ns):                  0.311                                                                           
+  Slack (ns):                  0.307                                                                           
+  Arrival (ns):                3.873                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 54
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/ex_ctrl_fence_i:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_ctrl_fence_i:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.308                                                                           
+  Arrival (ns):                3.874                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 55
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/ex_reg_inst[13]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_inst[13]:D
+  Delay (ns):                  0.320                                                                           
+  Slack (ns):                  0.308                                                                           
+  Arrival (ns):                3.873                                                                           
+  Required (ns):               3.565                                                                           
+
+Path 56
+  From:                        CoreGPIO_IN/xhdl1.GEN_BITS_3_.gpin1:CLK
+  To:                          CoreGPIO_IN/xhdl1.GEN_BITS_3_.gpin2:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.308                                                                           
+  Arrival (ns):                3.875                                                                           
+  Required (ns):               3.567                                                                           
+
+Path 57
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[21]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[21]:D
+  Delay (ns):                  0.320                                                                           
+  Slack (ns):                  0.308                                                                           
+  Arrival (ns):                3.871                                                                           
+  Required (ns):               3.563                                                                           
+
+Path 58
+  From:                        CoreGPIO_IN/xhdl1.GEN_BITS_0_.gpin2:CLK
+  To:                          CoreGPIO_IN/xhdl1.GEN_BITS_0_.gpin3:D
+  Delay (ns):                  0.312                                                                           
+  Slack (ns):                  0.308                                                                           
+  Arrival (ns):                3.879                                                                           
+  Required (ns):               3.571                                                                           
+
+Path 59
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[22]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[22]:D
+  Delay (ns):                  0.320                                                                           
+  Slack (ns):                  0.309                                                                           
+  Arrival (ns):                3.875                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 60
+  From:                        COREAXITOAHBL_1/U_AXIOutReg/BID[1]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/Queue_14_1/ram_id_0_[1]:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.309                                                                           
+  Arrival (ns):                3.873                                                                           
+  Required (ns):               3.564                                                                           
+
+Path 61
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[20]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[20]:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.309                                                                           
+  Arrival (ns):                3.863                                                                           
+  Required (ns):               3.554                                                                           
+
+Path 62
+  From:                        CORESPI_0/USPI/UCC/SYNC1_msrxp_pktsel:CLK
+  To:                          CORESPI_0/USPI/UCC/SYNC2_msrxp_pktsel:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.309                                                                           
+  Arrival (ns):                3.880                                                                           
+  Required (ns):               3.571                                                                           
+
+Path 63
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_pc[8]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/wb_reg_pc[8]:D
+  Delay (ns):                  0.330                                                                           
+  Slack (ns):                  0.310                                                                           
+  Arrival (ns):                3.888                                                                           
+  Required (ns):               3.578                                                                           
+
+Path 64
+  From:                        MSS_SUBSYSTEM_sb_0/CORECONFIGP_0/pwdata[0]:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_120_IP:MDDR_FABRIC_PWDATA[0]
+  Delay (ns):                  0.782                                                                           
+  Slack (ns):                  0.310                                                                           
+  Arrival (ns):                5.217                                                                           
+  Required (ns):               4.907                                                                           
+
+Path 65
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/release_sdif2_core_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/release_sdif2_core_clk_base:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.310                                                                           
+  Arrival (ns):                3.876                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 66
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_pc[9]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/wb_reg_pc[9]:D
+  Delay (ns):                  0.331                                                                           
+  Slack (ns):                  0.311                                                                           
+  Arrival (ns):                3.889                                                                           
+  Required (ns):               3.578                                                                           
+
+Path 67
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/DebugModule_1/dbRespReg_data[25]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusRespFifo/genblk2.fifoMem[0][27]:D
+  Delay (ns):                  0.331                                                                           
+  Slack (ns):                  0.311                                                                           
+  Arrival (ns):                3.882                                                                           
+  Required (ns):               3.571                                                                           
+
+Path 68
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_pc[5]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/wb_reg_pc[5]:D
+  Delay (ns):                  0.331                                                                           
+  Slack (ns):                  0.311                                                                           
+  Arrival (ns):                3.886                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 69
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/acq/ram_data_0_[2]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/enables_0_2:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.879                                                                           
+  Required (ns):               3.567                                                                           
+
+Path 70
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/CONFIG2_DONE_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/CONFIG2_DONE_clk_base:D
+  Delay (ns):                  0.323                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.878                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 71
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[26]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[58]:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.878                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 72
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/DebugModule_1/dbRespReg_data[22]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusRespFifo/genblk2.fifoMem[0][24]:D
+  Delay (ns):                  0.330                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.881                                                                           
+  Required (ns):               3.569                                                                           
+
+Path 73
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/Queue_19_1/ram_addr_0_[15]:CLK
+  To:                          COREAXITOAHBL_0/U_AXISlaveCtrl/ADDRReg_ret_44:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.858                                                                           
+  Required (ns):               3.546                                                                           
+
+Path 74
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_rs2[9]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/pstore1_data[9]:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.867                                                                           
+  Required (ns):               3.555                                                                           
+
+Path 75
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[29]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[29]:D
+  Delay (ns):                  0.332                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.886                                                                           
+  Required (ns):               3.574                                                                           
+
+Path 76
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[26]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[26]:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.878                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 77
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/Queue_8_1/ram_addr_block_0_[11]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/acq/ram_addr_block_0_[11]:D
+  Delay (ns):                  0.331                                                                           
+  Slack (ns):                  0.312                                                                           
+  Arrival (ns):                3.875                                                                           
+  Required (ns):               3.563                                                                           
+
+Path 78
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_pc[23]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/wb_reg_pc[23]:D
+  Delay (ns):                  0.325                                                                           
+  Slack (ns):                  0.313                                                                           
+  Arrival (ns):                3.885                                                                           
+  Required (ns):               3.572                                                                           
+
+Path 79
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/release_sdif1_core_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/release_sdif1_core_clk_base:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.313                                                                           
+  Arrival (ns):                3.887                                                                           
+  Required (ns):               3.574                                                                           
+
+Path 80
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/DebugModule_1/dbRespReg_data[25]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusRespFifo/genblk2.fifoMem[1][27]:D
+  Delay (ns):                  0.331                                                                           
+  Slack (ns):                  0.313                                                                           
+  Arrival (ns):                3.882                                                                           
+  Required (ns):               3.569                                                                           
+
+Path 81
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc:D
+  Delay (ns):                  0.324                                                                           
+  Slack (ns):                  0.313                                                                           
+  Arrival (ns):                5.579                                                                           
+  Required (ns):               5.266                                                                           
+
+Path 82
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/acq/ram_data_0_[5]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/enables_0_5:D
+  Delay (ns):                  0.318                                                                           
+  Slack (ns):                  0.314                                                                           
+  Arrival (ns):                3.881                                                                           
+  Required (ns):               3.567                                                                           
+
+Path 83
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[0]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[0]:D
+  Delay (ns):                  0.327                                                                           
+  Slack (ns):                  0.315                                                                           
+  Arrival (ns):                3.890                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 84
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_inst[10]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/wb_reg_inst[10]:D
+  Delay (ns):                  0.328                                                                           
+  Slack (ns):                  0.315                                                                           
+  Arrival (ns):                3.890                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 85
+  From:                        CORESPI_0/USPI/UCC/clock_rx_q1:CLK
+  To:                          CORESPI_0/USPI/UCC/clock_rx_q2:D
+  Delay (ns):                  0.318                                                                           
+  Slack (ns):                  0.315                                                                           
+  Arrival (ns):                3.886                                                                           
+  Required (ns):               3.571                                                                           
+
+Path 86
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s1_req_typ[1]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_typ[1]:D
+  Delay (ns):                  0.328                                                                           
+  Slack (ns):                  0.316                                                                           
+  Arrival (ns):                3.877                                                                           
+  Required (ns):               3.561                                                                           
+
+Path 87
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/DebugModule_1/dbRespReg_data[18]:CLK
+  To:                          CORERISCV_AXI4_0/debugBusRespFifo/genblk2.fifoMem[1][20]:D
+  Delay (ns):                  0.327                                                                           
+  Slack (ns):                  0.316                                                                           
+  Arrival (ns):                3.878                                                                           
+  Required (ns):               3.562                                                                           
+
+Path 88
+  From:                        MSS_SUBSYSTEM_sb_0/CORERESETP_0/FIC_2_APB_M_PRESET_N_q1:CLK
+  To:                          MSS_SUBSYSTEM_sb_0/CORERESETP_0/FIC_2_APB_M_PRESET_N_clk_base:D
+  Delay (ns):                  0.322                                                                           
+  Slack (ns):                  0.316                                                                           
+  Arrival (ns):                3.861                                                                           
+  Required (ns):               3.545                                                                           
+
+Path 89
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_victim_tag[10]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/probe_bits_addr_block[17]:D
+  Delay (ns):                  0.320                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.880                                                                           
+  Required (ns):               3.563                                                                           
+
+Path 90
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[14]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[46]:D
+  Delay (ns):                  0.321                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.892                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 91
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/icache/s2_pc[15]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/ex_reg_pc[15]:D
+  Delay (ns):                  0.320                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.887                                                                           
+  Required (ns):               3.570                                                                           
+
+Path 92
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_pc[27]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/wb_reg_pc[27]:D
+  Delay (ns):                  0.329                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.889                                                                           
+  Required (ns):               3.572                                                                           
+
+Path 93
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s1_req_tag[1]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/DCache_1/s2_req_tag[1]:D
+  Delay (ns):                  0.322                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.878                                                                           
+  Required (ns):               3.561                                                                           
+
+Path 94
+  From:                        CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/mem_reg_pc[11]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/RocketTile_1/core/wb_reg_pc[11]:D
+  Delay (ns):                  0.320                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.883                                                                           
+  Required (ns):               3.566                                                                           
+
+Path 95
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[3]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[3]:D
+  Delay (ns):                  0.329                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.892                                                                           
+  Required (ns):               3.575                                                                           
+
+Path 96
+  From:                        CoreUARTapb_0/uUART/tx_hold_reg[2]:CLK
+  To:                          CoreUARTapb_0/uUART/make_TX/tx_byte[2]:D
+  Delay (ns):                  0.320                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.882                                                                           
+  Required (ns):               3.565                                                                           
+
+Path 97
+  From:                        CORESPI_0/USPI/UCC/stxs_strobetx:CLK
+  To:                          CORESPI_0/USPI/UCC/SYNC1_stxp_strobetx:D
+  Delay (ns):                  0.330                                                                           
+  Slack (ns):                  0.317                                                                           
+  Arrival (ns):                3.885                                                                           
+  Required (ns):               3.568                                                                           
+
+Path 98
+  From:                        CoreUARTapb_0/uUART/tx_hold_reg[6]:CLK
+  To:                          CoreUARTapb_0/uUART/make_TX/tx_byte[6]:D
+  Delay (ns):                  0.322                                                                           
+  Slack (ns):                  0.318                                                                           
+  Arrival (ns):                3.860                                                                           
+  Required (ns):               3.542                                                                           
+
+Path 99
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/acq/ram_data_0_[30]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PRCI_1/timecmp_0[30]:D
+  Delay (ns):                  0.330                                                                           
+  Slack (ns):                  0.318                                                                           
+  Arrival (ns):                3.892                                                                           
+  Required (ns):               3.574                                                                           
+
+Path 100
+  From:                        CORERISCV_AXI4_0/ChiselTop0/uncore/outmemsys/Queue_8_1/ram_addr_block_0_[6]:CLK
+  To:                          CORERISCV_AXI4_0/ChiselTop0/uncore/PLIC_1/acq/ram_addr_block_0_[6]:D
+  Delay (ns):                  0.330                                                                           
+  Slack (ns):                  0.318                                                                           
+  Arrival (ns):                3.879                                                                           
+  Required (ns):               3.561                                                                           
+

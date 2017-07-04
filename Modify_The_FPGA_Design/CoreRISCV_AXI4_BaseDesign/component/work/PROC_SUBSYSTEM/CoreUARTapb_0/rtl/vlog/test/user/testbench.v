@@ -189,7 +189,7 @@ module testbench;
       // BFM instantiation
       
       // passing testbench parameters to BFM ARGVALUE* parameters
-      BFM_APB #(
+      PROC_SUBSYSTEM_CoreUARTapb_0_BFM_APB #(
         .VECTFILE(APB_MASTER_VECTFILE), 
         .TPD(TPD), 
         .ARGVALUE0(FAMILY), 

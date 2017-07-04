@@ -155,6 +155,17 @@ procedure init_parameter_vars
 		set FIFO_DEPTH 127
 	endif
   endif
+  
+//check for PolarFire
+//and set FIFO depth accordingly
+  set cmp FAMILY == 26
+  if cmp
+	if USE_SOFT_FIFO
+		set FIFO_DEPTH 15
+	else
+		set FIFO_DEPTH 255
+	endif
+  endif
 
 //check for ProASICplus
 //and set FIFO depth accordingly

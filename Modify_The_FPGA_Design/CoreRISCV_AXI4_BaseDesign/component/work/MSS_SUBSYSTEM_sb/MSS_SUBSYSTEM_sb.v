@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Jun 12 11:04:35 2017
+// Created by SmartDesign Wed Jun 21 10:30:33 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -25,14 +25,6 @@ module MSS_SUBSYSTEM_sb(
     FIC_1_AHB_M_HRDATA,
     FIC_1_AHB_M_HREADY,
     FIC_1_AHB_M_HRESP,
-    FIC_1_AHB_S_HADDR,
-    FIC_1_AHB_S_HMASTLOCK,
-    FIC_1_AHB_S_HREADY,
-    FIC_1_AHB_S_HSEL,
-    FIC_1_AHB_S_HSIZE,
-    FIC_1_AHB_S_HTRANS,
-    FIC_1_AHB_S_HWDATA,
-    FIC_1_AHB_S_HWRITE,
     MDDR_DDR_AHB0_S_HADDR,
     MDDR_DDR_AHB0_S_HBURST,
     MDDR_DDR_AHB0_S_HMASTLOCK,
@@ -61,9 +53,6 @@ module MSS_SUBSYSTEM_sb(
     FIC_1_AHB_M_HTRANS,
     FIC_1_AHB_M_HWDATA,
     FIC_1_AHB_M_HWRITE,
-    FIC_1_AHB_S_HRDATA,
-    FIC_1_AHB_S_HREADYOUT,
-    FIC_1_AHB_S_HRESP,
     FIC_1_CLK,
     FIC_1_LOCK,
     INIT_DONE,
@@ -113,14 +102,6 @@ input         FIC_0_AHB_S_HWRITE;
 input  [31:0] FIC_1_AHB_M_HRDATA;
 input         FIC_1_AHB_M_HREADY;
 input         FIC_1_AHB_M_HRESP;
-input  [31:0] FIC_1_AHB_S_HADDR;
-input         FIC_1_AHB_S_HMASTLOCK;
-input         FIC_1_AHB_S_HREADY;
-input         FIC_1_AHB_S_HSEL;
-input  [1:0]  FIC_1_AHB_S_HSIZE;
-input  [1:0]  FIC_1_AHB_S_HTRANS;
-input  [31:0] FIC_1_AHB_S_HWDATA;
-input         FIC_1_AHB_S_HWRITE;
 input  [31:0] MDDR_DDR_AHB0_S_HADDR;
 input  [2:0]  MDDR_DDR_AHB0_S_HBURST;
 input         MDDR_DDR_AHB0_S_HMASTLOCK;
@@ -151,9 +132,6 @@ output [1:0]  FIC_1_AHB_M_HSIZE;
 output [1:0]  FIC_1_AHB_M_HTRANS;
 output [31:0] FIC_1_AHB_M_HWDATA;
 output        FIC_1_AHB_M_HWRITE;
-output [31:0] FIC_1_AHB_S_HRDATA;
-output        FIC_1_AHB_S_HREADYOUT;
-output        FIC_1_AHB_S_HRESP;
 output        FIC_1_CLK;
 output        FIC_1_LOCK;
 output        INIT_DONE;
@@ -235,17 +213,6 @@ wire   [1:0]  FIC_1_AHB_MASTER_1_HSIZE;
 wire   [1:0]  FIC_1_AHB_MASTER_1_HTRANS;
 wire   [31:0] FIC_1_AHB_MASTER_1_HWDATA;
 wire          FIC_1_AHB_MASTER_1_HWRITE;
-wire   [31:0] FIC_1_AHB_S_HADDR;
-wire          FIC_1_AHB_S_HMASTLOCK;
-wire   [31:0] FIC_1_AMBA_SLAVE_HRDATA;
-wire          FIC_1_AHB_S_HREADY;
-wire          FIC_1_AMBA_SLAVE_HREADYOUT;
-wire          FIC_1_AMBA_SLAVE_HRESP;
-wire          FIC_1_AHB_S_HSEL;
-wire   [1:0]  FIC_1_AHB_S_HSIZE;
-wire   [1:0]  FIC_1_AHB_S_HTRANS;
-wire   [31:0] FIC_1_AHB_S_HWDATA;
-wire          FIC_1_AHB_S_HWRITE;
 wire          FIC_1_CLK_net_0;
 wire          INIT_DONE_net_0;
 wire   [15:0] MDDR_ADDR_net_0;
@@ -326,9 +293,6 @@ wire   [1:0]  FIC_0_AHB_MASTER_2_HTRANS_net_0;
 wire          FIC_0_AHB_MASTER_2_HWRITE_net_0;
 wire   [1:0]  FIC_0_AHB_MASTER_2_HSIZE_net_0;
 wire   [31:0] FIC_0_AHB_MASTER_2_HWDATA_net_0;
-wire   [31:0] FIC_1_AMBA_SLAVE_HRDATA_net_0;
-wire          FIC_1_AMBA_SLAVE_HREADYOUT_net_0;
-wire          FIC_1_AMBA_SLAVE_HRESP_net_0;
 wire   [31:0] FIC_1_AHB_MASTER_1_HADDR_net_0;
 wire   [1:0]  FIC_1_AHB_MASTER_1_HTRANS_net_0;
 wire          FIC_1_AHB_MASTER_1_HWRITE_net_0;
@@ -353,16 +317,16 @@ wire   [31:0] SDIF3_PRDATA_const_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [15:2] CORECONFIGP_0_MDDR_APBmslave_PADDR;
 wire   [10:2] CORECONFIGP_0_MDDR_APBmslave_PADDR_0_10to2;
 wire   [10:2] CORECONFIGP_0_MDDR_APBmslave_PADDR_0;
+wire   [15:2] CORECONFIGP_0_MDDR_APBmslave_PADDR;
+wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA;
 wire   [31:16]CORECONFIGP_0_MDDR_APBmslave_PRDATA_0_31to16;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA_0_15to0;
 wire   [31:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA_0;
-wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PRDATA;
-wire   [31:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA_0_15to0;
 wire   [15:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA_0;
+wire   [31:0] CORECONFIGP_0_MDDR_APBmslave_PWDATA;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -448,12 +412,6 @@ assign FIC_0_AHB_MASTER_2_HSIZE_net_0      = FIC_0_AHB_MASTER_2_HSIZE;
 assign FIC_0_AHB_M_HSIZE[1:0]              = FIC_0_AHB_MASTER_2_HSIZE_net_0;
 assign FIC_0_AHB_MASTER_2_HWDATA_net_0     = FIC_0_AHB_MASTER_2_HWDATA;
 assign FIC_0_AHB_M_HWDATA[31:0]            = FIC_0_AHB_MASTER_2_HWDATA_net_0;
-assign FIC_1_AMBA_SLAVE_HRDATA_net_0       = FIC_1_AMBA_SLAVE_HRDATA;
-assign FIC_1_AHB_S_HRDATA[31:0]            = FIC_1_AMBA_SLAVE_HRDATA_net_0;
-assign FIC_1_AMBA_SLAVE_HREADYOUT_net_0    = FIC_1_AMBA_SLAVE_HREADYOUT;
-assign FIC_1_AHB_S_HREADYOUT               = FIC_1_AMBA_SLAVE_HREADYOUT_net_0;
-assign FIC_1_AMBA_SLAVE_HRESP_net_0        = FIC_1_AMBA_SLAVE_HRESP;
-assign FIC_1_AHB_S_HRESP                   = FIC_1_AMBA_SLAVE_HRESP_net_0;
 assign FIC_1_AHB_MASTER_1_HADDR_net_0      = FIC_1_AHB_MASTER_1_HADDR;
 assign FIC_1_AHB_M_HADDR[31:0]             = FIC_1_AHB_MASTER_1_HADDR_net_0;
 assign FIC_1_AHB_MASTER_1_HTRANS_net_0     = FIC_1_AHB_MASTER_1_HTRANS;
@@ -727,10 +685,6 @@ MSS_SUBSYSTEM_sb_MSS MSS_SUBSYSTEM_sb_MSS_0(
         .FIC_0_AHB_S_HSEL          ( FIC_0_AHB_S_HSEL ),
         .FIC_0_AHB_M_HREADY        ( FIC_0_AHB_M_HREADY ),
         .FIC_0_AHB_M_HRESP         ( FIC_0_AHB_M_HRESP ),
-        .FIC_1_AHB_S_HREADY        ( FIC_1_AHB_S_HREADY ),
-        .FIC_1_AHB_S_HWRITE        ( FIC_1_AHB_S_HWRITE ),
-        .FIC_1_AHB_S_HMASTLOCK     ( FIC_1_AHB_S_HMASTLOCK ),
-        .FIC_1_AHB_S_HSEL          ( FIC_1_AHB_S_HSEL ),
         .FIC_1_AHB_M_HREADY        ( FIC_1_AHB_M_HREADY ),
         .FIC_1_AHB_M_HRESP         ( FIC_1_AHB_M_HRESP ),
         .M3_RESET_N                ( CORERESETP_0_M3_RESET_N ),
@@ -751,10 +705,6 @@ MSS_SUBSYSTEM_sb_MSS MSS_SUBSYSTEM_sb_MSS_0(
         .FIC_0_AHB_S_HSIZE         ( FIC_0_AHB_S_HSIZE ),
         .FIC_0_AHB_S_HTRANS        ( FIC_0_AHB_S_HTRANS ),
         .FIC_0_AHB_M_HRDATA        ( FIC_0_AHB_M_HRDATA ),
-        .FIC_1_AHB_S_HADDR         ( FIC_1_AHB_S_HADDR ),
-        .FIC_1_AHB_S_HWDATA        ( FIC_1_AHB_S_HWDATA ),
-        .FIC_1_AHB_S_HSIZE         ( FIC_1_AHB_S_HSIZE ),
-        .FIC_1_AHB_S_HTRANS        ( FIC_1_AHB_S_HTRANS ),
         .FIC_1_AHB_M_HRDATA        ( FIC_1_AHB_M_HRDATA ),
         .FIC_2_APB_M_PRDATA        ( MSS_SUBSYSTEM_sb_MSS_TMP_0_FIC_2_APB_MASTER_PRDATA ),
         .MDDR_APB_S_PWDATA         ( CORECONFIGP_0_MDDR_APBmslave_PWDATA_0 ),
@@ -777,8 +727,6 @@ MSS_SUBSYSTEM_sb_MSS MSS_SUBSYSTEM_sb_MSS_0(
         .FIC_0_AHB_S_HRESP         ( FIC_0_AMBA_SLAVE_HRESP ),
         .FIC_0_AHB_S_HREADYOUT     ( FIC_0_AMBA_SLAVE_HREADYOUT ),
         .FIC_0_AHB_M_HWRITE        ( FIC_0_AHB_MASTER_2_HWRITE ),
-        .FIC_1_AHB_S_HRESP         ( FIC_1_AMBA_SLAVE_HRESP ),
-        .FIC_1_AHB_S_HREADYOUT     ( FIC_1_AMBA_SLAVE_HREADYOUT ),
         .FIC_1_AHB_M_HWRITE        ( FIC_1_AHB_MASTER_1_HWRITE ),
         .FIC_2_APB_M_PRESET_N      ( MSS_SUBSYSTEM_sb_MSS_TMP_0_FIC_2_APB_M_PRESET_N ),
         .FIC_2_APB_M_PCLK          ( MSS_SUBSYSTEM_sb_MSS_TMP_0_FIC_2_APB_M_PCLK ),
@@ -795,7 +743,6 @@ MSS_SUBSYSTEM_sb_MSS MSS_SUBSYSTEM_sb_MSS_0(
         .FIC_0_AHB_M_HWDATA        ( FIC_0_AHB_MASTER_2_HWDATA ),
         .FIC_0_AHB_M_HSIZE         ( FIC_0_AHB_MASTER_2_HSIZE ),
         .FIC_0_AHB_M_HTRANS        ( FIC_0_AHB_MASTER_2_HTRANS ),
-        .FIC_1_AHB_S_HRDATA        ( FIC_1_AMBA_SLAVE_HRDATA ),
         .FIC_1_AHB_M_HADDR         ( FIC_1_AHB_MASTER_1_HADDR ),
         .FIC_1_AHB_M_HWDATA        ( FIC_1_AHB_MASTER_1_HWDATA ),
         .FIC_1_AHB_M_HSIZE         ( FIC_1_AHB_MASTER_1_HSIZE ),

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Jun 12 11:05:42 2017
+// Created by SmartDesign Tue Jul 04 15:28:20 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -49,7 +49,7 @@ module PROC_SUBSYSTEM(
 //--------------------------------------------------------------------
 input         CLK0_PAD;
 input         DEVRST_N;
-input  [7:0]  GPIO_IN;
+input  [3:0]  GPIO_IN;
 input         MDDR_DQS_TMATCH_0_IN;
 input         RX;
 input         SPI_FLASH_SDI;
@@ -88,518 +88,503 @@ inout  [1:0]  MDDR_DQS_N;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire   [31:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARADDR;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARBURST;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARCACHE;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLOCK;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARPROT;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARREADY;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARSIZE;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARUSER;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARVALID;
-wire   [31:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWADDR;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWBURST;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWCACHE;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLOCK;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWPROT;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWREADY;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWSIZE;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWUSER;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWVALID;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BREADY;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BRESP;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BVALID;
-wire   [63:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RDATA;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RLAST;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RREADY;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RRESP;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RVALID;
-wire   [63:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WDATA;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WLAST;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WREADY;
-wire   [7:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WSTRB;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WUSER;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WVALID;
-wire   [31:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARADDR;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARBURST;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARCACHE;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLOCK;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARPROT;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARREADY;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARSIZE;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARUSER;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARVALID;
-wire   [31:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWADDR;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWBURST;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWCACHE;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLOCK;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWPROT;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWREADY;
-wire   [2:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWSIZE;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWUSER;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWVALID;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_BID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_BREADY;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_BRESP;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_BVALID;
-wire   [63:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_RDATA;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_RID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_RLAST;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_RREADY;
-wire   [1:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_RRESP;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_RVALID;
-wire   [63:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_WDATA;
-wire   [4:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_WID;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_WLAST;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_WREADY;
-wire   [7:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_WSTRB;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_WUSER;
-wire           AXI_GLUE_LOGIC_0_UNCORE_MMIO_WVALID;
-wire           CLK0_PAD;
-wire   [31:0]  CoreAHBLite_0_AHBmslave6_HADDR;
-wire   [2:0]   CoreAHBLite_0_AHBmslave6_HBURST;
-wire           CoreAHBLite_0_AHBmslave6_HMASTLOCK;
-wire   [3:0]   CoreAHBLite_0_AHBmslave6_HPROT;
-wire   [31:0]  CoreAHBLite_0_AHBmslave6_HRDATA;
-wire           CoreAHBLite_0_AHBmslave6_HREADY;
-wire           CoreAHBLite_0_AHBmslave6_HREADYOUT;
-wire           CoreAHBLite_0_AHBmslave6_HSELx;
-wire   [1:0]   CoreAHBLite_0_AHBmslave6_HTRANS;
-wire   [31:0]  CoreAHBLite_0_AHBmslave6_HWDATA;
-wire           CoreAHBLite_0_AHBmslave6_HWRITE;
-wire   [31:0]  CoreAHBLite_0_AHBmslave7_HADDR;
-wire   [2:0]   CoreAHBLite_0_AHBmslave7_HBURST;
-wire           CoreAHBLite_0_AHBmslave7_HMASTLOCK;
-wire   [3:0]   CoreAHBLite_0_AHBmslave7_HPROT;
-wire   [31:0]  CoreAHBLite_0_AHBmslave7_HRDATA;
-wire           CoreAHBLite_0_AHBmslave7_HREADY;
-wire           CoreAHBLite_0_AHBmslave7_HREADYOUT;
-wire   [1:0]   CoreAHBLite_0_AHBmslave7_HRESP;
-wire           CoreAHBLite_0_AHBmslave7_HSELx;
-wire   [2:0]   CoreAHBLite_0_AHBmslave7_HSIZE;
-wire   [1:0]   CoreAHBLite_0_AHBmslave7_HTRANS;
-wire   [31:0]  CoreAHBLite_0_AHBmslave7_HWDATA;
-wire           CoreAHBLite_0_AHBmslave7_HWRITE;
-wire   [31:0]  CoreAHBLite_1_AHBmslave16_HADDR;
-wire   [2:0]   CoreAHBLite_1_AHBmslave16_HBURST;
-wire           CoreAHBLite_1_AHBmslave16_HMASTLOCK;
-wire   [3:0]   CoreAHBLite_1_AHBmslave16_HPROT;
-wire   [31:0]  CoreAHBLite_1_AHBmslave16_HRDATA;
-wire           CoreAHBLite_1_AHBmslave16_HREADY;
-wire           CoreAHBLite_1_AHBmslave16_HREADYOUT;
-wire           CoreAHBLite_1_AHBmslave16_HSELx;
-wire   [1:0]   CoreAHBLite_1_AHBmslave16_HTRANS;
-wire   [31:0]  CoreAHBLite_1_AHBmslave16_HWDATA;
-wire           CoreAHBLite_1_AHBmslave16_HWRITE;
-wire   [31:0]  COREAHBTOAPB3_0_APBmaster_PADDR;
-wire           COREAHBTOAPB3_0_APBmaster_PENABLE;
-wire   [31:0]  COREAHBTOAPB3_0_APBmaster_PRDATA;
-wire           COREAHBTOAPB3_0_APBmaster_PREADY;
-wire           COREAHBTOAPB3_0_APBmaster_PSELx;
-wire           COREAHBTOAPB3_0_APBmaster_PSLVERR;
-wire   [31:0]  COREAHBTOAPB3_0_APBmaster_PWDATA;
-wire           COREAHBTOAPB3_0_APBmaster_PWRITE;
-wire           CoreAPB3_0_APBmslave1_PENABLE;
-wire           CoreAPB3_0_APBmslave1_PREADY;
-wire           CoreAPB3_0_APBmslave1_PSELx;
-wire           CoreAPB3_0_APBmslave1_PSLVERR;
-wire           CoreAPB3_0_APBmslave1_PWRITE;
-wire   [31:0]  CoreAPB3_0_APBmslave2_PRDATA;
-wire           CoreAPB3_0_APBmslave2_PREADY;
-wire           CoreAPB3_0_APBmslave2_PSELx;
-wire           CoreAPB3_0_APBmslave2_PSLVERR;
-wire   [31:0]  CoreAPB3_0_APBmslave3_PRDATA;
-wire           CoreAPB3_0_APBmslave3_PSELx;
-wire   [31:0]  CoreAPB3_0_APBmslave4_PRDATA;
-wire           CoreAPB3_0_APBmslave4_PSELx;
-wire   [31:0]  CoreAPB3_0_APBmslave5_PRDATA;
-wire           CoreAPB3_0_APBmslave5_PREADY;
-wire           CoreAPB3_0_APBmslave5_PSELx;
-wire           CoreAPB3_0_APBmslave5_PSLVERR;
-wire   [31:0]  CoreAPB3_0_APBmslave6_PRDATA;
-wire           CoreAPB3_0_APBmslave6_PREADY;
-wire           CoreAPB3_0_APBmslave6_PSELx;
-wire           CoreAPB3_0_APBmslave6_PSLVERR;
-wire   [31:0]  COREAXITOAHBL_0_AHBMasterIF_HADDR;
-wire   [2:0]   COREAXITOAHBL_0_AHBMasterIF_HBURST;
-wire   [31:0]  COREAXITOAHBL_0_AHBMasterIF_HRDATA;
-wire           COREAXITOAHBL_0_AHBMasterIF_HREADY;
-wire   [2:0]   COREAXITOAHBL_0_AHBMasterIF_HSIZE;
-wire   [1:0]   COREAXITOAHBL_0_AHBMasterIF_HTRANS;
-wire   [31:0]  COREAXITOAHBL_0_AHBMasterIF_HWDATA;
-wire           COREAXITOAHBL_0_AHBMasterIF_HWRITE;
-wire   [31:0]  COREAXITOAHBL_1_AHBMasterIF_HADDR;
-wire   [2:0]   COREAXITOAHBL_1_AHBMasterIF_HBURST;
-wire   [31:0]  COREAXITOAHBL_1_AHBMasterIF_HRDATA;
-wire           COREAXITOAHBL_1_AHBMasterIF_HREADY;
-wire   [2:0]   COREAXITOAHBL_1_AHBMasterIF_HSIZE;
-wire   [1:0]   COREAXITOAHBL_1_AHBMasterIF_HTRANS;
-wire   [31:0]  COREAXITOAHBL_1_AHBMasterIF_HWDATA;
-wire           COREAXITOAHBL_1_AHBMasterIF_HWRITE;
-wire           COREJTAGDEBUG_0_TGT_TCK;
-wire           COREJTAGDEBUG_0_TGT_TDI;
-wire           COREJTAGDEBUG_0_TGT_TMS;
-wire           COREJTAGDEBUG_0_TGT_TRST;
-wire   [31:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARADDR;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARBURST;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARCACHE;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARID;
-wire   [7:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARLEN;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_ARLOCK;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARPROT;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARQOS;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_ARREADY;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARREGION;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MEM_ARSIZE;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_ARUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_ARVALID;
-wire   [31:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWADDR;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWBURST;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWCACHE;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWID;
-wire   [7:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWLEN;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_AWLOCK;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWPROT;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWQOS;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_AWREADY;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWREGION;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MEM_AWSIZE;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_AWUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_AWVALID;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MEM_BID;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_BREADY;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MEM_BRESP;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_BUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_BVALID;
-wire   [63:0]  CORERISCV_AXI4_0_AXI_MST_MEM_RDATA;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MEM_RID;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_RLAST;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_RREADY;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MEM_RRESP;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_RUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_RVALID;
-wire   [63:0]  CORERISCV_AXI4_0_AXI_MST_MEM_WDATA;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_WLAST;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_WREADY;
-wire   [7:0]   CORERISCV_AXI4_0_AXI_MST_MEM_WSTRB;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_WUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MEM_WVALID;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MEM_WID;
-wire   [31:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARADDR;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARBURST;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARCACHE;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARID;
-wire   [7:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARLEN;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_ARLOCK;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARPROT;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARQOS;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_ARREADY;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARREGION;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_ARSIZE;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_ARUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_ARVALID;
-wire   [31:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWADDR;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWBURST;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWCACHE;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWID;
-wire   [7:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWLEN;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_AWLOCK;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWPROT;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWQOS;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_AWREADY;
-wire   [3:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWREGION;
-wire   [2:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_AWSIZE;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_AWUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_AWVALID;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_BID;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_BREADY;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_BRESP;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_BUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_BVALID;
-wire   [63:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_RDATA;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_RID;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_RLAST;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_RREADY;
-wire   [1:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_RRESP;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_RUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_RVALID;
-wire   [63:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_WDATA;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_WLAST;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_WREADY;
-wire   [7:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_WSTRB;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_WUSER;
-wire           CORERISCV_AXI4_0_AXI_MST_MMIO_WVALID;
-wire   [4:0]   CORERISCV_AXI4_0_AXI_MST_MMIO_WID;
-wire           CORERISCV_AXI4_0_TDO;
-wire           CoreTimer_0_TIMINT;
-wire           CoreTimer_1_TIMINT;
-wire           DEVRST_N;
-wire   [7:0]   GPIO_IN;
-wire   [7:0]   GPIO_OUT_net_0;
-wire   [15:0]  MDDR_ADDR_net_0;
-wire   [2:0]   MDDR_BA_net_0;
-wire           MDDR_CAS_N_net_0;
-wire           MDDR_CKE_net_0;
-wire           MDDR_CLK_net_0;
-wire           MDDR_CLK_N_net_0;
-wire           MDDR_CS_N_net_0;
-wire   [1:0]   MDDR_DM_RDQS;
-wire   [15:0]  MDDR_DQ;
-wire   [1:0]   MDDR_DQS;
-wire   [1:0]   MDDR_DQS_N;
-wire           MDDR_DQS_TMATCH_0_IN;
-wire           MDDR_DQS_TMATCH_0_OUT_net_0;
-wire           MDDR_ODT_net_0;
-wire           MDDR_RAS_N_net_0;
-wire           MDDR_RESET_N_net_0;
-wire           MDDR_WE_N_net_0;
-wire           MSS_SUBSYSTEM_sb_0_FIC_0_CLK;
-wire           MSS_SUBSYSTEM_sb_0_INIT_DONE;
-wire           RX;
-wire           SPI_FLASH_SCLK_net_0;
-wire           SPI_FLASH_SDI;
-wire           SPI_FLASH_SDO_net_0;
-wire   [0:0]   SPI_FLASH_SS_net_0;
-wire           TCK;
-wire           TDI;
-wire           TDO_net_0;
-wire           TMS;
-wire           TRSTB;
-wire           TX_net_0;
-wire           MDDR_DQS_TMATCH_0_OUT_net_1;
-wire           MDDR_CAS_N_net_1;
-wire           MDDR_CLK_net_1;
-wire           MDDR_CLK_N_net_1;
-wire           MDDR_CKE_net_1;
-wire           MDDR_CS_N_net_1;
-wire           MDDR_ODT_net_1;
-wire           MDDR_RAS_N_net_1;
-wire           MDDR_RESET_N_net_1;
-wire           MDDR_WE_N_net_1;
-wire           TX_net_1;
-wire           SPI_FLASH_SCLK_net_1;
-wire           SPI_FLASH_SS_net_1;
-wire           SPI_FLASH_SDO_net_1;
-wire           TDO_net_1;
-wire   [15:0]  MDDR_ADDR_net_1;
-wire   [2:0]   MDDR_BA_net_1;
-wire   [7:0]   GPIO_OUT_net_1;
-wire   [15:8]  GPIO_OUT_slice_0;
-wire   [23:16] GPIO_OUT_slice_1;
-wire   [31:24] GPIO_OUT_slice_2;
-wire   [1:1]   SPISS_slice_0;
-wire   [2:2]   SPISS_slice_1;
-wire   [3:3]   SPISS_slice_2;
-wire   [4:4]   SPISS_slice_3;
-wire   [5:5]   SPISS_slice_4;
-wire   [6:6]   SPISS_slice_5;
-wire   [7:7]   SPISS_slice_6;
-wire   [31:0]  GPIO_IN_net_0;
-wire   [31:0]  GPIO_OUT_net_2;
-wire   [30:0]  IRQ_net_0;
-wire   [7:0]   SPISS_net_0;
+wire   [31:0] AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARADDR;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARBURST;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARCACHE;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLOCK;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARPROT;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARREADY;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARSIZE;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARUSER;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARVALID;
+wire   [31:0] AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWADDR;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWBURST;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWCACHE;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLOCK;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWPROT;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWREADY;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWSIZE;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWUSER;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWVALID;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BREADY;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BRESP;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_BVALID;
+wire   [63:0] AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RDATA;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RLAST;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RREADY;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RRESP;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_RVALID;
+wire   [63:0] AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WDATA;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WLAST;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WREADY;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WSTRB;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WUSER;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MEMORY_WVALID;
+wire   [31:0] AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARADDR;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARBURST;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARCACHE;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLOCK;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARPROT;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARREADY;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARSIZE;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARUSER;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARVALID;
+wire   [31:0] AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWADDR;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWBURST;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWCACHE;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLOCK;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWPROT;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWREADY;
+wire   [2:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWSIZE;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWUSER;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWVALID;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_BID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_BREADY;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_BRESP;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_BVALID;
+wire   [63:0] AXI_GLUE_LOGIC_0_UNCORE_MMIO_RDATA;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_RID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_RLAST;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_RREADY;
+wire   [1:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_RRESP;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_RVALID;
+wire   [63:0] AXI_GLUE_LOGIC_0_UNCORE_MMIO_WDATA;
+wire   [4:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_WID;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_WLAST;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_WREADY;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_WSTRB;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_WUSER;
+wire          AXI_GLUE_LOGIC_0_UNCORE_MMIO_WVALID;
+wire          CLK0_PAD;
+wire   [31:0] CoreAHBLite_0_AHBmslave6_HADDR;
+wire   [2:0]  CoreAHBLite_0_AHBmslave6_HBURST;
+wire          CoreAHBLite_0_AHBmslave6_HMASTLOCK;
+wire   [3:0]  CoreAHBLite_0_AHBmslave6_HPROT;
+wire   [31:0] CoreAHBLite_0_AHBmslave6_HRDATA;
+wire          CoreAHBLite_0_AHBmslave6_HREADY;
+wire          CoreAHBLite_0_AHBmslave6_HREADYOUT;
+wire          CoreAHBLite_0_AHBmslave6_HSELx;
+wire   [1:0]  CoreAHBLite_0_AHBmslave6_HTRANS;
+wire   [31:0] CoreAHBLite_0_AHBmslave6_HWDATA;
+wire          CoreAHBLite_0_AHBmslave6_HWRITE;
+wire   [31:0] CoreAHBLite_0_AHBmslave7_HADDR;
+wire   [2:0]  CoreAHBLite_0_AHBmslave7_HBURST;
+wire          CoreAHBLite_0_AHBmslave7_HMASTLOCK;
+wire   [3:0]  CoreAHBLite_0_AHBmslave7_HPROT;
+wire   [31:0] CoreAHBLite_0_AHBmslave7_HRDATA;
+wire          CoreAHBLite_0_AHBmslave7_HREADY;
+wire          CoreAHBLite_0_AHBmslave7_HREADYOUT;
+wire   [1:0]  CoreAHBLite_0_AHBmslave7_HRESP;
+wire          CoreAHBLite_0_AHBmslave7_HSELx;
+wire   [2:0]  CoreAHBLite_0_AHBmslave7_HSIZE;
+wire   [1:0]  CoreAHBLite_0_AHBmslave7_HTRANS;
+wire   [31:0] CoreAHBLite_0_AHBmslave7_HWDATA;
+wire          CoreAHBLite_0_AHBmslave7_HWRITE;
+wire   [31:0] CoreAHBLite_1_AHBmslave16_HADDR;
+wire   [2:0]  CoreAHBLite_1_AHBmslave16_HBURST;
+wire          CoreAHBLite_1_AHBmslave16_HMASTLOCK;
+wire   [3:0]  CoreAHBLite_1_AHBmslave16_HPROT;
+wire   [31:0] CoreAHBLite_1_AHBmslave16_HRDATA;
+wire          CoreAHBLite_1_AHBmslave16_HREADY;
+wire          CoreAHBLite_1_AHBmslave16_HREADYOUT;
+wire          CoreAHBLite_1_AHBmslave16_HSELx;
+wire   [1:0]  CoreAHBLite_1_AHBmslave16_HTRANS;
+wire   [31:0] CoreAHBLite_1_AHBmslave16_HWDATA;
+wire          CoreAHBLite_1_AHBmslave16_HWRITE;
+wire   [31:0] COREAHBTOAPB3_0_APBmaster_PADDR;
+wire          COREAHBTOAPB3_0_APBmaster_PENABLE;
+wire   [31:0] COREAHBTOAPB3_0_APBmaster_PRDATA;
+wire          COREAHBTOAPB3_0_APBmaster_PREADY;
+wire          COREAHBTOAPB3_0_APBmaster_PSELx;
+wire          COREAHBTOAPB3_0_APBmaster_PSLVERR;
+wire   [31:0] COREAHBTOAPB3_0_APBmaster_PWDATA;
+wire          COREAHBTOAPB3_0_APBmaster_PWRITE;
+wire          CoreAPB3_0_APBmslave1_PENABLE;
+wire          CoreAPB3_0_APBmslave1_PREADY;
+wire          CoreAPB3_0_APBmslave1_PSELx;
+wire          CoreAPB3_0_APBmslave1_PSLVERR;
+wire          CoreAPB3_0_APBmslave1_PWRITE;
+wire   [31:0] CoreAPB3_0_APBmslave2_PRDATA;
+wire          CoreAPB3_0_APBmslave2_PREADY;
+wire          CoreAPB3_0_APBmslave2_PSELx;
+wire          CoreAPB3_0_APBmslave2_PSLVERR;
+wire   [31:0] CoreAPB3_0_APBmslave3_PRDATA;
+wire          CoreAPB3_0_APBmslave3_PSELx;
+wire   [31:0] CoreAPB3_0_APBmslave4_PRDATA;
+wire          CoreAPB3_0_APBmslave4_PSELx;
+wire   [31:0] CoreAPB3_0_APBmslave5_PRDATA;
+wire          CoreAPB3_0_APBmslave5_PREADY;
+wire          CoreAPB3_0_APBmslave5_PSELx;
+wire          CoreAPB3_0_APBmslave5_PSLVERR;
+wire   [31:0] CoreAPB3_0_APBmslave6_PRDATA;
+wire          CoreAPB3_0_APBmslave6_PREADY;
+wire          CoreAPB3_0_APBmslave6_PSELx;
+wire          CoreAPB3_0_APBmslave6_PSLVERR;
+wire   [31:0] COREAXITOAHBL_0_AHBMasterIF_HADDR;
+wire   [2:0]  COREAXITOAHBL_0_AHBMasterIF_HBURST;
+wire   [31:0] COREAXITOAHBL_0_AHBMasterIF_HRDATA;
+wire          COREAXITOAHBL_0_AHBMasterIF_HREADY;
+wire   [2:0]  COREAXITOAHBL_0_AHBMasterIF_HSIZE;
+wire   [1:0]  COREAXITOAHBL_0_AHBMasterIF_HTRANS;
+wire   [31:0] COREAXITOAHBL_0_AHBMasterIF_HWDATA;
+wire          COREAXITOAHBL_0_AHBMasterIF_HWRITE;
+wire   [31:0] COREAXITOAHBL_1_AHBMasterIF_HADDR;
+wire   [2:0]  COREAXITOAHBL_1_AHBMasterIF_HBURST;
+wire   [31:0] COREAXITOAHBL_1_AHBMasterIF_HRDATA;
+wire          COREAXITOAHBL_1_AHBMasterIF_HREADY;
+wire   [2:0]  COREAXITOAHBL_1_AHBMasterIF_HSIZE;
+wire   [1:0]  COREAXITOAHBL_1_AHBMasterIF_HTRANS;
+wire   [31:0] COREAXITOAHBL_1_AHBMasterIF_HWDATA;
+wire          COREAXITOAHBL_1_AHBMasterIF_HWRITE;
+wire          COREJTAGDEBUG_0_TGT_TCK;
+wire          COREJTAGDEBUG_0_TGT_TDI;
+wire          COREJTAGDEBUG_0_TGT_TMS;
+wire          COREJTAGDEBUG_0_TGT_TRST;
+wire   [31:0] CORERISCV_AXI4_0_AXI_MST_MEM_ARADDR;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARBURST;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARCACHE;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARID;
+wire   [7:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARLEN;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_ARLOCK;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARPROT;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARQOS;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_ARREADY;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARREGION;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MEM_ARSIZE;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_ARUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_ARVALID;
+wire   [31:0] CORERISCV_AXI4_0_AXI_MST_MEM_AWADDR;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWBURST;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWCACHE;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWID;
+wire   [7:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWLEN;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_AWLOCK;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWPROT;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWQOS;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_AWREADY;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWREGION;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MEM_AWSIZE;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_AWUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_AWVALID;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MEM_BID;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_BREADY;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MEM_BRESP;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_BUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_BVALID;
+wire   [63:0] CORERISCV_AXI4_0_AXI_MST_MEM_RDATA;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MEM_RID;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_RLAST;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_RREADY;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MEM_RRESP;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_RUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_RVALID;
+wire   [63:0] CORERISCV_AXI4_0_AXI_MST_MEM_WDATA;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_WLAST;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_WREADY;
+wire   [7:0]  CORERISCV_AXI4_0_AXI_MST_MEM_WSTRB;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_WUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MEM_WVALID;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MEM_WID;
+wire   [31:0] CORERISCV_AXI4_0_AXI_MST_MMIO_ARADDR;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARBURST;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARCACHE;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARID;
+wire   [7:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARLEN;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_ARLOCK;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARPROT;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARQOS;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_ARREADY;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARREGION;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_ARSIZE;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_ARUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_ARVALID;
+wire   [31:0] CORERISCV_AXI4_0_AXI_MST_MMIO_AWADDR;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWBURST;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWCACHE;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWID;
+wire   [7:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWLEN;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_AWLOCK;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWPROT;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWQOS;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_AWREADY;
+wire   [3:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWREGION;
+wire   [2:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_AWSIZE;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_AWUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_AWVALID;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_BID;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_BREADY;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_BRESP;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_BUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_BVALID;
+wire   [63:0] CORERISCV_AXI4_0_AXI_MST_MMIO_RDATA;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_RID;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_RLAST;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_RREADY;
+wire   [1:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_RRESP;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_RUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_RVALID;
+wire   [63:0] CORERISCV_AXI4_0_AXI_MST_MMIO_WDATA;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_WLAST;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_WREADY;
+wire   [7:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_WSTRB;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_WUSER;
+wire          CORERISCV_AXI4_0_AXI_MST_MMIO_WVALID;
+wire   [4:0]  CORERISCV_AXI4_0_AXI_MST_MMIO_WID;
+wire          CORERISCV_AXI4_0_TDO;
+wire          CoreTimer_0_TIMINT;
+wire          CoreTimer_1_TIMINT;
+wire          DEVRST_N;
+wire   [3:0]  GPIO_IN;
+wire   [7:0]  GPIO_OUT_net_0;
+wire   [15:0] MDDR_ADDR_net_0;
+wire   [2:0]  MDDR_BA_net_0;
+wire          MDDR_CAS_N_net_0;
+wire          MDDR_CKE_net_0;
+wire          MDDR_CLK_net_0;
+wire          MDDR_CLK_N_net_0;
+wire          MDDR_CS_N_net_0;
+wire   [1:0]  MDDR_DM_RDQS;
+wire   [15:0] MDDR_DQ;
+wire   [1:0]  MDDR_DQS;
+wire   [1:0]  MDDR_DQS_N;
+wire          MDDR_DQS_TMATCH_0_IN;
+wire          MDDR_DQS_TMATCH_0_OUT_net_0;
+wire          MDDR_ODT_net_0;
+wire          MDDR_RAS_N_net_0;
+wire          MDDR_RESET_N_net_0;
+wire          MDDR_WE_N_net_0;
+wire          MSS_SUBSYSTEM_sb_0_FIC_0_CLK;
+wire          MSS_SUBSYSTEM_sb_0_INIT_DONE;
+wire          RX;
+wire          SPI_FLASH_SCLK_net_0;
+wire          SPI_FLASH_SDI;
+wire          SPI_FLASH_SDO_net_0;
+wire   [0:0]  SPI_FLASH_SS_net_0;
+wire          TCK;
+wire          TDI;
+wire          TDO_net_0;
+wire          TMS;
+wire          TRSTB;
+wire          TX_net_0;
+wire          MDDR_DQS_TMATCH_0_OUT_net_1;
+wire          MDDR_CAS_N_net_1;
+wire          MDDR_CLK_net_1;
+wire          MDDR_CLK_N_net_1;
+wire          MDDR_CKE_net_1;
+wire          MDDR_CS_N_net_1;
+wire          MDDR_ODT_net_1;
+wire          MDDR_RAS_N_net_1;
+wire          MDDR_RESET_N_net_1;
+wire          MDDR_WE_N_net_1;
+wire          TX_net_1;
+wire          SPI_FLASH_SCLK_net_1;
+wire          SPI_FLASH_SS_net_1;
+wire          SPI_FLASH_SDO_net_1;
+wire          TDO_net_1;
+wire   [15:0] MDDR_ADDR_net_1;
+wire   [2:0]  MDDR_BA_net_1;
+wire   [7:0]  GPIO_OUT_net_1;
+wire   [1:1]  SPISS_slice_0;
+wire   [2:2]  SPISS_slice_1;
+wire   [3:3]  SPISS_slice_2;
+wire   [4:4]  SPISS_slice_3;
+wire   [5:5]  SPISS_slice_4;
+wire   [6:6]  SPISS_slice_5;
+wire   [7:7]  SPISS_slice_6;
+wire   [30:0] IRQ_net_0;
+wire   [7:0]  SPISS_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
-wire   [15:8]  GPIO_IN_const_net_0;
-wire   [23:16] GPIO_IN_const_net_1;
-wire   [31:24] GPIO_IN_const_net_2;
-wire   [31:0]  GPIO_IN_const_net_3;
-wire           GND_net;
-wire           VCC_net;
-wire   [15:0]  MSS_INT_F2M_const_net_0;
-wire   [31:0]  IADDR_const_net_0;
-wire   [7:0]   UIREG_IN_const_net_0;
-wire   [3:0]   HPROT_M0_const_net_0;
-wire   [31:0]  HADDR_M1_const_net_0;
-wire   [1:0]   HTRANS_M1_const_net_0;
-wire   [2:0]   HSIZE_M1_const_net_0;
-wire   [2:0]   HBURST_M1_const_net_0;
-wire   [3:0]   HPROT_M1_const_net_0;
-wire   [31:0]  HWDATA_M1_const_net_0;
-wire   [31:0]  HADDR_M2_const_net_0;
-wire   [1:0]   HTRANS_M2_const_net_0;
-wire   [2:0]   HSIZE_M2_const_net_0;
-wire   [2:0]   HBURST_M2_const_net_0;
-wire   [3:0]   HPROT_M2_const_net_0;
-wire   [31:0]  HWDATA_M2_const_net_0;
-wire   [31:0]  HADDR_M3_const_net_0;
-wire   [1:0]   HTRANS_M3_const_net_0;
-wire   [2:0]   HSIZE_M3_const_net_0;
-wire   [2:0]   HBURST_M3_const_net_0;
-wire   [3:0]   HPROT_M3_const_net_0;
-wire   [31:0]  HWDATA_M3_const_net_0;
-wire   [31:0]  HRDATA_S0_const_net_0;
-wire   [1:0]   HRESP_S0_const_net_0;
-wire   [31:0]  HRDATA_S1_const_net_0;
-wire   [1:0]   HRESP_S1_const_net_0;
-wire   [31:0]  HRDATA_S2_const_net_0;
-wire   [1:0]   HRESP_S2_const_net_0;
-wire   [31:0]  HRDATA_S3_const_net_0;
-wire   [1:0]   HRESP_S3_const_net_0;
-wire   [31:0]  HRDATA_S4_const_net_0;
-wire   [1:0]   HRESP_S4_const_net_0;
-wire   [31:0]  HRDATA_S5_const_net_0;
-wire   [1:0]   HRESP_S5_const_net_0;
-wire   [31:0]  HRDATA_S8_const_net_0;
-wire   [1:0]   HRESP_S8_const_net_0;
-wire   [31:0]  HRDATA_S9_const_net_0;
-wire   [1:0]   HRESP_S9_const_net_0;
-wire   [31:0]  HRDATA_S10_const_net_0;
-wire   [1:0]   HRESP_S10_const_net_0;
-wire   [31:0]  HRDATA_S11_const_net_0;
-wire   [1:0]   HRESP_S11_const_net_0;
-wire   [31:0]  HRDATA_S12_const_net_0;
-wire   [1:0]   HRESP_S12_const_net_0;
-wire   [31:0]  HRDATA_S13_const_net_0;
-wire   [1:0]   HRESP_S13_const_net_0;
-wire   [31:0]  HRDATA_S14_const_net_0;
-wire   [1:0]   HRESP_S14_const_net_0;
-wire   [31:0]  HRDATA_S15_const_net_0;
-wire   [1:0]   HRESP_S15_const_net_0;
-wire   [31:0]  HRDATA_S16_const_net_0;
-wire   [1:0]   HRESP_S16_const_net_0;
-wire   [3:0]   HPROT_M0_const_net_1;
-wire   [31:0]  HADDR_M1_const_net_1;
-wire   [1:0]   HTRANS_M1_const_net_1;
-wire   [2:0]   HSIZE_M1_const_net_1;
-wire   [2:0]   HBURST_M1_const_net_1;
-wire   [3:0]   HPROT_M1_const_net_1;
-wire   [31:0]  HWDATA_M1_const_net_1;
-wire   [31:0]  HADDR_M2_const_net_1;
-wire   [1:0]   HTRANS_M2_const_net_1;
-wire   [2:0]   HSIZE_M2_const_net_1;
-wire   [2:0]   HBURST_M2_const_net_1;
-wire   [3:0]   HPROT_M2_const_net_1;
-wire   [31:0]  HWDATA_M2_const_net_1;
-wire   [31:0]  HADDR_M3_const_net_1;
-wire   [1:0]   HTRANS_M3_const_net_1;
-wire   [2:0]   HSIZE_M3_const_net_1;
-wire   [2:0]   HBURST_M3_const_net_1;
-wire   [3:0]   HPROT_M3_const_net_1;
-wire   [31:0]  HWDATA_M3_const_net_1;
-wire   [31:0]  HRDATA_S0_const_net_1;
-wire   [1:0]   HRESP_S0_const_net_1;
-wire   [31:0]  HRDATA_S1_const_net_1;
-wire   [1:0]   HRESP_S1_const_net_1;
-wire   [31:0]  HRDATA_S2_const_net_1;
-wire   [1:0]   HRESP_S2_const_net_1;
-wire   [31:0]  HRDATA_S3_const_net_1;
-wire   [1:0]   HRESP_S3_const_net_1;
-wire   [31:0]  HRDATA_S4_const_net_1;
-wire   [1:0]   HRESP_S4_const_net_1;
-wire   [31:0]  HRDATA_S5_const_net_1;
-wire   [1:0]   HRESP_S5_const_net_1;
-wire   [31:0]  HRDATA_S6_const_net_0;
-wire   [1:0]   HRESP_S6_const_net_0;
-wire   [31:0]  HRDATA_S7_const_net_0;
-wire   [1:0]   HRESP_S7_const_net_0;
-wire   [31:0]  HRDATA_S8_const_net_1;
-wire   [1:0]   HRESP_S8_const_net_1;
-wire   [31:0]  HRDATA_S9_const_net_1;
-wire   [1:0]   HRESP_S9_const_net_1;
-wire   [31:0]  HRDATA_S10_const_net_1;
-wire   [1:0]   HRESP_S10_const_net_1;
-wire   [31:0]  HRDATA_S11_const_net_1;
-wire   [1:0]   HRESP_S11_const_net_1;
-wire   [31:0]  HRDATA_S12_const_net_1;
-wire   [1:0]   HRESP_S12_const_net_1;
-wire   [31:0]  HRDATA_S13_const_net_1;
-wire   [1:0]   HRESP_S13_const_net_1;
-wire   [31:0]  HRDATA_S14_const_net_1;
-wire   [1:0]   HRESP_S14_const_net_1;
-wire   [31:0]  HRDATA_S15_const_net_1;
-wire   [1:0]   HRESP_S15_const_net_1;
-wire   [31:0]  PRDATAS0_const_net_0;
-wire   [31:0]  PRDATAS7_const_net_0;
-wire   [31:0]  PRDATAS8_const_net_0;
-wire   [31:0]  PRDATAS9_const_net_0;
-wire   [31:0]  PRDATAS10_const_net_0;
-wire   [31:0]  PRDATAS11_const_net_0;
-wire   [31:0]  PRDATAS12_const_net_0;
-wire   [31:0]  PRDATAS13_const_net_0;
-wire   [31:0]  PRDATAS14_const_net_0;
-wire   [31:0]  PRDATAS15_const_net_0;
-wire   [31:0]  PRDATAS16_const_net_0;
-wire   [31:0]  FIC_0_AHB_M_HRDATA_const_net_0;
-wire   [31:0]  FIC_1_AHB_S_HADDR_const_net_0;
-wire   [1:0]   FIC_1_AHB_S_HTRANS_const_net_0;
-wire   [1:0]   FIC_1_AHB_S_HSIZE_const_net_0;
-wire   [31:0]  FIC_1_AHB_S_HWDATA_const_net_0;
-wire   [31:0]  FIC_1_AHB_M_HRDATA_const_net_0;
+wire   [7:0]  GPIO_IN_const_net_0;
+wire          GND_net;
+wire          VCC_net;
+wire   [15:0] MSS_INT_F2M_const_net_0;
+wire   [31:0] IADDR_const_net_0;
+wire   [7:0]  UIREG_IN_const_net_0;
+wire   [3:0]  HPROT_M0_const_net_0;
+wire   [31:0] HADDR_M1_const_net_0;
+wire   [1:0]  HTRANS_M1_const_net_0;
+wire   [2:0]  HSIZE_M1_const_net_0;
+wire   [2:0]  HBURST_M1_const_net_0;
+wire   [3:0]  HPROT_M1_const_net_0;
+wire   [31:0] HWDATA_M1_const_net_0;
+wire   [31:0] HADDR_M2_const_net_0;
+wire   [1:0]  HTRANS_M2_const_net_0;
+wire   [2:0]  HSIZE_M2_const_net_0;
+wire   [2:0]  HBURST_M2_const_net_0;
+wire   [3:0]  HPROT_M2_const_net_0;
+wire   [31:0] HWDATA_M2_const_net_0;
+wire   [31:0] HADDR_M3_const_net_0;
+wire   [1:0]  HTRANS_M3_const_net_0;
+wire   [2:0]  HSIZE_M3_const_net_0;
+wire   [2:0]  HBURST_M3_const_net_0;
+wire   [3:0]  HPROT_M3_const_net_0;
+wire   [31:0] HWDATA_M3_const_net_0;
+wire   [31:0] HRDATA_S0_const_net_0;
+wire   [1:0]  HRESP_S0_const_net_0;
+wire   [31:0] HRDATA_S1_const_net_0;
+wire   [1:0]  HRESP_S1_const_net_0;
+wire   [31:0] HRDATA_S2_const_net_0;
+wire   [1:0]  HRESP_S2_const_net_0;
+wire   [31:0] HRDATA_S3_const_net_0;
+wire   [1:0]  HRESP_S3_const_net_0;
+wire   [31:0] HRDATA_S4_const_net_0;
+wire   [1:0]  HRESP_S4_const_net_0;
+wire   [31:0] HRDATA_S5_const_net_0;
+wire   [1:0]  HRESP_S5_const_net_0;
+wire   [31:0] HRDATA_S8_const_net_0;
+wire   [1:0]  HRESP_S8_const_net_0;
+wire   [31:0] HRDATA_S9_const_net_0;
+wire   [1:0]  HRESP_S9_const_net_0;
+wire   [31:0] HRDATA_S10_const_net_0;
+wire   [1:0]  HRESP_S10_const_net_0;
+wire   [31:0] HRDATA_S11_const_net_0;
+wire   [1:0]  HRESP_S11_const_net_0;
+wire   [31:0] HRDATA_S12_const_net_0;
+wire   [1:0]  HRESP_S12_const_net_0;
+wire   [31:0] HRDATA_S13_const_net_0;
+wire   [1:0]  HRESP_S13_const_net_0;
+wire   [31:0] HRDATA_S14_const_net_0;
+wire   [1:0]  HRESP_S14_const_net_0;
+wire   [31:0] HRDATA_S15_const_net_0;
+wire   [1:0]  HRESP_S15_const_net_0;
+wire   [31:0] HRDATA_S16_const_net_0;
+wire   [1:0]  HRESP_S16_const_net_0;
+wire   [3:0]  HPROT_M0_const_net_1;
+wire   [31:0] HADDR_M1_const_net_1;
+wire   [1:0]  HTRANS_M1_const_net_1;
+wire   [2:0]  HSIZE_M1_const_net_1;
+wire   [2:0]  HBURST_M1_const_net_1;
+wire   [3:0]  HPROT_M1_const_net_1;
+wire   [31:0] HWDATA_M1_const_net_1;
+wire   [31:0] HADDR_M2_const_net_1;
+wire   [1:0]  HTRANS_M2_const_net_1;
+wire   [2:0]  HSIZE_M2_const_net_1;
+wire   [2:0]  HBURST_M2_const_net_1;
+wire   [3:0]  HPROT_M2_const_net_1;
+wire   [31:0] HWDATA_M2_const_net_1;
+wire   [31:0] HADDR_M3_const_net_1;
+wire   [1:0]  HTRANS_M3_const_net_1;
+wire   [2:0]  HSIZE_M3_const_net_1;
+wire   [2:0]  HBURST_M3_const_net_1;
+wire   [3:0]  HPROT_M3_const_net_1;
+wire   [31:0] HWDATA_M3_const_net_1;
+wire   [31:0] HRDATA_S0_const_net_1;
+wire   [1:0]  HRESP_S0_const_net_1;
+wire   [31:0] HRDATA_S1_const_net_1;
+wire   [1:0]  HRESP_S1_const_net_1;
+wire   [31:0] HRDATA_S2_const_net_1;
+wire   [1:0]  HRESP_S2_const_net_1;
+wire   [31:0] HRDATA_S3_const_net_1;
+wire   [1:0]  HRESP_S3_const_net_1;
+wire   [31:0] HRDATA_S4_const_net_1;
+wire   [1:0]  HRESP_S4_const_net_1;
+wire   [31:0] HRDATA_S5_const_net_1;
+wire   [1:0]  HRESP_S5_const_net_1;
+wire   [31:0] HRDATA_S6_const_net_0;
+wire   [1:0]  HRESP_S6_const_net_0;
+wire   [31:0] HRDATA_S7_const_net_0;
+wire   [1:0]  HRESP_S7_const_net_0;
+wire   [31:0] HRDATA_S8_const_net_1;
+wire   [1:0]  HRESP_S8_const_net_1;
+wire   [31:0] HRDATA_S9_const_net_1;
+wire   [1:0]  HRESP_S9_const_net_1;
+wire   [31:0] HRDATA_S10_const_net_1;
+wire   [1:0]  HRESP_S10_const_net_1;
+wire   [31:0] HRDATA_S11_const_net_1;
+wire   [1:0]  HRESP_S11_const_net_1;
+wire   [31:0] HRDATA_S12_const_net_1;
+wire   [1:0]  HRESP_S12_const_net_1;
+wire   [31:0] HRDATA_S13_const_net_1;
+wire   [1:0]  HRESP_S13_const_net_1;
+wire   [31:0] HRDATA_S14_const_net_1;
+wire   [1:0]  HRESP_S14_const_net_1;
+wire   [31:0] HRDATA_S15_const_net_1;
+wire   [1:0]  HRESP_S15_const_net_1;
+wire   [31:0] PRDATAS0_const_net_0;
+wire   [31:0] PRDATAS7_const_net_0;
+wire   [31:0] PRDATAS8_const_net_0;
+wire   [31:0] PRDATAS9_const_net_0;
+wire   [31:0] PRDATAS10_const_net_0;
+wire   [31:0] PRDATAS11_const_net_0;
+wire   [31:0] PRDATAS12_const_net_0;
+wire   [31:0] PRDATAS13_const_net_0;
+wire   [31:0] PRDATAS14_const_net_0;
+wire   [31:0] PRDATAS15_const_net_0;
+wire   [31:0] PRDATAS16_const_net_0;
+wire   [31:0] FIC_0_AHB_M_HRDATA_const_net_0;
+wire   [31:0] FIC_1_AHB_M_HRDATA_const_net_0;
 //--------------------------------------------------------------------
 // Inverted Nets
 //--------------------------------------------------------------------
-wire           RESET_IN_POST_INV0_0;
+wire          RESET_IN_POST_INV0_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLEN_0_3to0;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLEN_0;
-wire   [7:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLEN;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN_0_3to0;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN_0;
-wire   [7:0]   AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN_0_3to0;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN_0;
-wire   [7:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN_0_3to0;
-wire   [3:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN_0;
-wire   [7:0]   AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN;
-wire           CoreAHBLite_0_AHBmslave6_HRESP;
-wire   [1:1]   CoreAHBLite_0_AHBmslave6_HRESP_0_1to1;
-wire   [0:0]   CoreAHBLite_0_AHBmslave6_HRESP_0_0to0;
-wire   [1:0]   CoreAHBLite_0_AHBmslave6_HRESP_0;
-wire   [1:0]   CoreAHBLite_0_AHBmslave6_HSIZE_0_1to0;
-wire   [1:0]   CoreAHBLite_0_AHBmslave6_HSIZE_0;
-wire   [2:0]   CoreAHBLite_0_AHBmslave6_HSIZE;
-wire   [1:1]   CoreAHBLite_1_AHBmslave16_HRESP_0_1to1;
-wire   [0:0]   CoreAHBLite_1_AHBmslave16_HRESP_0_0to0;
-wire   [1:0]   CoreAHBLite_1_AHBmslave16_HRESP_0;
-wire           CoreAHBLite_1_AHBmslave16_HRESP;
-wire   [2:0]   CoreAHBLite_1_AHBmslave16_HSIZE;
-wire   [1:0]   CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0;
-wire   [1:0]   CoreAHBLite_1_AHBmslave16_HSIZE_0;
-wire   [31:0]  CoreAPB3_0_APBmslave1_PADDR;
-wire   [6:0]   CoreAPB3_0_APBmslave1_PADDR_5_6to0;
-wire   [6:0]   CoreAPB3_0_APBmslave1_PADDR_5;
-wire   [4:2]   CoreAPB3_0_APBmslave1_PADDR_2_4to2;
-wire   [4:2]   CoreAPB3_0_APBmslave1_PADDR_2;
-wire   [4:2]   CoreAPB3_0_APBmslave1_PADDR_3_4to2;
-wire   [4:2]   CoreAPB3_0_APBmslave1_PADDR_3;
-wire   [4:0]   CoreAPB3_0_APBmslave1_PADDR_0_4to0;
-wire   [4:0]   CoreAPB3_0_APBmslave1_PADDR_0;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PADDR_1_7to0;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PADDR_1;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PADDR_4_7to0;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PADDR_4;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PRDATA;
-wire   [31:8]  CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
-wire   [31:0]  CoreAPB3_0_APBmslave1_PRDATA_0;
-wire   [31:0]  CoreAPB3_0_APBmslave1_PWDATA;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PWDATA_0_7to0;
-wire   [7:0]   CoreAPB3_0_APBmslave1_PWDATA_0;
-wire   [1:0]   COREAXITOAHBL_0_AHBMasterIF_HRESP;
-wire   [0:0]   COREAXITOAHBL_0_AHBMasterIF_HRESP_0_0to0;
-wire           COREAXITOAHBL_0_AHBMasterIF_HRESP_0;
-wire   [0:0]   COREAXITOAHBL_1_AHBMasterIF_HRESP_0_0to0;
-wire           COREAXITOAHBL_1_AHBMasterIF_HRESP_0;
-wire   [1:0]   COREAXITOAHBL_1_AHBMasterIF_HRESP;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLEN;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLEN_0_3to0;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_ARLEN_0;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN_0_3to0;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MEMORY_AWLEN_0;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN_0_3to0;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_ARLEN_0;
+wire   [7:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN_0_3to0;
+wire   [3:0]  AXI_GLUE_LOGIC_0_UNCORE_MMIO_AWLEN_0;
+wire   [1:1]  CoreAHBLite_0_AHBmslave6_HRESP_0_1to1;
+wire   [0:0]  CoreAHBLite_0_AHBmslave6_HRESP_0_0to0;
+wire   [1:0]  CoreAHBLite_0_AHBmslave6_HRESP_0;
+wire          CoreAHBLite_0_AHBmslave6_HRESP;
+wire   [2:0]  CoreAHBLite_0_AHBmslave6_HSIZE;
+wire   [1:0]  CoreAHBLite_0_AHBmslave6_HSIZE_0_1to0;
+wire   [1:0]  CoreAHBLite_0_AHBmslave6_HSIZE_0;
+wire   [1:1]  CoreAHBLite_1_AHBmslave16_HRESP_0_1to1;
+wire   [0:0]  CoreAHBLite_1_AHBmslave16_HRESP_0_0to0;
+wire   [1:0]  CoreAHBLite_1_AHBmslave16_HRESP_0;
+wire          CoreAHBLite_1_AHBmslave16_HRESP;
+wire   [2:0]  CoreAHBLite_1_AHBmslave16_HSIZE;
+wire   [1:0]  CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0;
+wire   [1:0]  CoreAHBLite_1_AHBmslave16_HSIZE_0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1_7to0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_4_7to0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_4;
+wire   [6:0]  CoreAPB3_0_APBmslave1_PADDR_5_6to0;
+wire   [6:0]  CoreAPB3_0_APBmslave1_PADDR_5;
+wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_3_4to2;
+wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_3;
+wire   [4:0]  CoreAPB3_0_APBmslave1_PADDR_0_4to0;
+wire   [4:0]  CoreAPB3_0_APBmslave1_PADDR_0;
+wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_2_4to2;
+wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_2;
+wire   [31:0] CoreAPB3_0_APBmslave1_PADDR;
+wire   [31:8] CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
+wire   [31:0] CoreAPB3_0_APBmslave1_PRDATA_0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
+wire   [31:0] CoreAPB3_0_APBmslave1_PWDATA;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PWDATA_0_7to0;
+wire   [7:0]  CoreAPB3_0_APBmslave1_PWDATA_0;
+wire   [1:0]  COREAXITOAHBL_0_AHBMasterIF_HRESP;
+wire   [0:0]  COREAXITOAHBL_0_AHBMasterIF_HRESP_0_0to0;
+wire          COREAXITOAHBL_0_AHBMasterIF_HRESP_0;
+wire   [0:0]  COREAXITOAHBL_1_AHBMasterIF_HRESP_0_0to0;
+wire          COREAXITOAHBL_1_AHBMasterIF_HRESP_0;
+wire   [1:0]  COREAXITOAHBL_1_AHBMasterIF_HRESP;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
 assign GPIO_IN_const_net_0            = 8'h00;
-assign GPIO_IN_const_net_1            = 8'h00;
-assign GPIO_IN_const_net_2            = 8'h00;
-assign GPIO_IN_const_net_3            = 32'h00000000;
 assign GND_net                        = 1'b0;
 assign VCC_net                        = 1'b1;
 assign MSS_INT_F2M_const_net_0        = 16'h0000;
@@ -717,10 +702,6 @@ assign PRDATAS14_const_net_0          = 32'h00000000;
 assign PRDATAS15_const_net_0          = 32'h00000000;
 assign PRDATAS16_const_net_0          = 32'h00000000;
 assign FIC_0_AHB_M_HRDATA_const_net_0 = 32'h00000000;
-assign FIC_1_AHB_S_HADDR_const_net_0  = 32'h00000000;
-assign FIC_1_AHB_S_HTRANS_const_net_0 = 2'h0;
-assign FIC_1_AHB_S_HSIZE_const_net_0  = 2'h0;
-assign FIC_1_AHB_S_HWDATA_const_net_0 = 32'h00000000;
 assign FIC_1_AHB_M_HRDATA_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Inversions
@@ -768,11 +749,7 @@ assign GPIO_OUT[7:0]               = GPIO_OUT_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
-assign GPIO_OUT_net_0        = GPIO_OUT_net_2[7:0];
 assign SPI_FLASH_SS_net_0[0] = SPISS_net_0[0:0];
-assign GPIO_OUT_slice_0      = GPIO_OUT_net_2[15:8];
-assign GPIO_OUT_slice_1      = GPIO_OUT_net_2[23:16];
-assign GPIO_OUT_slice_2      = GPIO_OUT_net_2[31:24];
 assign SPISS_slice_0[1]      = SPISS_net_0[1:1];
 assign SPISS_slice_1[2]      = SPISS_net_0[2:2];
 assign SPISS_slice_2[3]      = SPISS_net_0[3:3];
@@ -783,8 +760,7 @@ assign SPISS_slice_6[7]      = SPISS_net_0[7:7];
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
-assign GPIO_IN_net_0 = { 8'h00 , 8'h00 , 8'h00 , GPIO_IN };
-assign IRQ_net_0     = { CoreTimer_1_TIMINT , CoreTimer_0_TIMINT , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 };
+assign IRQ_net_0 = { CoreTimer_1_TIMINT , CoreTimer_0_TIMINT , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 , 1'b0 };
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -814,18 +790,18 @@ assign CoreAHBLite_1_AHBmslave16_HRESP_0 = { CoreAHBLite_1_AHBmslave16_HRESP_0_1
 assign CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0 = CoreAHBLite_1_AHBmslave16_HSIZE[1:0];
 assign CoreAHBLite_1_AHBmslave16_HSIZE_0 = { CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0 };
 
-assign CoreAPB3_0_APBmslave1_PADDR_5_6to0 = CoreAPB3_0_APBmslave1_PADDR[6:0];
-assign CoreAPB3_0_APBmslave1_PADDR_5 = { CoreAPB3_0_APBmslave1_PADDR_5_6to0 };
-assign CoreAPB3_0_APBmslave1_PADDR_2_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
-assign CoreAPB3_0_APBmslave1_PADDR_2 = { CoreAPB3_0_APBmslave1_PADDR_2_4to2 };
-assign CoreAPB3_0_APBmslave1_PADDR_3_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
-assign CoreAPB3_0_APBmslave1_PADDR_3 = { CoreAPB3_0_APBmslave1_PADDR_3_4to2 };
-assign CoreAPB3_0_APBmslave1_PADDR_0_4to0 = CoreAPB3_0_APBmslave1_PADDR[4:0];
-assign CoreAPB3_0_APBmslave1_PADDR_0 = { CoreAPB3_0_APBmslave1_PADDR_0_4to0 };
 assign CoreAPB3_0_APBmslave1_PADDR_1_7to0 = CoreAPB3_0_APBmslave1_PADDR[7:0];
 assign CoreAPB3_0_APBmslave1_PADDR_1 = { CoreAPB3_0_APBmslave1_PADDR_1_7to0 };
 assign CoreAPB3_0_APBmslave1_PADDR_4_7to0 = CoreAPB3_0_APBmslave1_PADDR[7:0];
 assign CoreAPB3_0_APBmslave1_PADDR_4 = { CoreAPB3_0_APBmslave1_PADDR_4_7to0 };
+assign CoreAPB3_0_APBmslave1_PADDR_5_6to0 = CoreAPB3_0_APBmslave1_PADDR[6:0];
+assign CoreAPB3_0_APBmslave1_PADDR_5 = { CoreAPB3_0_APBmslave1_PADDR_5_6to0 };
+assign CoreAPB3_0_APBmslave1_PADDR_3_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
+assign CoreAPB3_0_APBmslave1_PADDR_3 = { CoreAPB3_0_APBmslave1_PADDR_3_4to2 };
+assign CoreAPB3_0_APBmslave1_PADDR_0_4to0 = CoreAPB3_0_APBmslave1_PADDR[4:0];
+assign CoreAPB3_0_APBmslave1_PADDR_0 = { CoreAPB3_0_APBmslave1_PADDR_0_4to0 };
+assign CoreAPB3_0_APBmslave1_PADDR_2_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
+assign CoreAPB3_0_APBmslave1_PADDR_2 = { CoreAPB3_0_APBmslave1_PADDR_2_4to2 };
 
 assign CoreAPB3_0_APBmslave1_PRDATA_0_31to8 = 24'h0;
 assign CoreAPB3_0_APBmslave1_PRDATA_0_7to0 = CoreAPB3_0_APBmslave1_PRDATA[7:0];
@@ -2078,7 +2054,7 @@ CoreGPIO #(
         .IO_INT_TYPE_29  ( 7 ),
         .IO_INT_TYPE_30  ( 7 ),
         .IO_INT_TYPE_31  ( 7 ),
-        .IO_NUM          ( 32 ),
+        .IO_NUM          ( 4 ),
         .IO_TYPE_0       ( 0 ),
         .IO_TYPE_1       ( 0 ),
         .IO_TYPE_2       ( 0 ),
@@ -2153,7 +2129,7 @@ CoreGPIO_IN(
         .PWRITE   ( CoreAPB3_0_APBmslave1_PWRITE ),
         .PADDR    ( CoreAPB3_0_APBmslave1_PADDR_1 ),
         .PWDATA   ( CoreAPB3_0_APBmslave1_PWDATA ),
-        .GPIO_IN  ( GPIO_IN_net_0 ),
+        .GPIO_IN  ( GPIO_IN ),
         // Outputs
         .PSLVERR  ( CoreAPB3_0_APBmslave2_PSLVERR ),
         .PREADY   ( CoreAPB3_0_APBmslave2_PREADY ),
@@ -2233,7 +2209,7 @@ CoreGPIO #(
         .IO_INT_TYPE_29  ( 7 ),
         .IO_INT_TYPE_30  ( 7 ),
         .IO_INT_TYPE_31  ( 7 ),
-        .IO_NUM          ( 32 ),
+        .IO_NUM          ( 8 ),
         .IO_TYPE_0       ( 1 ),
         .IO_TYPE_1       ( 1 ),
         .IO_TYPE_2       ( 1 ),
@@ -2308,14 +2284,14 @@ CoreGPIO_OUT(
         .PWRITE   ( CoreAPB3_0_APBmslave1_PWRITE ),
         .PADDR    ( CoreAPB3_0_APBmslave1_PADDR_4 ),
         .PWDATA   ( CoreAPB3_0_APBmslave1_PWDATA ),
-        .GPIO_IN  ( GPIO_IN_const_net_3 ),
+        .GPIO_IN  ( GPIO_IN_const_net_0 ),
         // Outputs
         .PSLVERR  ( CoreAPB3_0_APBmslave5_PSLVERR ),
         .PREADY   ( CoreAPB3_0_APBmslave5_PREADY ),
         .INT_OR   (  ),
         .PRDATA   ( CoreAPB3_0_APBmslave5_PRDATA ),
         .INT      (  ),
-        .GPIO_OUT ( GPIO_OUT_net_2 ),
+        .GPIO_OUT ( GPIO_OUT_net_0 ),
         .GPIO_OE  (  ) 
         );
 
@@ -2469,7 +2445,7 @@ CORERISCV_AXI4_0(
         .AXI_MST_MMIO_WID      ( CORERISCV_AXI4_0_AXI_MST_MMIO_WID ) 
         );
 
-//--------CORESPI   -   Actel:DirectCore:CORESPI:5.0.100
+//--------CORESPI   -   Actel:DirectCore:CORESPI:5.1.104
 CORESPI #( 
         .APB_DWIDTH        ( 32 ),
         .CFG_CLK           ( 7 ),
@@ -2547,7 +2523,7 @@ CoreTimer_1(
         .PRDATA  ( CoreAPB3_0_APBmslave4_PRDATA ) 
         );
 
-//--------PROC_SUBSYSTEM_CoreUARTapb_0_CoreUARTapb   -   Actel:DirectCore:CoreUARTapb:5.5.101
+//--------PROC_SUBSYSTEM_CoreUARTapb_0_CoreUARTapb   -   Actel:DirectCore:CoreUARTapb:5.6.102
 PROC_SUBSYSTEM_CoreUARTapb_0_CoreUARTapb #( 
         .BAUD_VAL_FRCTN    ( 0 ),
         .BAUD_VAL_FRCTN_EN ( 0 ),
@@ -2598,10 +2574,6 @@ MSS_SUBSYSTEM_sb MSS_SUBSYSTEM_sb_0(
         .FIC_0_AHB_S_HREADY         ( CoreAHBLite_0_AHBmslave6_HREADY ),
         .FIC_0_AHB_M_HREADY         ( VCC_net ), // tied to 1'b1 from definition
         .FIC_0_AHB_M_HRESP          ( GND_net ), // tied to 1'b0 from definition
-        .FIC_1_AHB_S_HWRITE         ( GND_net ), // tied to 1'b0 from definition
-        .FIC_1_AHB_S_HSEL           ( GND_net ), // tied to 1'b0 from definition
-        .FIC_1_AHB_S_HMASTLOCK      ( GND_net ), // tied to 1'b0 from definition
-        .FIC_1_AHB_S_HREADY         ( VCC_net ), // tied to 1'b1 from definition
         .FIC_1_AHB_M_HREADY         ( VCC_net ), // tied to 1'b1 from definition
         .FIC_1_AHB_M_HRESP          ( GND_net ), // tied to 1'b0 from definition
         .MSS_INT_F2M                ( MSS_INT_F2M_const_net_0 ),
@@ -2615,10 +2587,6 @@ MSS_SUBSYSTEM_sb MSS_SUBSYSTEM_sb_0(
         .FIC_0_AHB_S_HSIZE          ( CoreAHBLite_0_AHBmslave6_HSIZE_0 ),
         .FIC_0_AHB_S_HWDATA         ( CoreAHBLite_0_AHBmslave6_HWDATA ),
         .FIC_0_AHB_M_HRDATA         ( FIC_0_AHB_M_HRDATA_const_net_0 ), // tied to 32'h00000000 from definition
-        .FIC_1_AHB_S_HADDR          ( FIC_1_AHB_S_HADDR_const_net_0 ), // tied to 32'h00000000 from definition
-        .FIC_1_AHB_S_HTRANS         ( FIC_1_AHB_S_HTRANS_const_net_0 ), // tied to 2'h0 from definition
-        .FIC_1_AHB_S_HSIZE          ( FIC_1_AHB_S_HSIZE_const_net_0 ), // tied to 2'h0 from definition
-        .FIC_1_AHB_S_HWDATA         ( FIC_1_AHB_S_HWDATA_const_net_0 ), // tied to 32'h00000000 from definition
         .FIC_1_AHB_M_HRDATA         ( FIC_1_AHB_M_HRDATA_const_net_0 ), // tied to 32'h00000000 from definition
         // Outputs
         .MDDR_DQS_TMATCH_0_OUT      ( MDDR_DQS_TMATCH_0_OUT_net_0 ),
@@ -2646,8 +2614,6 @@ MSS_SUBSYSTEM_sb MSS_SUBSYSTEM_sb_0(
         .FIC_0_AHB_S_HREADYOUT      ( CoreAHBLite_0_AHBmslave6_HREADYOUT ),
         .FIC_0_AHB_S_HRESP          ( CoreAHBLite_0_AHBmslave6_HRESP ),
         .FIC_0_AHB_M_HWRITE         (  ),
-        .FIC_1_AHB_S_HREADYOUT      (  ),
-        .FIC_1_AHB_S_HRESP          (  ),
         .FIC_1_AHB_M_HWRITE         (  ),
         .MDDR_ADDR                  ( MDDR_ADDR_net_0 ),
         .MDDR_BA                    ( MDDR_BA_net_0 ),
@@ -2657,7 +2623,6 @@ MSS_SUBSYSTEM_sb MSS_SUBSYSTEM_sb_0(
         .FIC_0_AHB_M_HTRANS         (  ),
         .FIC_0_AHB_M_HSIZE          (  ),
         .FIC_0_AHB_M_HWDATA         (  ),
-        .FIC_1_AHB_S_HRDATA         (  ),
         .FIC_1_AHB_M_HADDR          (  ),
         .FIC_1_AHB_M_HTRANS         (  ),
         .FIC_1_AHB_M_HSIZE          (  ),

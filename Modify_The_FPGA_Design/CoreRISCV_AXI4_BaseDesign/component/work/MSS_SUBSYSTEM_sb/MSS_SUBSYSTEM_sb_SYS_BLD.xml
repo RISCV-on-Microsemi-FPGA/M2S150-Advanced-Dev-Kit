@@ -3180,37 +3180,6 @@
 </data>
 <separator/>
 <data>
-<name>FIC_1_AMBA_SLAVE</name>
-<table>
-<header>
- <cell>Name</cell>
- <cell>Subsystem</cell>
- <cell>Vendor</cell>
- <cell>Version</cell>
-</header>
-<row>
- <cell>AMBA_MASTER</cell>
- <cell>MSS FIC_1 - Fabric Master Subsystem</cell>
- <cell>Actel</cell>
- <cell>0.0.102</cell>
-</row>
-</table>
-<cdata>
-<name>Configuration</name>
-<table>
-<header>
- <cell>Parameter</cell>
- <cell>Value</cell>
-</header>
-<row>
- <cell>AMBA_INTERFACE_TYPE</cell>
- <cell>AHBLITE</cell>
-</row>
-</table>
-</cdata>
-</data>
-<separator/>
-<data>
 <name>MDDR_DDR_AMBA_SLAVE</name>
 <table>
 <header>
@@ -3457,11 +3426,6 @@
 <row>
  <cell>FIC_0_AMBA_MASTER</cell>
  <cell>MASTER</cell>
- <cell>-</cell>
-</row>
-<row>
- <cell>FIC_1_AMBA_SLAVE</cell>
- <cell>SLAVE</cell>
  <cell>-</cell>
 </row>
 <row>
