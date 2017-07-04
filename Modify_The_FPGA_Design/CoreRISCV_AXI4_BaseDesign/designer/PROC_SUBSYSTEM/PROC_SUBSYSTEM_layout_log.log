@@ -1,0 +1,516 @@
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\user.sdc.
+4 warnings found.
+Check logfile C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\placer_sdc_errors.log for details.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : ON
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 68 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
+
+Placer V4.0 - 11.8.0 
+Design: PROC_SUBSYSTEM                  Started: Tue Jul 04 10:14:47 2017
+
+Initializing High-Effort Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 28 seconds
+Placement Runtime            : 301 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Tue Jul 04 10:20:51 2017
+Total CPU Time:     00:06:01            Total Elapsed Time: 00:06:04
+Total Memory Usage: 990.5 Mbytes
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 10:21:10 2017
+
+Final stats: search run time 24.164420
+
+Timing-driven Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 10:23:06 2017
+Total CPU Time:     00:01:53            Total Elapsed Time: 00:01:56
+Total Memory Usage: 5016.1 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 1
+  Worst minimum delay slack: -0.026 ns
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 12671 | 146124 | 8.67       |
+| DFF           | 7965  | 146124 | 5.45       |
+| I/O Register  | 0     | 1716   | 0.00       |
+| Logic Element | 13409 | 146124 | 9.18       |
++---------------+-------+--------+------------+
+
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\user.sdc.
+4 warnings found.
+Check logfile C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\placer_sdc_errors.log for details.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : ON
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 68 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
+
+Placer V4.0 - 11.8.0 
+Design: PROC_SUBSYSTEM                  Started: Tue Jul 04 11:13:24 2017
+
+Initializing High-Effort Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 28 seconds
+Placement Runtime            : 246 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Tue Jul 04 11:18:33 2017
+Total CPU Time:     00:05:07            Total Elapsed Time: 00:05:09
+Total Memory Usage: 990.7 Mbytes
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 11:18:53 2017
+
+Final stats: search run time 20.714314
+
+Timing-driven Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 11:20:47 2017
+Total CPU Time:     00:01:52            Total Elapsed Time: 00:01:54
+Total Memory Usage: 5015.6 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 1
+  Worst minimum delay slack: -0.013 ns
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 11:21:54 2017
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 2.
+Final stats: search run time 0.240568
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 11:22:48 2017
+Total CPU Time:     00:00:51            Total Elapsed Time: 00:00:54
+Total Memory Usage: 4725.6 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 2:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 12672 | 146124 | 8.67       |
+| DFF           | 7965  | 146124 | 5.45       |
+| I/O Register  | 0     | 1716   | 0.00       |
+| Logic Element | 13401 | 146124 | 9.17       |
++---------------+-------+--------+------------+
+
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\user.sdc.
+4 warnings found.
+Check logfile C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\placer_sdc_errors.log for details.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : ON
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 68 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
+
+Placer V4.0 - 11.8.0 
+Design: PROC_SUBSYSTEM                  Started: Tue Jul 04 11:44:07 2017
+
+Initializing High-Effort Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 30 seconds
+Placement Runtime            : 346 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Tue Jul 04 11:50:59 2017
+Total CPU Time:     00:06:47            Total Elapsed Time: 00:06:52
+Total Memory Usage: 991.3 Mbytes
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 11:51:21 2017
+
+Final stats: search run time 23.361708
+
+Timing-driven Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 11:53:29 2017
+Total CPU Time:     00:02:02            Total Elapsed Time: 00:02:08
+Total Memory Usage: 5014.9 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 11
+  Worst minimum delay slack: -0.09 ns
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 11:54:42 2017
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 2.
+Final stats: search run time 14.990007
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 11:55:57 2017
+Total CPU Time:     00:01:12            Total Elapsed Time: 00:01:15
+Total Memory Usage: 4725.5 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 2:
+  Total violating paths eligible for improvement: 9
+  Worst minimum delay slack: -0.09 ns
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 11:57:13 2017
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 2.
+Final stats: search run time 11.811091
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 11:58:24 2017
+Total CPU Time:     00:01:07            Total Elapsed Time: 00:01:11
+Total Memory Usage: 4725.6 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 3:
+  Total violating paths eligible for improvement: 8
+  Worst minimum delay slack: -0.085 ns
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 12673 | 146124 | 8.67       |
+| DFF           | 7965  | 146124 | 5.45       |
+| I/O Register  | 0     | 1716   | 0.00       |
+| Logic Element | 13425 | 146124 | 9.19       |
++---------------+-------+--------+------------+
+
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\user.sdc.
+4 warnings found.
+Check logfile C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\placer_sdc_errors.log for details.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 68 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
+
+Placer V4.0 - 11.8.0 
+Design: PROC_SUBSYSTEM                  Started: Tue Jul 04 12:19:56 2017
+
+Initializing Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 28 seconds
+Placement Runtime            : 90 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Tue Jul 04 12:22:29 2017
+Total CPU Time:     00:02:31            Total Elapsed Time: 00:02:33
+Total Memory Usage: 990.5 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 12:22:49 2017
+
+Final stats: search run time 20.732718
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 12:24:02 2017
+Total CPU Time:     00:01:11            Total Elapsed Time: 00:01:13
+Total Memory Usage: 4734.8 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 96
+  Worst minimum delay slack: -0.42 ns
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 12:25:25 2017
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 47.
+Final stats: search run time 12.999200
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 12:26:32 2017
+Total CPU Time:     00:01:05            Total Elapsed Time: 00:01:07
+Total Memory Usage: 4725.5 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 2:
+  Total violating paths eligible for improvement: 70
+  Worst minimum delay slack: -0.42 ns
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 12:27:51 2017
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 5.
+Final stats: search run time 0.460720
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 12:28:47 2017
+Total CPU Time:     00:00:53            Total Elapsed Time: 00:00:56
+Total Memory Usage: 4725.5 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 3:
+  Total violating paths eligible for improvement: 66
+  Worst minimum delay slack: -0.42 ns
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 12703 | 146124 | 8.69       |
+| DFF           | 7965  | 146124 | 5.45       |
+| I/O Register  | 0     | 1716   | 0.00       |
+| Logic Element | 13427 | 146124 | 9.19       |
++---------------+-------+--------+------------+
+
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\user.sdc.
+4 warnings found.
+Check logfile C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\placer_sdc_errors.log for details.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 68 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
+
+Placer V4.0 - 11.8.0 
+Design: PROC_SUBSYSTEM                  Started: Tue Jul 04 13:07:12 2017
+
+Initializing Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 28 seconds
+Placement Runtime            : 88 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Tue Jul 04 13:09:43 2017
+Total CPU Time:     00:02:29            Total Elapsed Time: 00:02:31
+Total Memory Usage: 990.5 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 13:10:02 2017
+
+Final stats: search run time 21.558773
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 13:11:17 2017
+Total CPU Time:     00:01:12            Total Elapsed Time: 00:01:15
+Total Memory Usage: 4734.7 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 2
+  Worst minimum delay slack: -0.018 ns
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 13:12:23 2017
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 4.
+Final stats: search run time 0.112217
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 13:13:16 2017
+Total CPU Time:     00:00:51            Total Elapsed Time: 00:00:53
+Total Memory Usage: 4725.4 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 2:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 12673 | 146124 | 8.67       |
+| DFF           | 7965  | 146124 | 5.45       |
+| I/O Register  | 0     | 1716   | 0.00       |
+| Logic Element | 13457 | 146124 | 9.21       |
++---------------+-------+--------+------------+
+
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\user.sdc.
+4 warnings found.
+Check logfile C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\placer_sdc_errors.log for details.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 68 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
+
+Placer V4.0 - 11.8.0 
+Design: PROC_SUBSYSTEM                  Started: Tue Jul 04 13:44:32 2017
+
+Initializing Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 28 seconds
+Placement Runtime            : 85 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Tue Jul 04 13:47:00 2017
+Total CPU Time:     00:02:26            Total Elapsed Time: 00:02:28
+Total Memory Usage: 990.5 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Tue Jul 04 13:47:20 2017
+
+Final stats: search run time 19.668386
+
+Router completed successfully.
+
+Design: C:\Users\ciaran.lappin\Desktop\DeleteMe\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\CoreRISCV_AXI4_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Tue Jul 04 13:48:32 2017
+Total CPU Time:     00:01:10            Total Elapsed Time: 00:01:12
+Total Memory Usage: 4734.7 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 12671 | 146124 | 8.67       |
+| DFF           | 7965  | 146124 | 5.45       |
+| I/O Register  | 0     | 1716   | 0.00       |
+| Logic Element | 13454 | 146124 | 9.21       |
++---------------+-------+--------+------------+
+
