@@ -1,0 +1,38 @@
+Software Version: 12.100.8.13
+creating folder: C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Programming_The_Target_Design\PROC_SUBSYSTEM_BaseDesign\PROC_SUBSYSTEM_BaseDesign
+programmer 'S201Z6SSZF' : FlashPro5
+Created new project 'C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Programming_The_Target_Design\PROC_SUBSYSTEM_BaseDesign\PROC_SUBSYSTEM_BaseDesign\PROC_SUBSYSTEM_BaseDesign.pro'
+STAPL file 'C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Programming_The_Target_Design\PROC_SUBSYSTEM_BaseDesign\PROC_SUBSYSTEM_BaseDesign\M2S150_1.stp' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : 3DBD;  ALG_VERSION : 2
+creating folder: C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Programming_The_Target_Design\PROC_SUBSYSTEM_BaseDesign\PROC_SUBSYSTEM_BaseDesign\projectData
+Software Version: 12.100.8.13
+STAPL file 'C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Programming_The_Target_Design\PROC_SUBSYSTEM_BaseDesign\PROC_SUBSYSTEM_BaseDesign\M2S150_1.stp' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : 3DBD;  ALG_VERSION : 2
+programmer 'S201Z6SSZF' : FlashPro5
+
+Created FlashPro Express Job Project.
+programmer 'S201Z6SSZF' : Scan Chain...
+Warning: programmer 'S201Z6SSZF' : Vpump has been selected on programmer AND an externally provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'S201Z6SSZF' : Check Chain...
+programmer 'S201Z6SSZF' : Scan and Check Chain PASSED.
+programmer 'S201Z6SSZF' : device 'M2S150' : Executing action PROGRAM
+programmer 'S201Z6SSZF' : device 'M2S150' : Family: SmartFusion2
+programmer 'S201Z6SSZF' : device 'M2S150' : Product:      M2S150
+programmer 'S201Z6SSZF' : device 'M2S150' : EXPORT ISC_ENABLE_RESULT[32] = 007c6844
+programmer 'S201Z6SSZF' : device 'M2S150' : EXPORT CRCERR[1] = 0
+programmer 'S201Z6SSZF' : device 'M2S150' : EXPORT EDCERR[1] = 0
+programmer 'S201Z6SSZF' : device 'M2S150' : Programming FPGA Array and eNVM...
+programmer 'S201Z6SSZF' : device 'M2S150' : EXPORT Fabric component digest[256] = c59d5c2c9c4cd184cefc0c3641b3cba766c6125a269cc42857ee93ec71712b60
+programmer 'S201Z6SSZF' : device 'M2S150' : EXPORT eNVM_0 component digest[256] = de1ef6dad45250c932e9402116910593bc9d0065e5c2f6205755aafdea50a722
+programmer 'S201Z6SSZF' : device 'M2S150' : ===================================================================================
+programmer 'S201Z6SSZF' : device 'M2S150' : EXPORT DSN[128] = 211a5892dd1192f2a912d86588fb4c7a
+programmer 'S201Z6SSZF' : device 'M2S150' : ===================================================================================
+programmer 'S201Z6SSZF' : device 'M2S150' : Finished: Mon Nov 20 10:00:13 2017 (Elapsed time 00:01:47)
+programmer 'S201Z6SSZF' : device 'M2S150' : Executing action PROGRAM PASSED.
+programmer 'S201Z6SSZF' : Chain programming PASSED.
+Chain Programming Finished: Mon Nov 20 10:00:13 2017 (Elapsed time 00:01:47)
+
+                        o - o - o - o - o - o
+
+Project saved.
+Project closed.
