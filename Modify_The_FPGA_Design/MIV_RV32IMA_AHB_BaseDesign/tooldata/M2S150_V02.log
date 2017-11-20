@@ -1,0 +1,16 @@
+Project Name: M2S150_V02
+Location: C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2S150-FC1152
+Family         : SmartFusion2
+Die            : M2S150
+Package        : 1152 FC
+Speed          : STD
+Core Voltage   : 1.2
+Range          : COM

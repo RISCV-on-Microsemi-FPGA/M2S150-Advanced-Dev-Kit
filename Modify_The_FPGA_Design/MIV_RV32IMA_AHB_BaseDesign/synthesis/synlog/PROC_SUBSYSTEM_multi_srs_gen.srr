@@ -1,0 +1,13 @@
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\component\work\PROC_SUBSYSTEM\PROC_SUBSYSTEM.v":9:7:9:20|Selected library: work cell: PROC_SUBSYSTEM view verilog as top level
+@N: NF107 :"C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\component\work\PROC_SUBSYSTEM\PROC_SUBSYSTEM.v":9:7:9:20|Selected library: work cell: PROC_SUBSYSTEM view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Nov 20 14:02:44 2017
+
+###########################################################]

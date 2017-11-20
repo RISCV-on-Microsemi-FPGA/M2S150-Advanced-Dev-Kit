@@ -1,0 +1,14 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02\designer\impl1\MSS_SUBSYSTEM.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02\synthesis\MSS_SUBSYSTEM.edn;edn"
+VALUE "C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02\constraint\io\user.pdc;pdc"
+VALUE "C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02\constraint\user.sdc;sdc"
+VALUE "C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02\constraint\MSS_SUBSYSTEM_derived_constraints.sdc;sdc"
+VALUE "C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02\constraint\fp\MSS_SUBSYSTEM_derived_constraints.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\hbreslin\Desktop\Project Workspace\My projects\M2S090\M2S150_V02\synthesis\MSS_SUBSYSTEM_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST
