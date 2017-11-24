@@ -1,0 +1,153 @@
+# Microsemi I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: v11.7 11.7.0.119
+
+# Family: SmartFusion2 , Die: M2S150TS , Package: 1152 FC
+
+# Date generated: Tue Nov 15 16:12:40 2016 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io CLK0_PAD       \
+    -pinname P1       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {GPIO_IN[0]}   \
+    -pinname J25      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {GPIO_IN[1]}   \
+    -pinname J24      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {GPIO_IN[2]}   \
+    -pinname H25      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {GPIO_IN[3]}   \
+    -pinname H23      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {GPIO_OUT[0]}   \
+    -pinname D26       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {GPIO_OUT[1]}   \
+    -pinname F26       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {GPIO_OUT[2]}   \
+    -pinname A27       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {GPIO_OUT[3]}   \
+    -pinname C26       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {GPIO_OUT[4]}   \
+    -pinname C28       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {GPIO_OUT[5]}   \
+    -pinname B27       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {GPIO_OUT[6]}   \
+    -pinname C27       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {GPIO_OUT[7]}   \
+    -pinname E26       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io RX             \
+    -pinname H7       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io SPI_FLASH_SCLK  \
+    -pinname U12       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_FLASH_SDI  \
+    -pinname T12      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io SPI_FLASH_SDO   \
+    -pinname K1        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_FLASH_SS    \
+    -pinname K2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io TX              \
+    -pinname G5        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+

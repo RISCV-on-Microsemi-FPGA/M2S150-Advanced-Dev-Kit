@@ -1,0 +1,246 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP2 (Version 11.8.2.4)
+Date: Mon Nov 20 14:04:57 2017
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S150         |
+| Package                        | 1152 FC        |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 2.5V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Topcell | PROC_SUBSYSTEM                                                                                                                                          |
+| Format  | EDIF                                                                                                                                                    |
+| Source  | C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\synthesis\PROC_SUBSYSTEM.edn |
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+-------+--------+------------+
+| Type                      | Used  | Total  | Percentage |
++---------------------------+-------+--------+------------+
+| 4LUT                      | 13352 | 146124 | 9.14       |
+| DFF                       | 6498  | 146124 | 4.45       |
+| I/O Register              | 0     | 1722   | 0.00       |
+| User I/O                  | 71    | 574    | 12.37      |
+| -- Single-ended I/O       | 65    | 574    | 11.32      |
+| -- Differential I/O Pairs | 3     | 287    | 1.05       |
+| RAM64x18                  | 10    | 240    | 4.17       |
+| RAM1K18                   | 8     | 236    | 3.39       |
+| MACC                      | 2     | 240    | 0.83       |
+| Chip Globals              | 11    | 16     | 68.75      |
+| CCC                       | 1     | 8      | 12.50      |
+| RCOSC_25_50MHZ            | 1     | 1      | 100.00     |
+| RCOSC_1MHZ                | 0     | 1      | 0.00       |
+| XTLOSC                    | 0     | 1      | 0.00       |
+| FDDR                      | 0     | 1      | 0.00       |
+| MSS                       | 1     | 1      | 100.00     |
++---------------------------+-------+--------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+-------+------+
+| Type                     | 4LUT  | DFF  |
++--------------------------+-------+------+
+| Fabric Logic             | 12632 | 5778 |
+| RAM64x18 Interface Logic | 360   | 360  |
+| RAM1K18 Interface Logic  | 288   | 288  |
+| MACC Interface Logic     | 72    | 72   |
+| Total Used               | 13352 | 6498 |
++--------------------------+-------+------+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (512KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 0    | 1     |
+| SPI           | 0    | 2     |
+| I2C           | 0    | 2     |
+| UART          | 0    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 0    | 1     |
+| MDDR          | 1    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 46   |
+| 5      | 2    |
+| 6      | 3    |
+| 7      | 3    |
+| 8      | 1    |
+| 9      | 1    |
+| 10     | 8    |
+| 11     | 5    |
+| 14     | 3    |
+| 17     | 4    |
+| 30     | 2    |
+| 32     | 3    |
+| 33     | 9    |
+| 49     | 1    |
+| 58     | 2    |
+| 64     | 1    |
+| 65     | 1    |
+| Total  | 95   |
++--------+------+
+
+Detailed MACC Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 1    |
+| Total  | 1    |
++--------+------+
+
+I/O Function
++--------------------------------------+--------------+-------------+-----------------+
+| Type                                 | w/o register | w/ register | w/ DDR register |
++--------------------------------------+--------------+-------------+-----------------+
+| Input I/O                            | 8            | 0           | 0               |
+| Output I/O                           | 39           | 0           | 0               |
+| Bidirectional I/O                    | 18           | 0           | 0               |
+| Differential Input I/O Pairs         | 0            | 0           | 0               |
+| Differential Output I/O Pairs        | 1            | 0           | 0               |
+| Differential Bidirectional I/O Pairs | 2            | 0           | 0               |
++--------------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++-------------------------------+--------+--------+-------+--------+---------------+
+| I/O Standard                  | Vddi   | Vref   | Input | Output | Bidirectional |
++-------------------------------+--------+--------+-------+--------+---------------+
+| LVCMOS25                      |  2.50v |  N/A   |  7    |  12    |  0            |
+| SSTL15I (Input/Bidirectional) |  1.50v |  0.75v |  1    |  0     |  22           |
+| SSTL15I (Output)              |  1.50v |  N/A   |  0    |  29    |  0            |
++-------------------------------+--------+--------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  52   | 73.24%     |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  19   | 26.76%     |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+-------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                            |
++--------+---------+-------------------------------------------------------------------------------------------------+
+| 5413   | INT_NET | Net   : MSS_SUBSYSTEM_sb_0_FIC_0_CLK                                                            |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/CCC_0/GL0_INST/U0_RGB1                                               |
+|        |         | Source: NETLIST                                                                                 |
+| 802    | INT_NET | Net   : MSS_SUBSYSTEM_sb_0_INIT_DONE                                                            |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int_RNIESS/U0_RGB1                            |
+|        |         | Source: NETLIST                                                                                 |
+| 294    | INT_NET | Net   : COREJTAGDEBUG_0_TGT_TCK                                                                 |
+|        |         | Driver: COREJTAGDEBUG_0/tck_clkint/U0_RGB1                                                      |
+|        |         | Source: NETLIST                                                                                 |
+| 78     | INT_NET | Net   : MSS_SUBSYSTEM_sb_0/CORECONFIGP_0_APB_S_PRESET_N                                         |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/FIC_2_APB_M_PRESET_N_keep_RNIQAQD/U0_RGB1     |
+|        |         | Source: NETLIST                                                                                 |
+| 76     | INT_NET | Net   : MSS_SUBSYSTEM_sb_0/CORECONFIGP_0_APB_S_PCLK                                             |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/MSS_SUBSYSTEM_sb_MSS_0/MSS_ADLIB_INST_RNI1HN6/U0_RGB1                |
+|        |         | Source: NETLIST                                                                                 |
+| 33     | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/reset_n_catch_reg_io_q[0]                               |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/dmiResetCatch/reset_n_catch_reg/reg_0/q_RNII25E/U0_RGB1 |
+|        |         | Source: NETLIST                                                                                 |
+| 26     | INT_NET | Net   : MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_clk_base                                   |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_clk_base_RNIU66D/U0_RGB1                   |
+|        |         | Source: NETLIST                                                                                 |
+| 23     | INT_NET | Net   : COREJTAGDEBUG_0.TGT_TRSTB                                                               |
+|        |         | Driver: COREJTAGDEBUG_0/genblk1_UJTAG_0_RNIFG38/U0_RGB1                                         |
+|        |         | Source: NETLIST                                                                                 |
+| 22     | INT_NET | Net   : MSS_SUBSYSTEM_sb_0/FABOSC_0_RCOSC_25_50MHZ_O2F                                          |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1                         |
+|        |         | Source: NETLIST                                                                                 |
+| 17     | INT_NET | Net   : MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc                                      |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/CORERESETP_0/sm0_areset_n_rcosc_RNI4N5C/U0_RGB1                      |
+|        |         | Source: NETLIST                                                                                 |
+| 16     | INT_NET | Net   : COREJTAGDEBUG_0/UDRCK_OUT                                                               |
+|        |         | Driver: COREJTAGDEBUG_0/genblk1_udrck_clkint/U0_RGB1                                            |
+|        |         | Source: NETLIST                                                                                 |
++--------+---------+-------------------------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                                                                                           |
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1004   | INT_NET | Net   : MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                                                          |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                                                          |
+| 614    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/_T_164                                                                                                                                                                 |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q                                                                  |
+| 280    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]                                                                                                                         |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7] |
+| 236    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]                                                                                                                         |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2] |
+| 225    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_2284                                                                                                                                                           |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_2284                                                                                                                                                           |
+| 217    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]                                                                                                                         |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3] |
+| 130    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core_io_imem_flush_icache                                                                                                                                                  |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/io_imem_flush_icache                                                                                                                                                  |
+| 128    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/frontend/icache/un1__GEN_14_2_sqmuxa_or                                                                                                                                    |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/frontend/icache/refill_one_beat_RNIEN4G                                                                                                                                    |
+| 119    | INT_NET | Net   : CoreAPB3_0_APBmslave1_PADDR[2]                                                                                                                                                                                         |
+|        |         | Driver: COREAHBTOAPB3_0/U_ApbAddrData/haddrReg[2]                                                                                                                                                                              |
+| 113    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_1240                                                                                                                                                           |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_1240_0_a2                                                                                                                                                      |
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                                                                                                           |
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1004   | INT_NET | Net   : MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                                                          |
+|        |         | Driver: MSS_SUBSYSTEM_sb_0/CORERESETP_0/INIT_DONE_int                                                                                                                                                                          |
+| 614    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/_T_164                                                                                                                                                                 |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q                                                                  |
+| 280    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]                                                                                                                         |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7] |
+| 236    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]                                                                                                                         |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2] |
+| 225    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_2284                                                                                                                                                           |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_2284                                                                                                                                                           |
+| 217    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]                                                                                                                         |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/debug_1/dmInner/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/PROC_SUBSYSTEM_MIV_RV32IMA_L1_AHB_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3] |
+| 130    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core_io_imem_flush_icache                                                                                                                                                  |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/io_imem_flush_icache                                                                                                                                                  |
+| 128    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/frontend/icache/un1__GEN_14_2_sqmuxa_or                                                                                                                                    |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/frontend/icache/refill_one_beat_RNIEN4G                                                                                                                                    |
+| 119    | INT_NET | Net   : CoreAPB3_0_APBmslave1_PADDR[2]                                                                                                                                                                                         |
+|        |         | Driver: COREAHBTOAPB3_0/U_ApbAddrData/haddrReg[2]                                                                                                                                                                              |
+| 113    | INT_NET | Net   : MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_1240                                                                                                                                                           |
+|        |         | Driver: MIV_RV32IMA_L1_AHB_0/ChiselTop0/tile/rocket/core/csr/_T_1240_0_a2                                                                                                                                                      |
++--------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
