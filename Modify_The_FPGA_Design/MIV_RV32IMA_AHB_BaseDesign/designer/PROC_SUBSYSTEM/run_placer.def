@@ -1,5 +1,5 @@
 DESIGN=PROC_SUBSYSTEM
-DESDIR=C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM
+DESDIR=C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM
 FAM=SmartFusion2
 DIE=PA4M12000_N
 PACKAGE=fc1152
@@ -24,7 +24,7 @@ MINDELAYG4_REPAIR=1
 RANDOM_SEED=0
 NETLIST_TYPE=EDIF
 LAYOUT_STATE=NOT_VALID
-PDC_FILE=C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\constraint\io\user.pdc,,C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc,,
+PDC_FILE=C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\constraint\io\user.pdc,,C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\constraint\fp\PROC_SUBSYSTEM_derived_constraints.pdc,,
 USE_CONSTRAINT_FLOW=1
 TARGET_DEVICES_FOR_MIGRATION='PA4M12000_N '
 RESTRICTPROBEPINS=1

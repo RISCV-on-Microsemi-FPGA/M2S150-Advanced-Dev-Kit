@@ -1,6 +1,6 @@
 DESIGN=PROC_SUBSYSTEM
-DESDIR=C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM
-TARGET_DIR=C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM
+DESDIR=C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM
+TARGET_DIR=C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM
 FAM=SmartFusion2
 DIE=PA4M12000_N
 PACKAGE=fc1152

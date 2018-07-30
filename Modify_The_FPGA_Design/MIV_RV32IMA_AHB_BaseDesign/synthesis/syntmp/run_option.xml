@@ -2,15 +2,15 @@
 <!-- 
   Synopsys, Inc.
   Version L-2016.09M-2
-  Project file C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\synthesis\syntmp\run_option.xml
-  Written on Mon Nov 20 14:01:50 2017
+  Project file C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\synthesis\syntmp\run_option.xml
+  Written on Mon Jul 30 12:07:58 2018
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
      <option name="project_name" display_name="Project Name">PROC_SUBSYSTEM_syn</option>
      <option name="impl_name" display_name="Implementation Name">synthesis</option>
-     <option name="top_module" display_name="Top Module"></option>
+     <option name="top_module" display_name="Top Module">PROC_SUBSYSTEM</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="maxfan" display_name="Fanout Guide">10000</option>

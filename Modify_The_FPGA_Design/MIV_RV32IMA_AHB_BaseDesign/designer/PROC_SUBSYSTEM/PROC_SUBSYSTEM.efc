@@ -14,11 +14,11 @@
             1152 FC
         </package>
         <version>
-            11.8.2.4
+            11.8.3.6
         </version>
     </header>
     <nvm>
-        <region name="RISCV_BOOT" address="0x000000" retrieveAddressFromFile="false" size="1856" format="HEX" type="Data Storage" wordSize="8" numberWords="1856" memFile="C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\hex\while_loop.hex" memType="INTELHEX" memFileTimeStamp="" clientType="public" program="true">
+        <region name="RISCV_BOOT" address="0x000000" retrieveAddressFromFile="false" size="1856" format="HEX" type="Data Storage" wordSize="8" numberWords="1856" memFile="C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\hex\while_loop.hex" memType="INTELHEX" memFileTimeStamp="" clientType="public" program="true">
             6f00c0006f0000006f00c002970200009382820273905230735000307350
             4030970100209381017e17110020130181166f000013130101f823201100
             23222100232431002326410023285100232a6100232c7100232e81002320
@@ -85,7 +85,7 @@
                 eff5
             </crc>
         </region>
-        <region name="M3_BOOT" address="0x078000" retrieveAddressFromFile="false" size="3456" format="HEX" type="Data Storage" wordSize="8" numberWords="3456" memFile="C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\hex\M3-Disable_M2S150-Adv-Dev-Kit_Enable-DDR.hex" memType="INTELHEX" memFileTimeStamp="" clientType="public" program="true">
+        <region name="M3_BOOT" address="0x078000" retrieveAddressFromFile="false" size="3456" format="HEX" type="Data Storage" wordSize="8" numberWords="3456" memFile="C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\hex\M3-Disable_M2S150-Adv-Dev-Kit_Enable-DDR.hex" memType="INTELHEX" memFileTimeStamp="" clientType="public" program="true">
             <read_protect/>
             00000120910100007f030000810300008303000085030000870300000000
             0000000000000000000000000000890300008b030000000000008d030000
