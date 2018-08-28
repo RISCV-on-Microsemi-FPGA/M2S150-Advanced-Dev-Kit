@@ -1,6 +1,6 @@
 Resource Report
-Microsemi Corporation - Microsemi Libero Software Release v11.8 SP2 (Version 11.8.2.4)
-Date: Mon Nov 20 14:04:57 2017
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+Date: Mon Jul 30 12:11:59 2018
 
 Device Selection
 +--------------------------------+----------------+
@@ -20,11 +20,11 @@ Device Selection
 +--------------------------------+----------------+
 
 Source Files
-+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Topcell | PROC_SUBSYSTEM                                                                                                                                          |
-| Format  | EDIF                                                                                                                                                    |
-| Source  | C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\synthesis\PROC_SUBSYSTEM.edn |
-+---------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Topcell | PROC_SUBSYSTEM                                                                                                                                                |
+| Format  | EDIF                                                                                                                                                          |
+| Source  | C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\synthesis\PROC_SUBSYSTEM.edn |
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Options
 +----------------------------------------------------+-------+

@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>PROC_SUBSYSTEM</design>
-	<target_edif>C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\synthesis\PROC_SUBSYSTEM.edn</target_edif>
+	<target_edif>C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\synthesis\PROC_SUBSYSTEM.edn</target_edif>
 </SynplifyOutput>

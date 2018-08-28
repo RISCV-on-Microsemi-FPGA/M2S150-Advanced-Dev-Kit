@@ -1,6 +1,6 @@
 <project name="PROC_SUBSYSTEM" version="1.1">
     <ProjectDirectory>
-        C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM_fp
+        C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM_fp
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,11 +9,19 @@
         M2S150
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\hbreslin\Desktop\Project Workspace\Github\M2S150-Creative-Board\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM_fp\PROC_SUBSYSTEM.log
+        C:\Users\ciaran.lappin\Desktop\ExtHelp\Prassana\M2S150-Advanced-Dev-Kit-master\Modify_The_FPGA_Design\MIV_RV32IMA_AHB_BaseDesign\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM_fp\PROC_SUBSYSTEM.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
+    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb2.0">
+        <name>
+            S20112PUY4
+        </name>
+        <id>
+            S20112PUY4
+        </id>
+    </programmer>
     <configuration>
         <Hardware>
             <FlashPro>

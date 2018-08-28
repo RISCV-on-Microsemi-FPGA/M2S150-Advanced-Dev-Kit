@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Nov 20 14:00:51 2017
-// Version: v11.8 SP2 11.8.2.4
+// Created by SmartDesign Mon Jul 30 12:06:58 2018
+// Version: v11.8 SP3 11.8.3.6
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -369,18 +369,15 @@ wire          CoreAHBLite_0_AHBmslave6_HRESP;
 wire   [2:0]  CoreAHBLite_0_AHBmslave6_HSIZE;
 wire   [1:0]  CoreAHBLite_0_AHBmslave6_HSIZE_0_1to0;
 wire   [1:0]  CoreAHBLite_0_AHBmslave6_HSIZE_0;
-wire          CoreAHBLite_1_AHBmslave16_HRESP;
 wire   [1:1]  CoreAHBLite_1_AHBmslave16_HRESP_0_1to1;
 wire   [0:0]  CoreAHBLite_1_AHBmslave16_HRESP_0_0to0;
 wire   [1:0]  CoreAHBLite_1_AHBmslave16_HRESP_0;
+wire          CoreAHBLite_1_AHBmslave16_HRESP;
 wire   [2:0]  CoreAHBLite_1_AHBmslave16_HSIZE;
 wire   [1:0]  CoreAHBLite_1_AHBmslave16_HSIZE_0_1to0;
 wire   [1:0]  CoreAHBLite_1_AHBmslave16_HSIZE_0;
-wire   [31:0] CoreAPB3_0_APBmslave1_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_1;
-wire   [6:0]  CoreAPB3_0_APBmslave1_PADDR_5_6to0;
-wire   [6:0]  CoreAPB3_0_APBmslave1_PADDR_5;
 wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_2_4to2;
 wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_2;
 wire   [4:2]  CoreAPB3_0_APBmslave1_PADDR_3_4to2;
@@ -389,6 +386,9 @@ wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_4_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PADDR_4;
 wire   [4:0]  CoreAPB3_0_APBmslave1_PADDR_0_4to0;
 wire   [4:0]  CoreAPB3_0_APBmslave1_PADDR_0;
+wire   [6:0]  CoreAPB3_0_APBmslave1_PADDR_5_6to0;
+wire   [6:0]  CoreAPB3_0_APBmslave1_PADDR_5;
+wire   [31:0] CoreAPB3_0_APBmslave1_PADDR;
 wire   [31:8] CoreAPB3_0_APBmslave1_PRDATA_0_31to8;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA_0_7to0;
 wire   [31:0] CoreAPB3_0_APBmslave1_PRDATA_0;
@@ -396,9 +396,9 @@ wire   [7:0]  CoreAPB3_0_APBmslave1_PRDATA;
 wire   [31:0] CoreAPB3_0_APBmslave1_PWDATA;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PWDATA_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave1_PWDATA_0;
+wire   [1:0]  MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HRESP;
 wire   [0:0]  MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HRESP_0_0to0;
 wire          MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HRESP_0;
-wire   [1:0]  MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HRESP;
 wire   [31:31]MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HADDR_0_31to31;
 wire   [30:0] MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HADDR_0_30to0;
 wire   [31:0] MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HADDR_0;
@@ -599,8 +599,6 @@ assign CoreAHBLite_1_AHBmslave16_HSIZE_0 = { CoreAHBLite_1_AHBmslave16_HSIZE_0_1
 
 assign CoreAPB3_0_APBmslave1_PADDR_1_7to0 = CoreAPB3_0_APBmslave1_PADDR[7:0];
 assign CoreAPB3_0_APBmslave1_PADDR_1 = { CoreAPB3_0_APBmslave1_PADDR_1_7to0 };
-assign CoreAPB3_0_APBmslave1_PADDR_5_6to0 = CoreAPB3_0_APBmslave1_PADDR[6:0];
-assign CoreAPB3_0_APBmslave1_PADDR_5 = { CoreAPB3_0_APBmslave1_PADDR_5_6to0 };
 assign CoreAPB3_0_APBmslave1_PADDR_2_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
 assign CoreAPB3_0_APBmslave1_PADDR_2 = { CoreAPB3_0_APBmslave1_PADDR_2_4to2 };
 assign CoreAPB3_0_APBmslave1_PADDR_3_4to2 = CoreAPB3_0_APBmslave1_PADDR[4:2];
@@ -609,6 +607,8 @@ assign CoreAPB3_0_APBmslave1_PADDR_4_7to0 = CoreAPB3_0_APBmslave1_PADDR[7:0];
 assign CoreAPB3_0_APBmslave1_PADDR_4 = { CoreAPB3_0_APBmslave1_PADDR_4_7to0 };
 assign CoreAPB3_0_APBmslave1_PADDR_0_4to0 = CoreAPB3_0_APBmslave1_PADDR[4:0];
 assign CoreAPB3_0_APBmslave1_PADDR_0 = { CoreAPB3_0_APBmslave1_PADDR_0_4to0 };
+assign CoreAPB3_0_APBmslave1_PADDR_5_6to0 = CoreAPB3_0_APBmslave1_PADDR[6:0];
+assign CoreAPB3_0_APBmslave1_PADDR_5 = { CoreAPB3_0_APBmslave1_PADDR_5_6to0 };
 
 assign CoreAPB3_0_APBmslave1_PRDATA_0_31to8 = 24'h0;
 assign CoreAPB3_0_APBmslave1_PRDATA_0_7to0 = CoreAPB3_0_APBmslave1_PRDATA[7:0];
@@ -1983,32 +1983,32 @@ MIV_RV32IMA_L1_AHB_0(
         .TMS                 ( COREJTAGDEBUG_0_TGT_TMS ),
         .TRST                ( COREJTAGDEBUG_0_TGT_TRST ),
         .TDI                 ( COREJTAGDEBUG_0_TGT_TDI ),
-        .IRQ                 ( IRQ_net_0 ),
         .AHB_MST_MMIO_HREADY ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HREADY ),
         .AHB_MST_MMIO_HRESP  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HRESP_0 ),
-        .AHB_MST_MMIO_HRDATA ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HRDATA ),
         .AHB_MST_MEM_HREADY  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HREADY ),
         .AHB_MST_MEM_HRESP   ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HRESP_0 ),
+        .IRQ                 ( IRQ_net_0 ),
+        .AHB_MST_MMIO_HRDATA ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HRDATA ),
         .AHB_MST_MEM_HRDATA  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HRDATA ),
         // Outputs
         .TDO                 ( MIV_RV32IMA_L1_AHB_0_TDO ),
         .DRV_TDO             (  ),
         .AHB_MST_MEM_HSEL    (  ),
-        .AHB_MST_MMIO_HTRANS ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HTRANS ),
         .AHB_MST_MMIO_HWRITE ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HWRITE ),
+        .AHB_MST_MMIO_HLOCK  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HLOCK ),
+        .AHB_MST_MEM_HWRITE  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HWRITE ),
+        .AHB_MST_MEM_HLOCK   ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HLOCK ),
+        .AHB_MST_MMIO_HTRANS ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HTRANS ),
         .AHB_MST_MMIO_HADDR  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HADDR ),
         .AHB_MST_MMIO_HSIZE  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HSIZE ),
         .AHB_MST_MMIO_HBURST ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HBURST ),
         .AHB_MST_MMIO_HPROT  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HPROT ),
         .AHB_MST_MMIO_HWDATA ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HWDATA ),
-        .AHB_MST_MMIO_HLOCK  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MMIO_HLOCK ),
         .AHB_MST_MEM_HTRANS  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HTRANS ),
-        .AHB_MST_MEM_HWRITE  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HWRITE ),
         .AHB_MST_MEM_HADDR   ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HADDR ),
         .AHB_MST_MEM_HSIZE   ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HSIZE ),
         .AHB_MST_MEM_HBURST  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HBURST ),
         .AHB_MST_MEM_HPROT   ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HPROT ),
-        .AHB_MST_MEM_HLOCK   ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HLOCK ),
         .AHB_MST_MEM_HWDATA  ( MIV_RV32IMA_L1_AHB_0_AHB_MST_MEM_HWDATA ) 
         );
 
